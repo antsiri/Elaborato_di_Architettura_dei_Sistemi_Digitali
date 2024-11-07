@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: /Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/main.aux
+A level-1 auxiliary file: introduzione.aux
+A level-1 auxiliary file: chapter1.aux
+A level-1 auxiliary file: chapter2.aux
+A level-1 auxiliary file: chapter3.aux
+A level-1 auxiliary file: chapter4.aux
+A level-1 auxiliary file: chapter5.aux
+A level-1 auxiliary file: chapter6.aux
+A level-1 auxiliary file: chapter7.aux
+A level-1 auxiliary file: chapter8.aux
+A level-1 auxiliary file: conclusion.aux
+The style file: plain.bst
+Database file #1: ../bibliography.bib
+You've used 4 entries,
+            2118 wiz_defined-function locations,
+            525 strings with 4751 characters,
+and the built_in function-call counts, 1694 in all, are:
+= -- 193
+> -- 28
+< -- 2
++ -- 12
+- -- 8
+* -- 48
+:= -- 208
+add.period$ -- 12
+call.type$ -- 4
+change.case$ -- 14
+chr.to.int$ -- 0
+cite$ -- 4
+duplicate$ -- 117
+empty$ -- 138
+format.name$ -- 8
+if$ -- 426
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 4
+newline$ -- 22
+num.names$ -- 8
+pop$ -- 31
+preamble$ -- 1
+purify$ -- 12
+quote$ -- 0
+skip$ -- 130
+stack$ -- 0
+substring$ -- 108
+swap$ -- 77
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 14
+warning$ -- 0
+while$ -- 11
+width$ -- 5
+write$ -- 43

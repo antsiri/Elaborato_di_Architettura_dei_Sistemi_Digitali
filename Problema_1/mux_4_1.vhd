@@ -1,16 +1,16 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity mux_14 is
+entity mux_41 is
     port
     (
         b: in std_logic_vector(0 to 3);
         c1: in std_logic_vector(1 downto 0);
         f: out std_logic
     );
-end mux_14;
+end mux_41;
 
-architecture structural of mux_14 is
+architecture structural of mux_41 is
     signal u: std_logic_vector(0 to 1);
 
     component mux_21 is 
@@ -43,3 +43,4 @@ architecture structural of mux_14 is
             );
 
 end structural;
+
