@@ -1,0 +1,4 @@
+v 4
+file . "mux_2_1.vhd" "3f494a15e4f075ef584c5188a8d10ab49dd24021" "20241107093047.201":
+  entity mux_21 at 1( 0) + 0 on 11;
+  architecture rtl of mux_21 at 13( 177) + 0 on 12;
