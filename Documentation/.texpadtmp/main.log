@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.23)  7 NOV 2024 23:05
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2024) (preloaded format=xelatex 2024.9.23)  8 NOV 2024 20:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -715,7 +715,7 @@ Package tocbibind Info: The document has chapter divisions on input line 50.
 
 Package tocbibind Note: Using chapter style headings, unless overridden.
 
-) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/main.aux (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/introduzione.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/chapter1.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/chapter2.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/chapter3.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/chapter4.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/chapter5.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/chapter6.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/chapter7.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/chapter8.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/conclusion.aux))
+) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/main.aux (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/problema1.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/chapter2.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/chapter3.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/chapter4.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/chapter5.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/chapter6.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/chapter7.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/chapter8.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/conclusion.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
@@ -805,45 +805,52 @@ File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 
 
 ]
-\openout2 = `introduzione.aux'.
+\openout2 = `problema1.aux'.
 
- (./introduzione.tex [1
-
-
-
-]) [2]
-\openout2 = `chapter1.aux'.
-
- (./chapter1.tex
+ (./problema1.tex
 Chapter 1.
 File: img/01.png Graphic file (type bmp)
 <img/01.png>
-[3
+[1
 
 
 
+]
+File: img/02.png Graphic file (type bmp)
+<img/02.png>
 
-]) [4]
+Underfull \hbox (badness 10000) in paragraph at lines 15--21
+
+ []
+
+File: img/03.png Graphic file (type bmp)
+<img/03.png>
+[2]
+File: img/04.png Graphic file (type bmp)
+<img/04.png>
+File: img/05.png Graphic file (type bmp)
+<img/05.png>
+ [3]
+Overfull \hbox (7.11928pt too wide) in paragraph at lines 47--47
+[]\T1/lmr/bx/n/20.74 Rete di in-ter-con-nes-sione a 16 in-gressi
+ []
+
+
+Overfull \hbox (0.57149pt too wide) in paragraph at lines 55--55
+[]\T1/lmr/bx/n/20.74 Implementazione su board del punto
+ []
+
+[4] [5]
+Chapter 2.
+) [6
+
+]
 \openout2 = `chapter2.aux'.
 
- (./chapter2.tex
-Chapter 2.
-[5
-
-
-
-
-]) [6] [7] [8] [9]
+ (./chapter2.tex)
 \openout2 = `chapter3.aux'.
 
- (./chapter3.tex
-Chapter 3.
-[10
-
-
-
-
-]) [11] [12] [13] [14]
+ (./chapter3.tex)
 \openout2 = `chapter4.aux'.
 
  (./chapter4.tex)
@@ -862,8 +869,14 @@ Chapter 3.
 \openout2 = `conclusion.aux'.
 
  (./conclusion.tex
-Chapter 4.
-) [15
+Chapter 3.
+) [7
+
+
+
+
+
+
 
 
 
@@ -884,33 +897,32 @@ Chapter 4.
 
 
 ] (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/main.bbl
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 20.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)) [16
+
+LaTeX Warning: Empty `thebibliography' environment on input line 3.
+
+) [8
 
 
 
-] (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/main.aux (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/introduzione.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/chapter1.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/chapter2.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/chapter3.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/chapter4.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/chapter5.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/chapter6.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/chapter7.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/chapter8.aux)
-(/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/conclusion.aux))
+] (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/main.aux (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/problema1.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/chapter2.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/chapter3.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/chapter4.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/chapter5.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/chapter6.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/chapter7.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/chapter8.aux) (/Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/conclusion.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 2A651E2837E83F56DC8658EEA9E9DCD0;2314.
+(rerunfilecheck)             Checksum: 858CB199591604320EFA0FDDB262A5F2;2068.
  )
 (\end occurred inside a group at level 1)
 
 ### semi simple group (level 1) entered at line 37 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 34015 strings out of 474773
- 795926 string characters out of 5757724
- 1923839 words of memory out of 5000000
- 55515 multiletter control sequences out of 15000+600000
- 605760 words of font info for 58 fonts, out of 8000000 for 9000
+ 34030 strings out of 474773
+ 795246 string characters out of 5757724
+ 1922839 words of memory out of 5000000
+ 55538 multiletter control sequences out of 15000+600000
+ 601176 words of font info for 56 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  81i,11n,93p,734b,2992s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on /Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/main.pdf (18 pages).
+Output written on /Users/antoniosirignano/Documents/Università/Ingegneria_Informatica_LM32/I Anno/I Semestre/Architettura dei sistemi digitali/Progetto/Documentation/.texpadtmp/main.pdf (10 pages).

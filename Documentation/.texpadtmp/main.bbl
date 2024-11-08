@@ -1,22 +1,3 @@
-\begin{thebibliography}{1}
-
-\bibitem{librocitato}
-Autori.
-\newblock {\em Titolo del libro}, page pagine conslultate.
-\newblock Editore, Anno.
-
-\bibitem{articolocitato}
-Autori.
-\newblock Titolo dell'articolo.
-\newblock {\em Nome della rivista}, volume consultato:pagine, Anno.
-
-\bibitem{articoloconferenza}
-Autori.
-\newblock Titolo dell'articolo.
-\newblock In {\em Nome della conferenza di cui è agli atti}, page pagine consultate. editore, Anno.
-
-\bibitem{sitocitato}
-Nome del~sito web.
-\newblock \url{url del sito web}, ultima data in cui è stato acceduto.
+\begin{thebibliography}{}
 
 \end{thebibliography}
