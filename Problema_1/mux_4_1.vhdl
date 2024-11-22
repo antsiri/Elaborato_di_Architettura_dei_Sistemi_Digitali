@@ -17,29 +17,29 @@ architecture structural of mux_41 is
         port (
                 a0, a1: in std_logic;
                 c0: in std_logic;
-                z: out std_logic;
+                z: out std_logic
             );
     end component;
 
     begin
-        mux0to1: FOR 1 IN 0 TO 1 GENERATE
+        mux0to1: FOR i IN 0 TO 1 GENERATE
             m: mux_21
             port map
             (
-                b(i*2);
-                b(i*2 + 1);
-                c1(0);
-                u(i);
+                b(i*2),
+                b(i*2 + 1),
+                c1(0),
+                u(i)
             );
         end GENERATE;
 
         mux_2: mux_21
             port map
             (
-                u(0);
-                u(1);
-                c1(1);
-                f;
+                u(0),
+                u(1),
+                c1(1),
+                f
             );
 
 end structural;
