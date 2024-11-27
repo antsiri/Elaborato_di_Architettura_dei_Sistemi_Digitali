@@ -1,0 +1,7 @@
+v 4
+file . "riconoscitore.vhdl" "79fc73bbe87867b99b5844dfddb9b2a53293c72a" "20241127160150.485":
+  entity riconoscitore at 1( 0) + 0 on 33;
+  architecture behavioral of riconoscitore at 14( 210) + 0 on 34;
+file . "riconoscitore_tb.vhdl" "9076ca116a97d0e07e62b681ac5075f12c6d0da5" "20241127160428.510":
+  entity tb_riconoscitore at 1( 0) + 0 on 35;
+  architecture behavior of tb_riconoscitore at 7( 121) + 0 on 36;
