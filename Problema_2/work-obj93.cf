@@ -1,7 +1,13 @@
 v 4
-file . "riconoscitore.vhdl" "79fc73bbe87867b99b5844dfddb9b2a53293c72a" "20241127160150.485":
-  entity riconoscitore at 1( 0) + 0 on 33;
-  architecture behavioral of riconoscitore at 14( 210) + 0 on 34;
-file . "riconoscitore_tb.vhdl" "9076ca116a97d0e07e62b681ac5075f12c6d0da5" "20241127160428.510":
-  entity tb_riconoscitore at 1( 0) + 0 on 35;
-  architecture behavior of tb_riconoscitore at 7( 121) + 0 on 36;
+file . "shift_register.vhdl" "e84423e6db137cb457ee975a6e7516740da26eb0" "20241205175744.424":
+  entity shift_register at 1( 0) + 0 on 23;
+  architecture structural of shift_register at 16( 335) + 0 on 24;
+file . "mux_4_1.vhdl" "e1fc243cd9b0d687daa39176c9b4d0214b3a88b4" "20241205174527.743":
+  entity mux_41 at 1( 0) + 0 on 11;
+  architecture behavioral of mux_41 at 13( 210) + 0 on 12;
+file . "register.vhdl" "1457de883e09c3b7f68b97b99ff6e16a7ae94995" "20241205174536.203":
+  entity reg at 1( 0) + 0 on 13;
+  architecture behavioral of reg at 16( 295) + 0 on 14;
+file . "tb_shift_register.vhdl" "e4820f8456f5316ed427a58f0f433167afe8e548" "20241205180322.625":
+  entity shift_register_tb at 1( 0) + 0 on 27;
+  architecture bench of shift_register_tb at 8( 104) + 0 on 28;
