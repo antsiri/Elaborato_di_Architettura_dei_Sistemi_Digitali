@@ -1,0 +1,150 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{library}\PYG{+w}{ }\PYG{n+nn}{IEEE}\PYG{p}{;}
+\PYG{k}{use}\PYG{+w}{ }\PYG{n+nn}{IEEE.Std\PYGZus{}logic\PYGZus{}1164.}\PYG{k}{all}\PYG{p}{;}
+\PYG{k}{use}\PYG{+w}{ }\PYG{n+nn}{IEEE.Numeric\PYGZus{}Std.}\PYG{k}{all}\PYG{p}{;}
+
+\PYG{k}{entity}\PYG{+w}{ }\PYG{n+nc}{shift\PYGZus{}register\PYGZus{}tb}\PYG{+w}{ }\PYG{k}{is}
+\PYG{k}{end}\PYG{p}{;}
+
+\PYG{k}{architecture}\PYG{+w}{ }\PYG{n+nc}{bench}\PYG{+w}{ }\PYG{k}{of}\PYG{+w}{ }\PYG{n+nc}{shift\PYGZus{}register\PYGZus{}tb}\PYG{+w}{ }\PYG{k}{is}
+
+\PYG{+w}{  }\PYG{k}{component}\PYG{+w}{ }\PYG{n+nc}{shift\PYGZus{}register}\PYG{+w}{ }
+\PYG{+w}{  }\PYG{k}{port}
+\PYG{+w}{  }\PYG{p}{(}
+\PYG{+w}{      }\PYG{n}{clk}\PYG{o}{:}\PYG{+w}{        }\PYG{k}{in}\PYG{+w}{  }\PYG{k+kt}{std\PYGZus{}logic}\PYG{p}{;}
+\PYG{+w}{      }\PYG{n}{rst}\PYG{o}{:}\PYG{+w}{        }\PYG{k}{in}\PYG{+w}{  }\PYG{k+kt}{std\PYGZus{}logic}\PYG{p}{;}
+\PYG{+w}{      }\PYG{n}{en}\PYG{o}{:}\PYG{+w}{         }\PYG{k}{in}\PYG{+w}{  }\PYG{k+kt}{std\PYGZus{}logic}\PYG{p}{;}
+\PYG{+w}{      }\PYG{n}{y}\PYG{o}{:}\PYG{+w}{          }\PYG{k}{in}\PYG{+w}{  }\PYG{k+kt}{std\PYGZus{}logic\PYGZus{}vector}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{k}{downto}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{      }\PYG{n}{data\PYGZus{}in}\PYG{o}{:}\PYG{+w}{    }\PYG{k}{in}\PYG{+w}{  }\PYG{k+kt}{std\PYGZus{}logic\PYGZus{}vector}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{k}{downto}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{      }\PYG{n}{data\PYGZus{}out}\PYG{o}{:}\PYG{+w}{   }\PYG{k}{out}\PYG{+w}{ }\PYG{k+kt}{std\PYGZus{}logic\PYGZus{}vector}\PYG{p}{(}\PYG{l+m+mi}{7}\PYG{+w}{ }\PYG{k}{downto}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}
+\PYG{+w}{  }\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{  }\PYG{k}{end}\PYG{+w}{ }\PYG{k}{component}\PYG{p}{;}
+
+\PYG{+w}{  }\PYG{k}{signal}\PYG{+w}{ }\PYG{n}{clk}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{std\PYGZus{}logic}\PYG{+w}{ }\PYG{o}{:}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s+sc}{\PYGZsq{}0\PYGZsq{}}\PYG{p}{;}
+\PYG{+w}{  }\PYG{k}{signal}\PYG{+w}{ }\PYG{n}{rst}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{std\PYGZus{}logic}\PYG{+w}{ }\PYG{o}{:}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s+sc}{\PYGZsq{}0\PYGZsq{}}\PYG{p}{;}
+\PYG{+w}{  }\PYG{k}{signal}\PYG{+w}{ }\PYG{n}{en}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{std\PYGZus{}logic}\PYG{+w}{ }\PYG{o}{:}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s+sc}{\PYGZsq{}0\PYGZsq{}}\PYG{p}{;}
+\PYG{+w}{  }\PYG{k}{signal}\PYG{+w}{ }\PYG{n}{y}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{std\PYGZus{}logic\PYGZus{}vector}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{k}{downto}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{:}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}00\PYGZdq{}}\PYG{p}{;}
+\PYG{+w}{  }\PYG{k}{signal}\PYG{+w}{ }\PYG{n}{data\PYGZus{}in}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{std\PYGZus{}logic\PYGZus{}vector}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{k}{downto}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{:}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}00\PYGZdq{}}\PYG{p}{;}
+\PYG{+w}{  }\PYG{k}{signal}\PYG{+w}{ }\PYG{n}{data\PYGZus{}out}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{std\PYGZus{}logic\PYGZus{}vector}\PYG{p}{(}\PYG{l+m+mi}{7}\PYG{+w}{ }\PYG{k}{downto}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{;}
+
+\PYG{k}{begin}
+
+\PYG{+w}{  }\PYG{n}{uut}\PYG{o}{:}\PYG{+w}{ }\PYG{n}{shift\PYGZus{}register}\PYG{+w}{ }\PYG{k}{port}\PYG{+w}{ }\PYG{k}{map}\PYG{+w}{ }\PYG{p}{(}\PYG{+w}{ }\PYG{n}{clk}\PYG{+w}{      }\PYG{o}{=}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{clk}\PYG{p}{,}
+\PYG{+w}{                                 }\PYG{n}{rst}\PYG{+w}{      }\PYG{o}{=}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{rst}\PYG{p}{,}
+\PYG{+w}{                                 }\PYG{n}{en}\PYG{+w}{       }\PYG{o}{=}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{en}\PYG{p}{,}
+\PYG{+w}{                                 }\PYG{n}{y}\PYG{+w}{        }\PYG{o}{=}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{y}\PYG{p}{,}
+\PYG{+w}{                                 }\PYG{n}{data\PYGZus{}in}\PYG{+w}{  }\PYG{o}{=}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{data\PYGZus{}in}\PYG{p}{,}
+\PYG{+w}{                                 }\PYG{n}{data\PYGZus{}out}\PYG{+w}{ }\PYG{o}{=}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{data\PYGZus{}out}\PYG{+w}{ }\PYG{p}{)}\PYG{p}{;}
+
+\PYG{+w}{  }\PYG{n+nc}{clk\PYGZus{}process}\PYG{o}{:}\PYG{+w}{ }\PYG{k}{process}
+\PYG{+w}{  }\PYG{k}{begin}
+\PYG{+w}{    }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Clock generation}
+\PYG{+w}{    }\PYG{n}{clk}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{k}{not}\PYG{+w}{ }\PYG{n}{clk}\PYG{+w}{ }\PYG{k}{after}\PYG{+w}{ }\PYG{l+m+mi}{10}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{10}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+\PYG{+w}{  }\PYG{k}{end}\PYG{+w}{ }\PYG{k}{process}\PYG{p}{;}
+
+\PYG{+w}{  }\PYG{n+nc}{stimulus}\PYG{o}{:}\PYG{+w}{ }\PYG{k}{process}
+\PYG{+w}{  }\PYG{k}{begin}
+\PYG{+w}{    }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Test Case 1: Apply reset}
+\PYG{+w}{    }\PYG{n}{rst}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s+sc}{\PYGZsq{}1\PYGZsq{}}\PYG{p}{;}\PYG{+w}{          }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Assert reset}
+\PYG{+w}{    }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{20}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}\PYG{+w}{      }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Wait for reset to propagate}
+\PYG{+w}{    }\PYG{n}{rst}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s+sc}{\PYGZsq{}0\PYGZsq{}}\PYG{p}{;}\PYG{+w}{          }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Deassert reset}
+\PYG{+w}{    }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{20}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+
+\PYG{+w}{    }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Test Case 2: Enable shift register with y = \PYGZdq{}00\PYGZdq{}}
+\PYG{+w}{    }\PYG{n}{en}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s+sc}{\PYGZsq{}1\PYGZsq{}}\PYG{p}{;}\PYG{+w}{           }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Enable shift register}
+\PYG{+w}{    }\PYG{n}{y}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}00\PYGZdq{}}\PYG{p}{;}\PYG{+w}{           }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Set y to \PYGZdq{}00\PYGZdq{}}
+\PYG{+w}{    }\PYG{n}{data\PYGZus{}in}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}01\PYGZdq{}}\PYG{p}{;}\PYG{+w}{     }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Apply data \PYGZdq{}01\PYGZdq{}}
+\PYG{+w}{    }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{40}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+
+\PYG{+w}{    }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Test Case 3: Apply data\PYGZus{}in while changing y to \PYGZdq{}01\PYGZdq{}}
+\PYG{+w}{    }\PYG{n}{y}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}01\PYGZdq{}}\PYG{p}{;}\PYG{+w}{           }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Change y to \PYGZdq{}01\PYGZdq{}}
+\PYG{+w}{    }\PYG{n}{data\PYGZus{}in}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}10\PYGZdq{}}\PYG{p}{;}\PYG{+w}{     }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Apply data \PYGZdq{}10\PYGZdq{}}
+\PYG{+w}{    }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{40}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+
+\PYG{+w}{    }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Test Case 4: Apply data\PYGZus{}in while changing y to \PYGZdq{}10\PYGZdq{}}
+\PYG{+w}{    }\PYG{n}{y}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}10\PYGZdq{}}\PYG{p}{;}\PYG{+w}{           }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Change y to \PYGZdq{}10\PYGZdq{}}
+\PYG{+w}{    }\PYG{n}{data\PYGZus{}in}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}11\PYGZdq{}}\PYG{p}{;}\PYG{+w}{     }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Apply data \PYGZdq{}11\PYGZdq{}}
+\PYG{+w}{    }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{40}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+
+\PYG{+w}{    }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Test Case 5: Disable shift register with y = \PYGZdq{}11\PYGZdq{}}
+\PYG{+w}{    }\PYG{n}{en}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s+sc}{\PYGZsq{}0\PYGZsq{}}\PYG{p}{;}\PYG{+w}{           }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Disable shift register}
+\PYG{+w}{    }\PYG{n}{y}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}11\PYGZdq{}}\PYG{p}{;}\PYG{+w}{           }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Set y to \PYGZdq{}11\PYGZdq{}}
+\PYG{+w}{    }\PYG{n}{data\PYGZus{}in}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}00\PYGZdq{}}\PYG{p}{;}\PYG{+w}{     }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Change data input}
+\PYG{+w}{    }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{40}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+
+\PYG{+w}{    }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Test Case 6: Apply data\PYGZus{}in with y = \PYGZdq{}00\PYGZdq{} and reset active}
+\PYG{+w}{    }\PYG{n}{rst}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s+sc}{\PYGZsq{}1\PYGZsq{}}\PYG{p}{;}\PYG{+w}{          }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Assert reset}
+\PYG{+w}{    }\PYG{n}{y}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}00\PYGZdq{}}\PYG{p}{;}\PYG{+w}{           }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Set y to \PYGZdq{}00\PYGZdq{}}
+\PYG{+w}{    }\PYG{n}{data\PYGZus{}in}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}10\PYGZdq{}}\PYG{p}{;}\PYG{+w}{     }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Apply data \PYGZdq{}10\PYGZdq{} while reset is active}
+\PYG{+w}{    }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{20}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{rst}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s+sc}{\PYGZsq{}0\PYGZsq{}}\PYG{p}{;}\PYG{+w}{          }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Deassert reset}
+\PYG{+w}{    }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{40}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+
+\PYG{+w}{    }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Test Case 7: Apply data\PYGZus{}in while y = \PYGZdq{}01\PYGZdq{} and enable shifting}
+\PYG{+w}{    }\PYG{n}{y}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}01\PYGZdq{}}\PYG{p}{;}\PYG{+w}{           }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Set y to \PYGZdq{}01\PYGZdq{}}
+\PYG{+w}{    }\PYG{n}{en}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s+sc}{\PYGZsq{}1\PYGZsq{}}\PYG{p}{;}\PYG{+w}{           }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Enable shift register}
+\PYG{+w}{    }\PYG{n}{data\PYGZus{}in}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}11\PYGZdq{}}\PYG{p}{;}\PYG{+w}{     }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Apply data \PYGZdq{}11\PYGZdq{}}
+\PYG{+w}{    }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{40}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{data\PYGZus{}in}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}00\PYGZdq{}}\PYG{p}{;}\PYG{+w}{     }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Change data to \PYGZdq{}00\PYGZdq{}}
+\PYG{+w}{    }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{40}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+
+\PYG{+w}{    }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Test Case 8: Apply reset while shifting and changing y}
+\PYG{+w}{    }\PYG{n}{rst}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s+sc}{\PYGZsq{}1\PYGZsq{}}\PYG{p}{;}\PYG{+w}{          }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Assert reset}
+\PYG{+w}{    }\PYG{n}{y}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}10\PYGZdq{}}\PYG{p}{;}\PYG{+w}{           }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Change y to \PYGZdq{}10\PYGZdq{}}
+\PYG{+w}{    }\PYG{n}{data\PYGZus{}in}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}11\PYGZdq{}}\PYG{p}{;}\PYG{+w}{     }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Apply data \PYGZdq{}11\PYGZdq{}}
+\PYG{+w}{    }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{20}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{rst}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s+sc}{\PYGZsq{}0\PYGZsq{}}\PYG{p}{;}\PYG{+w}{          }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Deassert reset}
+\PYG{+w}{    }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{40}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+
+\PYG{+w}{    }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Test Case 9: Apply y = \PYGZdq{}11\PYGZdq{} and shift continuously with data\PYGZus{}in changes}
+\PYG{+w}{    }\PYG{n}{y}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}11\PYGZdq{}}\PYG{p}{;}\PYG{+w}{           }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Set y to \PYGZdq{}11\PYGZdq{}}
+\PYG{+w}{    }\PYG{n}{en}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s+sc}{\PYGZsq{}1\PYGZsq{}}\PYG{p}{;}\PYG{+w}{           }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Enable shift register}
+\PYG{+w}{    }\PYG{n}{data\PYGZus{}in}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}00\PYGZdq{}}\PYG{p}{;}\PYG{+w}{     }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Apply data \PYGZdq{}00\PYGZdq{}}
+\PYG{+w}{    }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{40}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{data\PYGZus{}in}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}01\PYGZdq{}}\PYG{p}{;}\PYG{+w}{     }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Apply data \PYGZdq{}01\PYGZdq{}}
+\PYG{+w}{    }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{40}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{data\PYGZus{}in}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}10\PYGZdq{}}\PYG{p}{;}\PYG{+w}{     }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Apply data \PYGZdq{}10\PYGZdq{}}
+\PYG{+w}{    }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{40}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{data\PYGZus{}in}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}11\PYGZdq{}}\PYG{p}{;}\PYG{+w}{     }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Apply data \PYGZdq{}11\PYGZdq{}}
+\PYG{+w}{    }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{40}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+
+\PYG{+w}{    }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Test Case 10: Reset during shifting with y = \PYGZdq{}00\PYGZdq{}}
+\PYG{+w}{    }\PYG{n}{rst}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s+sc}{\PYGZsq{}1\PYGZsq{}}\PYG{p}{;}\PYG{+w}{          }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Assert reset during shift}
+\PYG{+w}{    }\PYG{n}{y}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}00\PYGZdq{}}\PYG{p}{;}\PYG{+w}{           }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Set y to \PYGZdq{}00\PYGZdq{}}
+\PYG{+w}{    }\PYG{n}{data\PYGZus{}in}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}01\PYGZdq{}}\PYG{p}{;}\PYG{+w}{     }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Apply data \PYGZdq{}01\PYGZdq{}}
+\PYG{+w}{    }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{20}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{rst}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s+sc}{\PYGZsq{}0\PYGZsq{}}\PYG{p}{;}\PYG{+w}{          }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Deassert reset}
+\PYG{+w}{    }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{40}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+
+\PYG{+w}{    }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Test Case 11: Changing y while shifting with enabled register}
+\PYG{+w}{    }\PYG{n}{y}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}01\PYGZdq{}}\PYG{p}{;}\PYG{+w}{           }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Set y to \PYGZdq{}01\PYGZdq{}}
+\PYG{+w}{    }\PYG{n}{en}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s+sc}{\PYGZsq{}1\PYGZsq{}}\PYG{p}{;}\PYG{+w}{           }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Enable shift register}
+\PYG{+w}{    }\PYG{n}{data\PYGZus{}in}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}01\PYGZdq{}}\PYG{p}{;}\PYG{+w}{     }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Apply data \PYGZdq{}01\PYGZdq{}}
+\PYG{+w}{    }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{40}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{y}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}10\PYGZdq{}}\PYG{p}{;}\PYG{+w}{           }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Change y to \PYGZdq{}10\PYGZdq{}}
+\PYG{+w}{    }\PYG{n}{data\PYGZus{}in}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}11\PYGZdq{}}\PYG{p}{;}\PYG{+w}{     }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Change data to \PYGZdq{}11\PYGZdq{}}
+\PYG{+w}{    }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{40}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+
+\PYG{+w}{    }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Test Case 12: Apply y = \PYGZdq{}11\PYGZdq{} and shift with reset active}
+\PYG{+w}{    }\PYG{n}{rst}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s+sc}{\PYGZsq{}1\PYGZsq{}}\PYG{p}{;}\PYG{+w}{          }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Assert reset}
+\PYG{+w}{    }\PYG{n}{y}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}11\PYGZdq{}}\PYG{p}{;}\PYG{+w}{           }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Set y to \PYGZdq{}11\PYGZdq{}}
+\PYG{+w}{    }\PYG{n}{data\PYGZus{}in}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}10\PYGZdq{}}\PYG{p}{;}\PYG{+w}{     }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Apply data \PYGZdq{}10\PYGZdq{}}
+\PYG{+w}{    }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{20}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{rst}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s+sc}{\PYGZsq{}0\PYGZsq{}}\PYG{p}{;}\PYG{+w}{          }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Deassert reset}
+\PYG{+w}{    }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{40}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+
+\PYG{+w}{    }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Test Case 13: Disable shifting during changes in y}
+\PYG{+w}{    }\PYG{n}{en}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s+sc}{\PYGZsq{}0\PYGZsq{}}\PYG{p}{;}\PYG{+w}{           }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Disable shift register}
+\PYG{+w}{    }\PYG{n}{y}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}00\PYGZdq{}}\PYG{p}{;}\PYG{+w}{           }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Set y to \PYGZdq{}00\PYGZdq{}}
+\PYG{+w}{    }\PYG{n}{data\PYGZus{}in}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}11\PYGZdq{}}\PYG{p}{;}\PYG{+w}{     }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Change data to \PYGZdq{}11\PYGZdq{}}
+\PYG{+w}{    }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{40}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{y}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}01\PYGZdq{}}\PYG{p}{;}\PYG{+w}{           }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Change y to \PYGZdq{}01\PYGZdq{}}
+\PYG{+w}{    }\PYG{n}{data\PYGZus{}in}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}00\PYGZdq{}}\PYG{p}{;}\PYG{+w}{     }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Change data to \PYGZdq{}00\PYGZdq{}}
+\PYG{+w}{    }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{40}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+
+\PYG{+w}{    }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} End}
+\PYG{+w}{  }\PYG{k}{end}\PYG{+w}{ }\PYG{k}{process}\PYG{p}{;}
+
+\PYG{k}{end}\PYG{p}{;}
+\end{MintedVerbatim}

@@ -1,0 +1,22 @@
+v 4
+file . "stopwatch_tb.vhdl" "6be1018376ce2a42f55245da9cb049df8156db81" "20241220220900.355":
+  entity stopwatch_tb at 5( 134) + 0 on 23;
+  architecture bench of stopwatch_tb at 12( 233) + 0 on 24;
+file . "counter_mod_60.vhdl" "b2053a4fa4deb8176d9fc738eba54bc31873e103" "20241220220843.573":
+  entity counter_mod_60 at 1( 0) + 0 on 19;
+  architecture structural of counter_mod_60 at 17( 398) + 0 on 20;
+file . "counter_mod_64.vhdl" "ebb7ce52da49d0b6d065428ce1f20eecaf166c8a" "20241220220832.348":
+  entity counter_mod_64 at 1( 0) + 0 on 15;
+  architecture structural of counter_mod_64 at 17( 392) + 0 on 16;
+file . "ffD.vhdl" "4a4cbda45ca9b45ad23e3895ea4d09713e469211" "20241220220801.803":
+  entity ffd at 1( 0) + 0 on 11;
+  architecture behavioral of ffd at 17( 371) + 0 on 12;
+file . "counter_mod_32.vhdl" "1f4d15ed886a34e7fdfa6c5cbe165c6d95b3462e" "20241220220825.830":
+  entity counter_mod_32 at 1( 0) + 0 on 13;
+  architecture structural of counter_mod_32 at 17( 392) + 0 on 14;
+file . "counter_mod_24.vhdl" "dc854cc3cd879e291b42a12c0b202271d585fa04" "20241220220836.549":
+  entity counter_mod_24 at 1( 0) + 0 on 17;
+  architecture structural of counter_mod_24 at 17( 398) + 0 on 18;
+file . "stopwatch.vhdl" "535e801730b96690583e38256efba2eecaf91943" "20241220220855.117":
+  entity stopwatch at 1( 0) + 0 on 21;
+  architecture structural of stopwatch at 20( 570) + 0 on 22;

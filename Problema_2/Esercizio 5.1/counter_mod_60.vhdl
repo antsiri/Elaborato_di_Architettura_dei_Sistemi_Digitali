@@ -35,7 +35,6 @@ architecture structural of counter_mod_60 is
 
 begin
     last_number_rs  <=  temp_counter(5) and temp_counter(4) and temp_counter(3) and temp_counter(2) and (not temp_counter(1)) and (not temp_counter(0));
-
     reset           <=  last_number_rs or rst;
 
     counter_64: counter_mod_64  

@@ -1,0 +1,67 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{library}\PYG{+w}{ }\PYG{n+nn}{ieee}\PYG{p}{;}
+\PYG{k}{use}\PYG{+w}{     }\PYG{n+nn}{ieee.std\PYGZus{}logic\PYGZus{}1164.}\PYG{k}{all}\PYG{p}{;}
+
+\PYG{k}{entity}\PYG{+w}{ }\PYG{n+nc}{stopwatch}\PYG{+w}{ }\PYG{k}{is}
+\PYG{+w}{    }\PYG{k}{port}\PYG{+w}{ }
+\PYG{+w}{    }\PYG{p}{(}
+\PYG{+w}{        }\PYG{n}{clk}\PYG{+w}{     }\PYG{o}{:}\PYG{+w}{   }\PYG{k}{in}\PYG{+w}{  }\PYG{k+kt}{std\PYGZus{}logic}\PYG{p}{;}
+\PYG{+w}{        }\PYG{n}{rst}\PYG{+w}{     }\PYG{o}{:}\PYG{+w}{   }\PYG{k}{in}\PYG{+w}{  }\PYG{k+kt}{std\PYGZus{}logic}\PYG{p}{;}
+\PYG{+w}{        }\PYG{n}{set}\PYG{+w}{     }\PYG{o}{:}\PYG{+w}{   }\PYG{k}{in}\PYG{+w}{  }\PYG{k+kt}{std\PYGZus{}logic}\PYG{p}{;}
+\PYG{+w}{        }\PYG{n}{en}\PYG{+w}{      }\PYG{o}{:}\PYG{+w}{   }\PYG{k}{in}\PYG{+w}{  }\PYG{k+kt}{std\PYGZus{}logic}\PYG{p}{;}
+\PYG{+w}{        }\PYG{n}{set\PYGZus{}sec}\PYG{+w}{ }\PYG{o}{:}\PYG{+w}{   }\PYG{k}{in}\PYG{+w}{  }\PYG{k+kt}{std\PYGZus{}logic\PYGZus{}vector}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{+w}{ }\PYG{k}{downto}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{        }\PYG{n}{set\PYGZus{}min}\PYG{+w}{ }\PYG{o}{:}\PYG{+w}{   }\PYG{k}{in}\PYG{+w}{  }\PYG{k+kt}{std\PYGZus{}logic\PYGZus{}vector}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{+w}{ }\PYG{k}{downto}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{        }\PYG{n}{set\PYGZus{}hr}\PYG{+w}{  }\PYG{o}{:}\PYG{+w}{   }\PYG{k}{in}\PYG{+w}{  }\PYG{k+kt}{std\PYGZus{}logic\PYGZus{}vector}\PYG{p}{(}\PYG{l+m+mi}{4}\PYG{+w}{ }\PYG{k}{downto}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{        }\PYG{n}{seconds}\PYG{+w}{ }\PYG{o}{:}\PYG{+w}{   }\PYG{k}{out}\PYG{+w}{ }\PYG{k+kt}{std\PYGZus{}logic\PYGZus{}vector}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{+w}{ }\PYG{k}{downto}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{        }\PYG{n}{minutes}\PYG{+w}{ }\PYG{o}{:}\PYG{+w}{   }\PYG{k}{out}\PYG{+w}{ }\PYG{k+kt}{std\PYGZus{}logic\PYGZus{}vector}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{+w}{ }\PYG{k}{downto}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{        }\PYG{n}{hours}\PYG{+w}{   }\PYG{o}{:}\PYG{+w}{   }\PYG{k}{out}\PYG{+w}{ }\PYG{k+kt}{std\PYGZus{}logic\PYGZus{}vector}\PYG{p}{(}\PYG{l+m+mi}{4}\PYG{+w}{ }\PYG{k}{downto}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}
+\PYG{+w}{    }\PYG{p}{)}\PYG{p}{;}
+\PYG{k}{end}\PYG{+w}{ }\PYG{n+nc}{stopwatch}\PYG{p}{;}
+
+\PYG{k}{architecture}\PYG{+w}{ }\PYG{n+nc}{structural}\PYG{+w}{ }\PYG{k}{of}\PYG{+w}{ }\PYG{n+nc}{stopwatch}\PYG{+w}{ }\PYG{k}{is}
+\PYG{+w}{    }\PYG{k}{signal}\PYG{+w}{  }\PYG{n}{en\PYGZus{}count}\PYG{+w}{    }\PYG{o}{:}\PYG{+w}{   }\PYG{k+kt}{std\PYGZus{}logic\PYGZus{}vector}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{k}{downto}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{;}
+
+\PYG{+w}{    }\PYG{k}{signal}\PYG{+w}{ }\PYG{n}{temp\PYGZus{}enable}\PYG{+w}{  }\PYG{o}{:}\PYG{+w}{   }\PYG{k+kt}{std\PYGZus{}logic\PYGZus{}vector}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{+w}{ }\PYG{k}{downto}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{;}
+
+\PYG{+w}{    }\PYG{k}{component}\PYG{+w}{ }\PYG{n+nc}{counter\PYGZus{}mod\PYGZus{}60}\PYG{+w}{ }
+\PYG{+w}{        }\PYG{k}{port}
+\PYG{+w}{        }\PYG{p}{(}
+\PYG{+w}{            }\PYG{n}{clk}\PYG{+w}{     }\PYG{o}{:}\PYG{+w}{   }\PYG{k}{in}\PYG{+w}{  }\PYG{k+kt}{std\PYGZus{}logic}\PYG{p}{;}
+\PYG{+w}{            }\PYG{n}{en}\PYG{+w}{      }\PYG{o}{:}\PYG{+w}{   }\PYG{k}{in}\PYG{+w}{  }\PYG{k+kt}{std\PYGZus{}logic}\PYG{p}{;}
+\PYG{+w}{            }\PYG{n}{rst}\PYG{+w}{     }\PYG{o}{:}\PYG{+w}{   }\PYG{k}{in}\PYG{+w}{  }\PYG{k+kt}{std\PYGZus{}logic}\PYG{p}{;}
+\PYG{+w}{            }\PYG{n}{set}\PYG{+w}{     }\PYG{o}{:}\PYG{+w}{   }\PYG{k}{in}\PYG{+w}{  }\PYG{k+kt}{std\PYGZus{}logic}\PYG{p}{;}
+\PYG{+w}{            }\PYG{n}{v\PYGZus{}set}\PYG{+w}{   }\PYG{o}{:}\PYG{+w}{   }\PYG{k}{in}\PYG{+w}{  }\PYG{k+kt}{std\PYGZus{}logic\PYGZus{}vector}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{+w}{ }\PYG{k}{downto}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{            }\PYG{n}{counter}\PYG{+w}{ }\PYG{o}{:}\PYG{+w}{   }\PYG{k}{out}\PYG{+w}{ }\PYG{k+kt}{std\PYGZus{}logic\PYGZus{}vector}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{+w}{ }\PYG{k}{downto}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{            }\PYG{n}{count}\PYG{+w}{   }\PYG{o}{:}\PYG{+w}{   }\PYG{k}{out}\PYG{+w}{ }\PYG{k+kt}{std\PYGZus{}logic}
+\PYG{+w}{        }\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k}{end}\PYG{+w}{ }\PYG{k}{component}\PYG{p}{;}
+
+\PYG{+w}{    }\PYG{k}{component}\PYG{+w}{ }\PYG{n+nc}{counter\PYGZus{}mod\PYGZus{}24}
+\PYG{+w}{        }\PYG{k}{port}
+\PYG{+w}{        }\PYG{p}{(}
+\PYG{+w}{            }\PYG{n}{clk}\PYG{+w}{     }\PYG{o}{:}\PYG{+w}{   }\PYG{k}{in}\PYG{+w}{  }\PYG{k+kt}{std\PYGZus{}logic}\PYG{p}{;}
+\PYG{+w}{            }\PYG{n}{en}\PYG{+w}{      }\PYG{o}{:}\PYG{+w}{   }\PYG{k}{in}\PYG{+w}{  }\PYG{k+kt}{std\PYGZus{}logic}\PYG{p}{;}
+\PYG{+w}{            }\PYG{n}{rst}\PYG{+w}{     }\PYG{o}{:}\PYG{+w}{   }\PYG{k}{in}\PYG{+w}{  }\PYG{k+kt}{std\PYGZus{}logic}\PYG{p}{;}
+\PYG{+w}{            }\PYG{n}{set}\PYG{+w}{     }\PYG{o}{:}\PYG{+w}{   }\PYG{k}{in}\PYG{+w}{  }\PYG{k+kt}{std\PYGZus{}logic}\PYG{p}{;}
+\PYG{+w}{            }\PYG{n}{v\PYGZus{}set}\PYG{+w}{   }\PYG{o}{:}\PYG{+w}{   }\PYG{k}{in}\PYG{+w}{  }\PYG{k+kt}{std\PYGZus{}logic\PYGZus{}vector}\PYG{p}{(}\PYG{l+m+mi}{4}\PYG{+w}{ }\PYG{k}{downto}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{            }\PYG{n}{counter}\PYG{+w}{ }\PYG{o}{:}\PYG{+w}{   }\PYG{k}{out}\PYG{+w}{ }\PYG{k+kt}{std\PYGZus{}logic\PYGZus{}vector}\PYG{p}{(}\PYG{l+m+mi}{4}\PYG{+w}{ }\PYG{k}{downto}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{            }\PYG{n}{count}\PYG{+w}{   }\PYG{o}{:}\PYG{+w}{   }\PYG{k}{out}\PYG{+w}{ }\PYG{k+kt}{std\PYGZus{}logic}
+\PYG{+w}{        }\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k}{end}\PYG{+w}{ }\PYG{k}{component}\PYG{p}{;}
+\PYG{k}{begin}
+\PYG{+w}{    }\PYG{c+c1}{\PYGZhy{}\PYGZhy{}seconds}
+\PYG{+w}{    }\PYG{n}{temp\PYGZus{}enable}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{  }\PYG{n}{en}\PYG{+w}{ }\PYG{k}{or}\PYG{+w}{ }\PYG{n}{rst}\PYG{+w}{ }\PYG{k}{or}\PYG{+w}{ }\PYG{n}{set}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{counter\PYGZus{}seconds}\PYG{o}{:}\PYG{+w}{    }\PYG{n}{counter\PYGZus{}mod\PYGZus{}60}
+\PYG{+w}{    }\PYG{k}{port}\PYG{+w}{ }\PYG{k}{map}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{clk}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{temp\PYGZus{}enable}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{rst}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{set}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{set\PYGZus{}sec}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{seconds}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{en\PYGZus{}count}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{)}\PYG{p}{;}
+
+\PYG{+w}{    }\PYG{c+c1}{\PYGZhy{}\PYGZhy{}minutes}
+\PYG{+w}{    }\PYG{n}{temp\PYGZus{}enable}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{  }\PYG{p}{(}\PYG{n}{en}\PYG{+w}{ }\PYG{k}{and}\PYG{+w}{ }\PYG{n}{en\PYGZus{}count}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{or}\PYG{+w}{ }\PYG{n}{rst}\PYG{+w}{ }\PYG{k}{or}\PYG{+w}{ }\PYG{n}{set}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{counter\PYGZus{}minutes}\PYG{o}{:}\PYG{+w}{    }\PYG{n}{counter\PYGZus{}mod\PYGZus{}60}
+\PYG{+w}{    }\PYG{k}{port}\PYG{+w}{ }\PYG{k}{map}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{clk}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{temp\PYGZus{}enable}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{rst}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{set}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{set\PYGZus{}min}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{minutes}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{en\PYGZus{}count}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{p}{)}\PYG{p}{;}
+
+\PYG{+w}{    }\PYG{c+c1}{\PYGZhy{}\PYGZhy{}hours}
+\PYG{+w}{    }\PYG{n}{temp\PYGZus{}enable}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{  }\PYG{p}{(}\PYG{n}{en}\PYG{+w}{ }\PYG{k}{and}\PYG{+w}{ }\PYG{n}{en\PYGZus{}count}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{and}\PYG{+w}{ }\PYG{n}{en\PYGZus{}count}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{)}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{or}\PYG{+w}{ }\PYG{n}{rst}\PYG{+w}{ }\PYG{k}{or}\PYG{+w}{ }\PYG{n}{set}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{counter\PYGZus{}hours}\PYG{o}{:}\PYG{+w}{      }\PYG{n}{counter\PYGZus{}mod\PYGZus{}24}
+\PYG{+w}{    }\PYG{k}{port}\PYG{+w}{ }\PYG{k}{map}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{clk}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{temp\PYGZus{}enable}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{)}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{rst}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{set}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{set\PYGZus{}hr}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{hours}\PYG{p}{)}\PYG{p}{;}
+\PYG{k}{end}\PYG{+w}{ }\PYG{n+nc}{structural}\PYG{p}{;}
+\end{MintedVerbatim}
