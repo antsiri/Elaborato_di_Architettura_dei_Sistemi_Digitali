@@ -14,7 +14,7 @@ architecture Behavioral of M is
 begin
     process(ingresso)
     begin
-        -- Somma dei 4 bit più significativi e dei 4 meno significativi
+        -- Somma dei 4 bit piu' significativi e dei 4 meno significativi
      uscita <= std_logic_vector(unsigned(ingresso(7 downto 4)) + unsigned(ingresso(3 downto 0)));
     end process;
 end Behavioral;

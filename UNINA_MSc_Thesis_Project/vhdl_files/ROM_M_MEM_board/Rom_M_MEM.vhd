@@ -23,7 +23,7 @@ signal temp_clock: std_logic;
 
 component ROM is
         port(
-        CLK: in STD_LOGIC; --La read è sincrona
+        CLK: in STD_LOGIC; --La read e' sincrona
         address: in STD_LOGIC_VECTOR(3 downto 0); --l'indirizzo in ingresso me lo da il contatore
         EN_RD: in STD_LOGIC;
         dout: out STD_LOGIC_VECTOR(7 downto 0)

@@ -1,0 +1,62 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{library}\PYG{+w}{ }\PYG{n+nn}{IEEE}\PYG{p}{;}
+\PYG{k}{use}\PYG{+w}{ }\PYG{n+nn}{IEEE.STD\PYGZus{}LOGIC\PYGZus{}1164.}\PYG{k}{ALL}\PYG{p}{;}
+
+\PYG{k}{entity}\PYG{+w}{ }\PYG{n+nc}{B}\PYG{+w}{ }\PYG{k}{is}
+\PYG{+w}{      }\PYG{k}{Port}\PYG{+w}{ }\PYG{p}{(}\PYG{+w}{ }
+\PYG{+w}{            }\PYG{n}{CLK}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{RST}\PYG{o}{:}\PYG{+w}{ }\PYG{k}{in}\PYG{+w}{ }\PYG{k+kt}{STD\PYGZus{}LOGIC}\PYG{p}{;}
+\PYG{+w}{            }\PYG{n}{REQ}\PYG{o}{:}\PYG{+w}{ }\PYG{k}{in}\PYG{+w}{ }\PYG{k+kt}{STD\PYGZus{}LOGIC}\PYG{p}{;}
+\PYG{+w}{            }\PYG{n}{din}\PYG{o}{:}\PYG{+w}{ }\PYG{k}{in}\PYG{+w}{ }\PYG{k+kt}{STD\PYGZus{}LOGIC\PYGZus{}VECTOR}\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{+w}{ }\PYG{k}{downto}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{            }\PYG{n}{ACK}\PYG{o}{:}\PYG{+w}{ }\PYG{k}{out}\PYG{+w}{ }\PYG{k+kt}{STD\PYGZus{}LOGIC}\PYG{p}{;}
+\PYG{+w}{            }\PYG{n}{state}\PYG{o}{:}\PYG{+w}{ }\PYG{k}{out}\PYG{+w}{ }\PYG{k+kt}{STD\PYGZus{}LOGIC\PYGZus{}VECTOR}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{k}{downto}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{            }\PYG{n}{result}\PYG{o}{:}\PYG{+w}{ }\PYG{k}{out}\PYG{+w}{ }\PYG{k+kt}{STD\PYGZus{}LOGIC\PYGZus{}VECTOR}\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{+w}{ }\PYG{k}{downto}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}
+\PYG{+w}{      }\PYG{p}{)}\PYG{p}{;}
+\PYG{k}{end}\PYG{+w}{ }\PYG{n+nc}{B}\PYG{p}{;}
+
+\PYG{k}{architecture}\PYG{+w}{ }\PYG{n+nc}{structural}\PYG{+w}{ }\PYG{k}{of}\PYG{+w}{ }\PYG{n+nc}{B}\PYG{+w}{ }\PYG{k}{is}
+\PYG{k}{component}\PYG{+w}{ }\PYG{n+nc}{unita\PYGZus{}operativaB}
+\PYG{k}{Port}\PYG{+w}{ }\PYG{p}{(}\PYG{+w}{ }
+\PYG{+w}{        }\PYG{n}{CLK}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{RST}\PYG{o}{:}\PYG{+w}{ }\PYG{k}{in}\PYG{+w}{ }\PYG{k+kt}{STD\PYGZus{}LOGIC}\PYG{p}{;}
+\PYG{+w}{        }\PYG{n}{selA}\PYG{o}{:}\PYG{+w}{ }\PYG{k}{in}\PYG{+w}{ }\PYG{k+kt}{STD\PYGZus{}LOGIC}\PYG{p}{;}
+\PYG{+w}{        }\PYG{n}{din}\PYG{o}{:}\PYG{+w}{ }\PYG{k}{in}\PYG{+w}{ }\PYG{k+kt}{STD\PYGZus{}LOGIC\PYGZus{}VECTOR}\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{+w}{ }\PYG{k}{downto}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{        }\PYG{n}{load\PYGZus{}A}\PYG{o}{:}\PYG{+w}{ }\PYG{k}{in}\PYG{+w}{ }\PYG{k+kt}{STD\PYGZus{}LOGIC}\PYG{p}{;}
+\PYG{+w}{        }\PYG{n}{result}\PYG{o}{:}\PYG{+w}{ }\PYG{k}{out}\PYG{+w}{ }\PYG{k+kt}{STD\PYGZus{}LOGIC\PYGZus{}VECTOR}\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{+w}{ }\PYG{k}{downto}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}
+\PYG{+w}{        }
+\PYG{+w}{  }\PYG{p}{)}\PYG{p}{;}
+\PYG{k}{end}\PYG{+w}{ }\PYG{k}{component}\PYG{p}{;}
+
+\PYG{k}{component}\PYG{+w}{ }\PYG{n+nc}{UCB}
+\PYG{k}{Port}\PYG{+w}{ }\PYG{p}{(}\PYG{+w}{ }
+\PYG{+w}{        }\PYG{n}{CLK}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{RST}\PYG{o}{:}\PYG{+w}{ }\PYG{k}{in}\PYG{+w}{ }\PYG{k+kt}{STD\PYGZus{}LOGIC}\PYG{p}{;}
+\PYG{+w}{        }\PYG{n}{REQ}\PYG{o}{:}\PYG{+w}{ }\PYG{k}{in}\PYG{+w}{ }\PYG{k+kt}{STD\PYGZus{}LOGIC}\PYG{p}{;}
+\PYG{+w}{        }\PYG{n}{state}\PYG{o}{:}\PYG{+w}{ }\PYG{k}{out}\PYG{+w}{ }\PYG{k+kt}{STD\PYGZus{}LOGIC\PYGZus{}VECTOR}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{+w}{ }\PYG{k}{downto}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{        }\PYG{n}{EN\PYGZus{}WRITE}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{ACK}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{selA}\PYG{o}{:}\PYG{+w}{ }\PYG{k}{out}\PYG{+w}{ }\PYG{k+kt}{STD\PYGZus{}LOGIC}
+\PYG{+w}{  }\PYG{p}{)}\PYG{p}{;}
+\PYG{k}{end}\PYG{+w}{ }\PYG{k}{component}\PYG{p}{;}
+\PYG{k}{signal}\PYG{+w}{ }\PYG{n}{temp\PYGZus{}load}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{temp\PYGZus{}en\PYGZus{}sum}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{temp\PYGZus{}sel}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{STD\PYGZus{}LOGIC}\PYG{p}{;}
+\PYG{k}{begin}
+
+\PYG{n}{uo}\PYG{o}{:}\PYG{+w}{ }\PYG{n}{unita\PYGZus{}operativaB}
+\PYG{+w}{    }\PYG{k}{port}\PYG{+w}{ }\PYG{k}{map}\PYG{p}{(}
+\PYG{+w}{        }\PYG{n}{CLK}\PYG{+w}{ }\PYG{o}{=}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{CLK}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{RST}\PYG{+w}{ }\PYG{o}{=}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{RST}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{selA}\PYG{+w}{ }\PYG{o}{=}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{temp\PYGZus{}sel}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{din}\PYG{+w}{ }\PYG{o}{=}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{din}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{load\PYGZus{}A}\PYG{+w}{ }\PYG{o}{=}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{temp\PYGZus{}load}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{result}\PYG{+w}{ }\PYG{o}{=}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{result}
+\PYG{+w}{     }\PYG{p}{)}\PYG{p}{;}
+
+\PYG{n}{uc}\PYG{o}{:}\PYG{+w}{ }\PYG{n}{UCB}
+\PYG{+w}{    }\PYG{k}{port}\PYG{+w}{ }\PYG{k}{map}\PYG{p}{(}
+\PYG{+w}{        }\PYG{n}{CLK}\PYG{+w}{ }\PYG{o}{=}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{CLK}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{RST}\PYG{+w}{ }\PYG{o}{=}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{RST}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{REQ}\PYG{+w}{ }\PYG{o}{=}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{REQ}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{state}\PYG{+w}{ }\PYG{o}{=}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{state}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{EN\PYGZus{}WRITE}\PYG{+w}{ }\PYG{o}{=}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{temp\PYGZus{}load}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{ACK}\PYG{+w}{ }\PYG{o}{=}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{ACK}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{selA}\PYG{+w}{ }\PYG{o}{=}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{temp\PYGZus{}sel}
+\PYG{+w}{    }
+\PYG{+w}{    }\PYG{p}{)}\PYG{p}{;}
+
+\PYG{k}{end}\PYG{+w}{ }\PYG{n+nc}{structural}\PYG{p}{;}
+\end{MintedVerbatim}

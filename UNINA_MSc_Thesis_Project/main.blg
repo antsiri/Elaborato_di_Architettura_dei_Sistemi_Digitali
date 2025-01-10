@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d (TeX Live 2024)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: problema1.aux
+A level-1 auxiliary file: problema2.aux
+A level-1 auxiliary file: problema3.aux
+A level-1 auxiliary file: problema8.aux
+The style file: plain.bst
+Database file #1: bibliography.bib
+Warning--empty year in brandolese_introduzione_nodate
+Warning--empty publisher in rocco_di_torrepadula_franca_architettura_2019
+Warning--empty year in rocco_di_torrepadula_franca_architettura_2019
+You've used 2 entries,
+            2118 wiz_defined-function locations,
+            508 strings with 4373 characters,
+and the built_in function-call counts, 448 in all, are:
+= -- 34
+> -- 14
+< -- 0
++ -- 6
+- -- 4
+* -- 25
+:= -- 81
+add.period$ -- 5
+call.type$ -- 2
+change.case$ -- 6
+chr.to.int$ -- 0
+cite$ -- 5
+duplicate$ -- 24
+empty$ -- 45
+format.name$ -- 4
+if$ -- 89
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 4
+newline$ -- 12
+num.names$ -- 4
+pop$ -- 21
+preamble$ -- 1
+purify$ -- 6
+quote$ -- 0
+skip$ -- 10
+stack$ -- 0
+substring$ -- 10
+swap$ -- 2
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 4
+warning$ -- 3
+while$ -- 4
+width$ -- 3
+write$ -- 18
+(There were 3 warnings)

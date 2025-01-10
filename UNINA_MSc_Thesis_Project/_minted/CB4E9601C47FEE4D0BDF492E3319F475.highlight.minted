@@ -1,0 +1,73 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{library}\PYG{+w}{ }\PYG{n+nn}{IEEE}\PYG{p}{;}
+\PYG{k}{use}\PYG{+w}{ }\PYG{n+nn}{IEEE.STD\PYGZus{}LOGIC\PYGZus{}1164.}\PYG{k}{ALL}\PYG{p}{;}
+\PYG{k}{use}\PYG{+w}{ }\PYG{n+nn}{IEEE.NUMERIC\PYGZus{}STD.}\PYG{k}{ALL}\PYG{p}{;}
+
+\PYG{k}{entity}\PYG{+w}{ }\PYG{n+nc}{ROMplusM\PYGZus{}tb}\PYG{+w}{ }\PYG{k}{is}
+\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Un testbench non ha porte, e\PYGZsq{} un\PYGZsq{}entita\PYGZsq{} vuota.}
+\PYG{k}{end}\PYG{+w}{ }\PYG{n+nc}{ROMplusM\PYGZus{}tb}\PYG{p}{;}
+
+\PYG{k}{architecture}\PYG{+w}{ }\PYG{n+nc}{behavior}\PYG{+w}{ }\PYG{k}{of}\PYG{+w}{ }\PYG{n+nc}{ROMplusM\PYGZus{}tb}\PYG{+w}{ }\PYG{k}{is}
+
+\PYG{+w}{    }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Component declaration for the unit under test (UUT)}
+\PYG{+w}{    }\PYG{k}{component}\PYG{+w}{ }\PYG{n+nc}{ROMplusM}
+\PYG{+w}{        }\PYG{k}{Port}\PYG{+w}{ }\PYG{p}{(}
+\PYG{+w}{            }\PYG{n}{A}\PYG{o}{:}\PYG{+w}{ }\PYG{k}{in}\PYG{+w}{ }\PYG{k+kt}{std\PYGZus{}logic\PYGZus{}vector}\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{+w}{ }\PYG{k}{downto}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{            }\PYG{n}{bout}\PYG{o}{:}\PYG{+w}{ }\PYG{k}{out}\PYG{+w}{ }\PYG{k+kt}{std\PYGZus{}logic\PYGZus{}vector}\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{+w}{ }\PYG{k}{downto}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}
+\PYG{+w}{        }\PYG{p}{)}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k}{end}\PYG{+w}{ }\PYG{k}{component}\PYG{p}{;}
+
+\PYG{+w}{    }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Signals to connect to the UUT}
+\PYG{+w}{    }\PYG{k}{signal}\PYG{+w}{ }\PYG{n}{A\PYGZus{}tb}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{std\PYGZus{}logic\PYGZus{}vector}\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{+w}{ }\PYG{k}{downto}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{:}\PYG{o}{=}\PYG{+w}{ }\PYG{p}{(}\PYG{k}{others}\PYG{+w}{ }\PYG{o}{=}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{l+s+sc}{\PYGZsq{}0\PYGZsq{}}\PYG{p}{)}\PYG{p}{;}\PYG{+w}{ }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Ingresso inizializzato a 0}
+\PYG{+w}{    }\PYG{k}{signal}\PYG{+w}{ }\PYG{n}{bout\PYGZus{}tb}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{std\PYGZus{}logic\PYGZus{}vector}\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{+w}{ }\PYG{k}{downto}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{;}\PYG{+w}{ }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Uscita}
+
+\PYG{k}{begin}
+
+\PYG{+w}{    }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Instantiation of the UUT (Unit Under Test)}
+\PYG{+w}{    }\PYG{n}{uut}\PYG{o}{:}\PYG{+w}{ }\PYG{n}{ROMplusM}
+\PYG{+w}{        }\PYG{k}{Port}\PYG{+w}{ }\PYG{k}{map}\PYG{+w}{ }\PYG{p}{(}
+\PYG{+w}{            }\PYG{n}{A}\PYG{+w}{ }\PYG{o}{=}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{A\PYGZus{}tb}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n}{bout}\PYG{+w}{ }\PYG{o}{=}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{bout\PYGZus{}tb}
+\PYG{+w}{        }\PYG{p}{)}\PYG{p}{;}
+
+\PYG{+w}{    }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Stimulus process to provide inputs and check outputs}
+\PYG{+w}{    }\PYG{n+nc}{stimulus\PYGZus{}process}\PYG{o}{:}\PYG{+w}{ }\PYG{k}{process}
+\PYG{+w}{    }\PYG{k}{begin}
+\PYG{+w}{        }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Test 1: Indirizzo A = 0}
+\PYG{+w}{        }\PYG{n}{A\PYGZus{}tb}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}0000\PYGZdq{}}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{10}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+\PYG{+w}{        }
+\PYG{+w}{        }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Test 2: Indirizzo A = 1}
+\PYG{+w}{        }\PYG{n}{A\PYGZus{}tb}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}0001\PYGZdq{}}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{10}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+\PYG{+w}{        }
+\PYG{+w}{        }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Test 3: Indirizzo A = 2}
+\PYG{+w}{        }\PYG{n}{A\PYGZus{}tb}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}0010\PYGZdq{}}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{10}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+\PYG{+w}{        }
+\PYG{+w}{         }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Test 4: Indirizzo A = 3}
+\PYG{+w}{        }\PYG{n}{A\PYGZus{}tb}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}0011\PYGZdq{}}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{10}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+\PYG{+w}{        }
+\PYG{+w}{         }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Test 5: Indirizzo A = 5}
+\PYG{+w}{        }\PYG{n}{A\PYGZus{}tb}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}0101\PYGZdq{}}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{10}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+\PYG{+w}{        }
+\PYG{+w}{         }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Test 6: Indirizzo A = 7}
+\PYG{+w}{        }\PYG{n}{A\PYGZus{}tb}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}0111\PYGZdq{}}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{10}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+\PYG{+w}{        }
+\PYG{+w}{         }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Test 7: Indirizzo A = 10}
+\PYG{+w}{        }\PYG{n}{A\PYGZus{}tb}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}1010\PYGZdq{}}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{10}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+\PYG{+w}{        }
+\PYG{+w}{        }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Test 8: Indirizzo A = 255}
+\PYG{+w}{        }\PYG{n}{A\PYGZus{}tb}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{o}{=}\PYG{+w}{ }\PYG{l+s}{\PYGZdq{}1111\PYGZdq{}}\PYG{p}{;}
+\PYG{+w}{        }\PYG{k}{wait}\PYG{+w}{ }\PYG{k}{for}\PYG{+w}{ }\PYG{l+m+mi}{10}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
+
+\PYG{+w}{        }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} Fine simulazione}
+\PYG{+w}{        }\PYG{k}{wait}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k}{end}\PYG{+w}{ }\PYG{k}{process}\PYG{p}{;}
+
+\PYG{k}{end}\PYG{+w}{ }\PYG{n+nc}{behavior}\PYG{p}{;}
+\end{MintedVerbatim}

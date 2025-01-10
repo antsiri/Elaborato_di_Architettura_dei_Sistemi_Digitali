@@ -34,8 +34,8 @@ architecture structural of counter_mod_60 is
     end component;
 
 begin
-    last_number_rs  <=  temp_counter(5) and temp_counter(4) and temp_counter(3) and temp_counter(2) and (not temp_counter(1)) and (not temp_counter(0));
-    reset           <=  last_number_rs or rst;
+    last_number_rs  <=  temp_counter(5) and temp_counter(4) and temp_counter(3) and (not temp_counter(2)) and temp_counter(1) and temp_counter(0);
+    reset           <=  (last_number_rs and en) or rst;
 
     counter_64: counter_mod_64  
     port map (clk, en, reset, set, v_set, temp_counter);

@@ -38,7 +38,7 @@ end component;
     
 begin
 
-    resets(0)    <=  (set and not (v_set(0))) or (rst);
+    resets(0)   <=  rst;
     sets(0)     <=  set and v_set(0);
 
     counter_0 : ffD 
@@ -52,7 +52,7 @@ begin
             back
         );
 
-    resets(1)   <=  (set and not v_set(1)) or rst;
+    resets(1)   <=  rst;
     sets(1)     <=  set and v_set(1);
     counters(1) <=  temp_counter(0) xor temp_counter(1);
 
@@ -66,7 +66,7 @@ begin
             temp_counter(1)
         );
 
-    resets(2)   <=  (set and not v_set(2)) or rst;
+    resets(2)   <=  rst;
     sets(2)     <=  set and v_set(2);
     counters(2) <=  (temp_counter(0) and temp_counter(1)) xor temp_counter(2);
 
@@ -80,7 +80,7 @@ begin
         temp_counter(2)
     );
 
-    resets(3)   <=  (set and not v_set(3)) or rst;
+    resets(3)   <=  rst;
     sets(3)     <=  set and v_set(3);
     counters(3) <=  (temp_counter(0) and temp_counter(1) and temp_counter(2)) xor temp_counter(3);
 

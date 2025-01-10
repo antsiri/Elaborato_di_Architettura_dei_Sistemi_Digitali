@@ -437,6 +437,139 @@ Si vuole far notare che per materiali, è impossibile riportare nella documentaz
 Per cui qualore si volesse testare il cronometro, il codice VHDL si trova nella repository GitHub associata al progetto, nella cartella \texttt{Esercizio 5.1}.
 
 \section{Implementazione su board del punto precedente}
+\subsection{Traccia}
+ Sintetizzare ed implementare su board il componente sviluppato al punto precedente, utilizzando i display a 7 segmenti per la visualizzazione dell’orario (o una combinazione di display e led nel caso in cui i display a disposizione siano in numero inferiore a quello necessario), gli switch per l’immissione dell’orario iniziale e due bottoni, uno per il set dell’orario e uno per il reset. Si utilizzi una codifica a scelta dello studente per la visualizzazione dell’orario sui display (esadecimale o decimale).
+ \subsection{Implementazione}
+ Per l'implementazione su board è stato necessario utilizzare il visore presente sulla board, per fare ciò sono stati usati i seguenti codici:
+ \begin{code}
+    \inputminted[frame=lines, framesep=2mm, baselinestretch=1.2, bgcolor=LightGray, fontsize=\footnotesize, linenos]{vhdl}{vhdl_files/cron_board/anodes_manager.vhd}
+    \caption{anodes\_manager.vhdl}
+    \label{lbl:ROMC}
+\end{code}
+ \begin{code}
+    \inputminted[frame=lines, framesep=2mm, baselinestretch=1.2, bgcolor=LightGray, fontsize=\footnotesize, linenos]{vhdl}{vhdl_files/cron_board/anodes_manager.vhd}
+    \caption{catode\_manager.vhdl}
+    \label{lbl:ROMC}
+\end{code}
+ \begin{code}
+    \inputminted[frame=lines, framesep=2mm, baselinestretch=1.2, bgcolor=LightGray, fontsize=\footnotesize, linenos]{vhdl}{vhdl_files/cron_board/display_seven_segments.vhd}
+    \caption{display\_seven\_segments.vhdl}
+    \label{lbl:ROMC}
+\end{code}
+\begin{code}
+    \inputminted[frame=lines, framesep=2mm, baselinestretch=1.2, bgcolor=LightGray, fontsize=\footnotesize, linenos]{vhdl}{vhdl_files/cron_board/clock_filter.vhd}
+    \caption{clock\_filter.vhdl}
+    \label{lbl:ROMC}
+\end{code}
+\begin{code}
+    \inputminted[frame=lines, framesep=2mm, baselinestretch=1.2, bgcolor=LightGray, fontsize=\footnotesize, linenos]{vhdl}{vhdl_files/cron_board/count_mod8.vhd}
+    \caption{count\_mod8.vhdl}
+    \label{lbl:ROMC}
+\end{code}
+Inoltre per avere una rappresentazione coerente sui visori, sono stati implementati i seguenti codici per distinguere decine e unità dalle uscite del cronometro:
+ \begin{code}
+    \inputminted[frame=lines, framesep=2mm, baselinestretch=1.2, bgcolor=LightGray, fontsize=\footnotesize, linenos]{vhdl}{vhdl_files/cron_board/separator.vhd}
+    \caption{separator.vhdl}
+    \label{lbl:ROMC}
+\end{code}
+ \begin{code}
+    \inputminted[frame=lines, framesep=2mm, baselinestretch=1.2, bgcolor=LightGray, fontsize=\footnotesize, linenos]{vhdl}{vhdl_files/cron_board/sep_h_m_s.vhd}
+    \caption{anodes\_manager.vhdl}
+    \label{lbl:ROMC}
+\end{code}
+Si è inoltre scelto di usare un divisore di frequenza per ottenere un clock più adatto al funzionamento del progetto:
+\begin{code}
+    \inputminted[frame=lines, framesep=2mm, baselinestretch=1.2, bgcolor=LightGray, fontsize=\footnotesize, linenos]{vhdl}{vhdl_files/cron_board/freq_divider.vhd}
+    \caption{freq\_divider.vhdl}
+    \label{lbl:ROMC}
+\end{code}
+Per la gestione degli input, soprattutto relativi al \textit{SET} di secondi, minuti e ore, si è implementata una unotà di controllo, che sulla base del bottone premuto caricherà rispettivamente secondi (BTNU), minuti (BTNL) e ore (BTNR), e con un ulteriore bottone viene abilitato il SET (BTND). Inoltre con il bottone centrale si abilita il RESET.
+\begin{code}
+    \inputminted[frame=lines, framesep=2mm, baselinestretch=1.2, bgcolor=LightGray, fontsize=\footnotesize, linenos]{vhdl}{vhdl_files/cron_board/control_unit.vhd}
+    \caption{control\_unit.vhdl}
+    \label{lbl:ROMC}
+\end{code}
+La gestione del sistema nel suo complesso è implementata con il seguente codice:
+\begin{code}
+    \inputminted[frame=lines, framesep=2mm, baselinestretch=1.2, bgcolor=LightGray, fontsize=\footnotesize, linenos]{vhdl}{vhdl_files/cron_board/cron_onBOARD.vhd}
+    \caption{cron\_onBoard.vhdl}
+    \label{lbl:ROMC}
+\end{code}
+Si mostra anche il codice di Nexys-A7-50T-Master.xdc, fondamentale per la generazione del bitstream e di conseguenza per la programmazione della board.
+{\footnotesize
+\begin{verbatim}
+## Clock signal
+set_property -dict {PACKAGE_PIN E3 IOSTANDARD LVCMOS33}
+[get_ports {CLK}]; #IO_L12P_T1_MRCC_35 Sch=clk100mhz
+create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} 
+[get_ports {CLK}];
+
+##Switches
+set_property -dict {PACKAGE_PIN J15   IOSTANDARD LVCMOS33} 
+[get_ports {value_in[0]}]; #IO_L24N_T3_RS0_15 Sch=sw[0]
+set_property -dict { PACKAGE_PIN L16   IOSTANDARD LVCMOS33 } 
+[get_ports { value_in[1] }]; #IO_L3N_T0_DQS_EMCCLK_14 Sch=sw[1]
+set_property -dict { PACKAGE_PIN M13   IOSTANDARD LVCMOS33 } 
+[get_ports { value_in[2] }]; #IO_L6N_T0_D08_VREF_14 Sch=sw[2]
+set_property -dict { PACKAGE_PIN R15   IOSTANDARD LVCMOS33 } 
+[get_ports { value_in[3] }]; #IO_L13N_T2_MRCC_14 Sch=sw[3]
+set_property -dict { PACKAGE_PIN R17   IOSTANDARD LVCMOS33 } 
+[get_ports { value_in[4] }]; #IO_L12N_T1_MRCC_14 Sch=sw[4]
+set_property -dict { PACKAGE_PIN T18   IOSTANDARD LVCMOS33 } 
+[get_ports { value_in[5] }]; #IO_L7N_T1_D10_14 Sch=sw[5]
+
+##7 segment display
+set_property -dict { PACKAGE_PIN T10   IOSTANDARD LVCMOS33 } 
+[get_ports { cathodes_out[0] }]; #IO_L24N_T3_A00_D16_14 Sch=ca
+set_property -dict { PACKAGE_PIN R10   IOSTANDARD LVCMOS33 } 
+[get_ports { cathodes_out[1] }]; #IO_25_14 Sch=cb
+set_property -dict { PACKAGE_PIN K16   IOSTANDARD LVCMOS33 } 
+[get_ports { cathodes_out[2] }]; #IO_25_15 Sch=cc
+set_property -dict { PACKAGE_PIN K13   IOSTANDARD LVCMOS33 } 
+[get_ports { cathodes_out[3] }]; #IO_L17P_T2_A26_15 Sch=cd
+set_property -dict { PACKAGE_PIN P15   IOSTANDARD LVCMOS33 } 
+[get_ports { cathodes_out[4] }]; #IO_L13P_T2_MRCC_14 Sch=ce
+set_property -dict { PACKAGE_PIN T11   IOSTANDARD LVCMOS33 } 
+[get_ports { cathodes_out[5] }]; #IO_L19P_T3_A10_D26_14 Sch=cf
+set_property -dict { PACKAGE_PIN L18   IOSTANDARD LVCMOS33 } 
+[get_ports { cathodes_out[6] }]; #IO_L4P_T0_D04_14 Sch=cg
+set_property -dict { PACKAGE_PIN H15   IOSTANDARD LVCMOS33 } 
+[get_ports { cathodes_out[7] }]; #IO_L19N_T3_A21_VREF_15 Sch=dp
+set_property -dict { PACKAGE_PIN J17   IOSTANDARD LVCMOS33 } 
+[get_ports { anodes_out[0] }]; #IO_L23P_T3_FOE_B_15 Sch=an[0]
+set_property -dict { PACKAGE_PIN J18   IOSTANDARD LVCMOS33 } 
+[get_ports { anodes_out[1] }]; #IO_L23N_T3_FWE_B_15 Sch=an[1]
+set_property -dict { PACKAGE_PIN T9    IOSTANDARD LVCMOS33 } 
+[get_ports { anodes_out[2] }]; #IO_L24P_T3_A01_D17_14 Sch=an[2]
+set_property -dict { PACKAGE_PIN J14   IOSTANDARD LVCMOS33 } 
+[get_ports { anodes_out[3] }]; #IO_L19P_T3_A22_15 Sch=an[3]
+set_property -dict { PACKAGE_PIN P14   IOSTANDARD LVCMOS33 } 
+[get_ports { anodes_out[4] }]; #IO_L8N_T1_D12_14 Sch=an[4]
+set_property -dict { PACKAGE_PIN T14   IOSTANDARD LVCMOS33 } 
+[get_ports { anodes_out[5] }]; #IO_L14P_T2_SRCC_14 Sch=an[5]
+set_property -dict { PACKAGE_PIN K2    IOSTANDARD LVCMOS33 } 
+[get_ports { anodes_out[6] }]; #IO_L23P_T3_35 Sch=an[6]
+set_property -dict { PACKAGE_PIN U13   IOSTANDARD LVCMOS33 } 
+[get_ports { anodes_out[7] }]; #IO_L23N_T3_A02_D18_14 Sch=an[7]
+
+##Buttons
+#set_property -dict { PACKAGE_PIN C12   IOSTANDARD LVCMOS33 } 
+[get_ports { reset_in }]; #IO_L3P_T0_DQS_AD1P_15 Sch=cpu_resetn
+set_property -dict { PACKAGE_PIN N17   IOSTANDARD LVCMOS33 } 
+[get_ports { RST }]; #IO_L9P_T1_DQS_14 Sch=btnc
+set_property -dict { PACKAGE_PIN M18   IOSTANDARD LVCMOS33 } 
+[get_ports { load_s }]; #IO_L4N_T0_D05_14 Sch=btnu
+set_property -dict { PACKAGE_PIN P17   IOSTANDARD LVCMOS33 } 
+[get_ports { load_m }]; #IO_L12P_T1_MRCC_14 Sch=btnl
+set_property -dict { PACKAGE_PIN M17   IOSTANDARD LVCMOS33 } 
+[get_ports { load_h }]; #IO_L10N_T1_D15_14 Sch=btnr
+set_property -dict { PACKAGE_PIN P18   IOSTANDARD LVCMOS33 } 
+[get_ports { SET }]; #IO_L9N_T1_DQS_D13_14 Sch=btnd
+
+
+\end{verbatim}
+}
+
 
 \chapter{Esercizio 6}
 \section{Sistema di lettura - elaborazione - scrittura PO\_PC}

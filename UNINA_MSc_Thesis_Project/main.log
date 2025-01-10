@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.2)  3 JAN 2025 12:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.9)  10 JAN 2025 11:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
 LaTeX2e <2024-11-01> patch level 1
-L3 programming layer <2024-12-09>
+L3 programming layer <2024-12-25>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/extsizes/extbook.cls
 Document Class: extbook 1999/01/07 v1.4a NON-Standard LaTeX document class
 (/usr/local/texlive/2024/texmf-dist/tex/latex/extsizes/size14.clo
@@ -108,7 +108,7 @@ LaTeX Info: Redefining \] on input line 2954.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/lipsum/lipsum.sty
 (/usr/local/texlive/2024/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 (/usr/local/texlive/2024/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2024-12-09 L3 programming layer (loader) 
+Package: expl3 2024-12-25 L3 programming layer (loader) 
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
@@ -129,26 +129,33 @@ Package tocbibind Info: The document has chapter divisions on input line 50.
 
 Package tocbibind Note: Using chapter style headings, unless overridden.
 
-) (/usr/local/texlive/2024/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip54
+\bibsep=\skip55
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count287
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count287
-\c@ALG@rem=\count288
-\c@ALG@nested=\count289
-\ALG@tlm=\skip54
-\ALG@thistlm=\skip55
-\c@ALG@Lnr=\count290
-\c@ALG@blocknr=\count291
-\c@ALG@storecount=\count292
-\c@ALG@tmpcounter=\count293
-\ALG@tmplength=\skip56
+\c@ALG@line=\count288
+\c@ALG@rem=\count289
+\c@ALG@nested=\count290
+\ALG@tlm=\skip56
+\ALG@thistlm=\skip57
+\c@ALG@Lnr=\count291
+\c@ALG@blocknr=\count292
+\c@ALG@storecount=\count293
+\c@ALG@tmpcounter=\count294
+\ALG@tmplength=\skip58
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count294
+\c@float@type=\count295
 \float@exts=\toks22
 \float@box=\box55
 \@float@everytoks=\toks23
@@ -181,9 +188,9 @@ File: pdftex.def 2024/04/13 v1.2c Graphics/color driver for pdftex
 \Gin@req@height=\dimen152
 \Gin@req@width=\dimen153
 )
-\c@r@tfl@t=\count295
-\rotFPtop=\skip57
-\rotFPbot=\skip58
+\c@r@tfl@t=\count296
+\rotFPtop=\skip59
+\rotFPbot=\skip60
 \rot@float@box=\box57
 \rot@mess@toks=\toks25
 )
@@ -199,19 +206,19 @@ Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 (/usr/local/texlive/2024/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2025/01/01 v25.1 The multilingual framework for pdfLaTeX, LuaLaT
 eX and XeLaTeX
-\babel@savecnt=\count296
+\babel@savecnt=\count297
 \U@D=\dimen154
 \l@unhyphenated=\language89
 
 (/usr/local/texlive/2024/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count297
+\bbl@dirlevel=\count298
 
 (/usr/local/texlive/2024/texmf-dist/tex/generic/babel-italian/italian.ldf
 Language: italian 2024/10/10 v.1.5.01 Italian support for the babel system
-\it@lettering=\count298
-\it@doublequoteactive=\count299
-\it@ISOcompliance=\count300
+\it@lettering=\count299
+\it@doublequoteactive=\count300
+\it@ISOcompliance=\count301
 ))
 (/usr/local/texlive/2024/texmf-dist/tex/generic/babel/locale/it/babel-italian.t
 ex
@@ -219,7 +226,7 @@ Package babel Info: Importing font and identification data for italian
 (babel)             from babel-it.ini. Reported on input line 11.
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count301
+\etb@tempcnta=\count302
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -230,9 +237,9 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 (/usr/local/texlive/2024/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
-\Gm@cnth=\count302
-\Gm@cntv=\count303
-\c@Gm@tempcnt=\count304
+\Gm@cnth=\count303
+\Gm@cntv=\count304
+\c@Gm@tempcnt=\count305
 \Gm@bindingoffset=\dimen155
 \Gm@wd@mp=\dimen156
 \Gm@odd@mp=\dimen157
@@ -287,15 +294,15 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
  (/usr/local/texlive/2024/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count305
+\c@section@level=\count306
 )
 (/usr/local/texlive/2024/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
 \@linkdim=\dimen163
-\Hy@linkcounter=\count306
-\Hy@pagecounter=\count307
+\Hy@linkcounter=\count307
+\Hy@pagecounter=\count308
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2024-11-05 v7.01l Hyperref: PDFDocEncoding definition (HO)
@@ -305,7 +312,7 @@ Now handling font encoding PD1 ...
 (/usr/local/texlive/2024/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count308
+\Hy@SavedSpaceFactor=\count309
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
@@ -320,7 +327,7 @@ Package hyperref Info: Plain pages OFF on input line 4172.
 Package hyperref Info: Backreferencing OFF on input line 4177.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4424.
-\c@Hy@tempcnt=\count309
+\c@Hy@tempcnt=\count310
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
@@ -336,7 +343,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count310
+\Fld@menulength=\count311
 \Field@Width=\dimen165
 \Fld@charsize=\dimen166
 Package hyperref Info: Hyper figures OFF on input line 6042.
@@ -351,9 +358,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6072.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count311
-\c@Item=\count312
-\c@Hfootnote=\count313
+\Hy@abspage=\count312
+\c@Item=\count313
+\c@Hfootnote=\count314
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -365,8 +372,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count314
-\c@bookmark@seq@number=\count315
+\Fld@listcount=\count315
+\c@bookmark@seq@number=\count316
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
@@ -377,7 +384,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 85.
 )
-\Hy@SectionHShift=\skip59
+\Hy@SectionHShift=\skip61
 )
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: 
@@ -412,17 +419,23 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
  (/usr/local/texlive/2024/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
-Package: fancyhdr 2024/12/09 v4.5 Extensive control of page headers and footers
+Package: fancyhdr 2025/01/06 v5.1 Extensive control of page headers and footers
 
-\f@nch@headwidth=\skip60
-\f@nch@O@elh=\skip61
-\f@nch@O@erh=\skip62
-\f@nch@O@olh=\skip63
-\f@nch@O@orh=\skip64
-\f@nch@O@elf=\skip65
-\f@nch@O@erf=\skip66
-\f@nch@O@olf=\skip67
-\f@nch@O@orf=\skip68
+\f@nch@headwidth=\skip62
+\f@nch@offset@elh=\skip63
+\f@nch@offset@erh=\skip64
+\f@nch@offset@olh=\skip65
+\f@nch@offset@orh=\skip66
+\f@nch@offset@elf=\skip67
+\f@nch@offset@erf=\skip68
+\f@nch@offset@olf=\skip69
+\f@nch@offset@orf=\skip70
+\f@nch@height=\skip71
+\f@nch@footalignment=\skip72
+\f@nch@widthL=\skip73
+\f@nch@widthC=\skip74
+\f@nch@widthR=\skip75
+\@temptokenb=\toks28
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/minted/minted.sty
 Package: minted 2024/11/17 v3.4.0 Yet another Pygments shim for LaTeX
@@ -439,11 +452,11 @@ rb
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2024/01/20 4.5c verbatim text (tvz,hv)
-\FV@CodeLineNo=\count316
+\FV@CodeLineNo=\count317
 \FV@InFile=\read3
 \FV@TabBox=\box60
-\c@FancyVerbLine=\count317
-\FV@StepNumber=\count318
+\c@FancyVerbLine=\count318
+\FV@StepNumber=\count319
 \FV@OutFile=\write4
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/upquote/upquote.sty
@@ -455,47 +468,47 @@ Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
 ))
 (/usr/local/texlive/2024/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2023/05/20 line numbers on paragraphs v5.3
-\linenopenalty=\count319
-\output=\toks28
-\linenoprevgraf=\count320
+\linenopenalty=\count320
+\output=\toks29
+\linenoprevgraf=\count321
 \linenumbersep=\dimen167
 \linenumberwidth=\dimen168
-\c@linenumber=\count321
-\c@pagewiselinenumber=\count322
-\c@LN@truepage=\count323
-\c@internallinenumber=\count324
-\c@internallinenumbers=\count325
+\c@linenumber=\count322
+\c@pagewiselinenumber=\count323
+\c@LN@truepage=\count324
+\c@internallinenumber=\count325
+\c@internallinenumbers=\count326
 \quotelinenumbersep=\dimen169
 \bframerule=\dimen170
 \bframesep=\dimen171
 \bframebox=\box61
-\linenoamsmath@ams@eqpen=\count326
+\linenoamsmath@ams@eqpen=\count327
 LaTeX Info: Redefining \\ on input line 3180.
 )
-\c@FancyVerbWriteLine=\count327
-\c@FancyVerbBufferLine=\count328
-\c@FV@TrueTabGroupLevel=\count329
-\c@FV@TrueTabCounter=\count330
+\c@FancyVerbWriteLine=\count328
+\c@FancyVerbBufferLine=\count329
+\c@FV@TrueTabGroupLevel=\count330
+\c@FV@TrueTabCounter=\count331
 \FV@TabBox@Group=\box62
-\FV@TmpLength=\skip69
-\c@FV@HighlightLinesStart=\count331
-\c@FV@HighlightLinesStop=\count332
-\FV@LoopCount=\count333
+\FV@TmpLength=\skip76
+\c@FV@HighlightLinesStart=\count332
+\c@FV@HighlightLinesStop=\count333
+\FV@LoopCount=\count334
 \FV@NCharsBox=\box63
 \FV@BreakIndent=\dimen172
-\FV@BreakIndentNChars=\count334
+\FV@BreakIndentNChars=\count335
 \FV@BreakSymbolSepLeft=\dimen173
-\FV@BreakSymbolSepLeftNChars=\count335
+\FV@BreakSymbolSepLeftNChars=\count336
 \FV@BreakSymbolSepRight=\dimen174
-\FV@BreakSymbolSepRightNChars=\count336
+\FV@BreakSymbolSepRightNChars=\count337
 \FV@BreakSymbolIndentLeft=\dimen175
-\FV@BreakSymbolIndentLeftNChars=\count337
+\FV@BreakSymbolIndentLeftNChars=\count338
 \FV@BreakSymbolIndentRight=\dimen176
-\FV@BreakSymbolIndentRightNChars=\count338
-\c@FancyVerbLineBreakLast=\count339
+\FV@BreakSymbolIndentRightNChars=\count339
+\c@FancyVerbLineBreakLast=\count340
 \FV@LineBox=\box64
 \FV@LineIndentBox=\box65
-\c@FV@BreakBufferDepth=\count340
+\c@FV@BreakBufferDepth=\count341
 \FV@LineWidth=\dimen177
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/latex2pydata/latex2pydata.sty
@@ -504,17 +517,17 @@ thon literal format
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks29
-\pgfkeys@temptoks=\toks30
+\pgfkeys@pathtoks=\toks30
+\pgfkeys@temptoks=\toks31
 
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfil
 tered.code.tex
-\pgfkeys@tmptoks=\toks31
+\pgfkeys@tmptoks=\toks32
 )))
 (/usr/local/texlive/2024/texmf-dist/tex/latex/pgfopts/pgfopts.sty
 Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
-\pgfopts@list@add@a@toks=\toks32
-\pgfopts@list@add@b@toks=\toks33
+\pgfopts@list@add@a@toks=\toks33
+\pgfopts@list@add@b@toks=\toks34
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
@@ -534,10 +547,10 @@ pter [{#1}]{#2}.
 Package newfloat Info: \algocf@original@chapter = undefined.
 Package newfloat Info: `rotating' package detected.
 )
-\c@minted@FancyVerbLineTemp=\count341
+\c@minted@FancyVerbLineTemp=\count342
 Package newfloat Info: New float `listing' with options `fileext=lol,placement=
 tbp,within=chapter' on input line 1924.
-\c@listing=\count342
+\c@listing=\count343
 Package newfloat Info: float type `listing'=4 on input line 1924.
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
@@ -555,8 +568,8 @@ Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
 \caption@hangindent=\dimen185
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count343
-\c@continuedfloat=\count344
+\c@caption@flags=\count344
+\c@continuedfloat=\count345
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: rotating package is loaded.
@@ -591,26 +604,26 @@ Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
 
 (/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/local/texlive/2024/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks34
-\XKV@tempa@toks=\toks35
+\XKV@toks=\toks35
+\XKV@tempa@toks=\toks36
 )
-\XKV@depth=\count345
+\XKV@depth=\count346
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )))
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pstricks/pstricks.tex
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pstricks/pst-fp.tex
 `pst-fp' v0.06, 2020/11/20 (hv)
-\pstFP@xs=\count346
-\pstFP@xia=\count347
-\pstFP@xib=\count348
-\pstFP@xfa=\count349
-\pstFP@xfb=\count350
-\pstFP@rega=\count351
-\pstFP@regb=\count352
-\pstFP@regs=\count353
-\pstFP@times=\count354
+\pstFP@xs=\count347
+\pstFP@xia=\count348
+\pstFP@xib=\count349
+\pstFP@xfa=\count350
+\pstFP@xfb=\count351
+\pstFP@rega=\count352
+\pstFP@regb=\count353
+\pstFP@regs=\count354
+\pstFP@times=\count355
 )
-\psLoopIndex=\count355
+\psLoopIndex=\count356
 
 `PSTricks' v3.21  <2024/11/16> (tvz,hv)
 \pst@dima=\dimen186
@@ -626,25 +639,25 @@ File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 \pst@hbox=\box66
 \pst@ibox=\box67
 \pst@boxg=\box68
-\pst@cnta=\count356
-\pst@cntb=\count357
-\pst@cntc=\count358
-\pst@cntd=\count359
-\pst@cntg=\count360
-\pst@cnth=\count361
-\pst@cntm=\count362
-\pst@cntn=\count363
-\pst@cnto=\count364
-\pst@cntp=\count365
-\@zero=\count366
-\pst@toks=\toks36
+\pst@cnta=\count357
+\pst@cntb=\count358
+\pst@cntc=\count359
+\pst@cntd=\count360
+\pst@cntg=\count361
+\pst@cnth=\count362
+\pst@cntm=\count363
+\pst@cntn=\count364
+\pst@cnto=\count365
+\pst@cntp=\count366
+\@zero=\count367
+\pst@toks=\toks37
 --- We are running latex or xelatex ---
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pstricks/pstricks.con)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pstricks/pstricks-color.tex)
 \psunit=\dimen196
 \psxunit=\dimen197
 \psyunit=\dimen198
-\pst@C@@rType=\count367
+\pst@C@@rType=\count368
 \pslinewidth=\dimen199
 \psk@startLW=\dimen256
 \psk@endLW=\dimen257
@@ -653,20 +666,20 @@ File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 \pshooklength=\dimen258
 \pshookwidth=\dimen259
 )
-\pst@customdefs=\toks37
+\pst@customdefs=\toks38
 
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pstricks/pstricks-dots.tex)
 \pslinearc=\dimen260
 \pst@symbolStep=\dimen261
 \pst@symbolWidth=\dimen262
 \pst@symbolLinewidth=\dimen263
-\everypsbox=\toks38
+\everypsbox=\toks39
 \psframesep=\dimen264
 \pslabelsep=\dimen265
 \sh@wgridXunit=\dimen266
 \sh@wgridYunit=\dimen267
 \pst@shift=\dimen268
-\ps@imagectr=\count368
+\ps@imagectr=\count369
 
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pstricks/pstricks.con))
 File: pstricks.tex 2024/11/16 v3.21 `PSTricks' (tvz,hv)
@@ -680,7 +693,7 @@ File: pst-fp.tex 2020/11/20 v0.06 `PST-fp' (hv)
 (/usr/local/texlive/2024/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
-\pgfutil@everybye=\toks39
+\pgfutil@everybye=\toks40
 \pgfutil@tempdima=\dimen269
 \pgfutil@tempdimb=\dimen270
 )
@@ -708,14 +721,14 @@ Package: pgfsys 2023-01-15 v3.1.10 (3.1.10)
 \pgf@yd=\dimen280
 \w@pgf@writea=\write5
 \r@pgf@reada=\read4
-\c@pgf@counta=\count369
-\c@pgf@countb=\count370
-\c@pgf@countc=\count371
-\c@pgf@countd=\count372
-\t@pgf@toka=\toks40
-\t@pgf@tokb=\toks41
-\t@pgf@tokc=\toks42
-\pgf@sys@id@count=\count373
+\c@pgf@counta=\count370
+\c@pgf@countb=\count371
+\c@pgf@countc=\count372
+\c@pgf@countd=\count373
+\t@pgf@toka=\toks41
+\t@pgf@tokb=\toks42
+\t@pgf@tokc=\toks43
+\pgf@sys@id@count=\count374
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2023-01-15 v3.1.10 (3.1.10)
 )
@@ -732,8 +745,8 @@ File: pgfsys-common-pdf.def 2023-01-15 v3.1.10 (3.1.10)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
 File: pgfsyssoftpath.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfsyssoftpath@smallbuffer@items=\count374
-\pgfsyssoftpath@bigbuffer@items=\count375
+\pgfsyssoftpath@smallbuffer@items=\count375
+\pgfsyssoftpath@bigbuffer@items=\count376
 )
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
 code.tex
@@ -745,11 +758,11 @@ Package: pgfcore 2023-01-15 v3.1.10 (3.1.10)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen281
-\pgfmath@count=\count376
+\pgfmath@count=\count377
 \pgfmath@box=\box70
-\pgfmath@toks=\toks43
-\pgfmath@stack@operand=\toks44
-\pgfmath@stack@operation=\toks45
+\pgfmath@toks=\toks44
+\pgfmath@stack@operand=\toks45
+\pgfmath@stack@operation=\toks46
 )
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
 tex)
@@ -771,7 +784,7 @@ code.tex)
 erarithmetics.code.tex)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count377
+\c@pgfmathroundto@lastzeros=\count378
 )) (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
@@ -809,7 +822,7 @@ File: pgfcorescopes.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgfpic=\box71
 \pgf@hbox=\box72
 \pgf@layerbox@main=\box73
-\pgf@picture@serial@count=\count378
+\pgf@picture@serial@count=\count379
 )
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
@@ -844,8 +857,8 @@ File: pgfcorearrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 e.tex
 File: pgfcoreshade.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \pgf@max=\dimen305
-\pgf@sys@shading@range@num=\count379
-\pgf@shadingcount=\count380
+\pgf@sys@shading@range@num=\count380
+\pgf@shadingcount=\count381
 )
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
@@ -898,8 +911,8 @@ Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 \pgffor@iter=\dimen308
 \pgffor@skip=\dimen309
-\pgffor@stack=\toks46
-\pgffor@toks=\toks47
+\pgffor@stack=\toks47
+\pgffor@toks=\toks48
 ))
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
 e.tex
@@ -908,7 +921,7 @@ Package: tikz 2023-01-15 v3.1.10 (3.1.10)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count381
+\pgf@plot@mark@count=\count382
 \pgfplotmarksize=\dimen310
 )
 \tikz@lastx=\dimen311
@@ -923,19 +936,19 @@ File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikz@figbox@bg=\box77
 \tikz@tempbox=\box78
 \tikz@tempbox@bg=\box79
-\tikztreelevel=\count382
-\tikznumberofchildren=\count383
-\tikznumberofcurrentchild=\count384
-\tikz@fig@count=\count385
+\tikztreelevel=\count383
+\tikznumberofchildren=\count384
+\tikznumberofcurrentchild=\count385
+\tikz@fig@count=\count386
 
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count386
-\pgfmatrixcurrentcolumn=\count387
-\pgf@matrix@numberofcolumns=\count388
+\pgfmatrixcurrentrow=\count387
+\pgfmatrixcurrentcolumn=\count388
+\pgf@matrix@numberofcolumns=\count389
 )
-\tikz@expandcount=\count389
+\tikz@expandcount=\count390
 
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
@@ -945,22 +958,22 @@ Package: pgf-pie 2011/10/02 v0.2 Some LaTeX macros for pie chart by using PGF/T
 ikz package.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/carlisle/scalefnt.sty)
-\pgfpie@angleEnd=\skip70
-\c@pgfpie@explodeLength=\count390
-\c@pgfpie@colorLength=\count391
-\c@pgfpie@sliceLength=\count392
+\pgfpie@angleEnd=\skip77
+\c@pgfpie@explodeLength=\count391
+\c@pgfpie@colorLength=\count392
+\c@pgfpie@sliceLength=\count393
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/pgfplots/pgfplots.sty
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
 Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks48
-\t@pgfplots@tokb=\toks49
-\t@pgfplots@tokc=\toks50
+\t@pgfplots@toka=\toks49
+\t@pgfplots@tokb=\toks50
+\t@pgfplots@tokc=\toks51
 \pgfplots@tmpa=\dimen319
-\c@pgfplots@coordindex=\count393
-\c@pgfplots@scanlineindex=\count394
+\c@pgfplots@coordindex=\count394
+\c@pgfplots@scanlineindex=\count395
 
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
 .code.tex))
@@ -971,9 +984,9 @@ soldpgfsupp_loader.code.tex
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.cod
 e.tex)
 Package pgfplots: loading complementary utilities for your pgf version...
-\t@pgf@toka=\toks51
-\t@pgf@tokb=\toks52
-\t@pgf@tokc=\toks53
+\t@pgf@toka=\toks52
+\t@pgf@tokb=\toks53
+\t@pgf@tokc=\toks54
 
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
 soldpgfsupp_pgfutil-common-lists.tex))
@@ -985,14 +998,14 @@ liststructure.code.tex)
 liststructureext.code.tex)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 array.code.tex
-\c@pgfplotsarray@tmp=\count395
+\c@pgfplotsarray@tmp=\count396
 )
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 matrix.code.tex)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
 shared.code.tex
-\c@pgfplotstable@counta=\count396
-\t@pgfplotstable@a=\toks54
+\c@pgfplotstable@counta=\count397
+\t@pgfplotstable@a=\toks55
 )
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 deque.code.tex)
@@ -1004,7 +1017,7 @@ ta.code.tex))
 .code.tex)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
 s.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count397
+\c@pgfplotslibrarysurf@no=\count398
 
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
 .surfshading.pgfsys-pdftex.def)))
@@ -1041,7 +1054,7 @@ s.code.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen322
 \pgfdecoratedinputsegmentremainingdistance=\dimen323
 \pgf@decorate@distancetomove=\dimen324
-\pgf@decorate@repeatstate=\count398
+\pgf@decorate@repeatstate=\count399
 \pgfdecorationsegmentamplitude=\dimen325
 \pgfdecorationsegmentlength=\dimen326
 )
@@ -1057,7 +1070,7 @@ s/tikzlibrarydecorations.pathreplacing.code.tex
 brarydecorations.pathreplacing.code.tex))
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplo
 ts.contourlua.code.tex)
-\pgfplots@numplots=\count399
+\pgfplots@numplots=\count400
 \pgfplots@xmin@reg=\dimen327
 \pgfplots@xmax@reg=\dimen328
 \pgfplots@ymin@reg=\dimen329
@@ -1095,10 +1108,10 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.89 \begin{document}
+l.90 \begin{document}
                      
-Classes and packages should only be loaded at the top level
-
+? s
+OK, entering \scrollmode...
 (./main.aux (./problema1.aux
 
 LaTeX Warning: Label `mux_16:1' multiply defined.
@@ -1153,6 +1166,33 @@ LaTeX Warning: Label `mux_41_sr' multiply defined.
 LaTeX Warning: Label `cnt_60' multiply defined.
 
 
+LaTeX Warning: Label `lbl:ROMC' multiply defined.
+
+
+LaTeX Warning: Label `lbl:ROMC' multiply defined.
+
+
+LaTeX Warning: Label `lbl:ROMC' multiply defined.
+
+
+LaTeX Warning: Label `lbl:ROMC' multiply defined.
+
+
+LaTeX Warning: Label `lbl:ROMC' multiply defined.
+
+
+LaTeX Warning: Label `lbl:ROMC' multiply defined.
+
+
+LaTeX Warning: Label `lbl:ROMC' multiply defined.
+
+
+LaTeX Warning: Label `lbl:ROMC' multiply defined.
+
+
+LaTeX Warning: Label `lbl:ROMC' multiply defined.
+
+
 LaTeX Warning: Label `shf_reg_beh_sim' multiply defined.
 
 
@@ -1165,6 +1205,9 @@ LaTeX Warning: Label `lbl:ROMC' multiply defined.
 LaTeX Warning: Label `lbl:ROMC' multiply defined.
 
 
+LaTeX Warning: Label `lbl:ROMC' multiply defined.
+
+
 LaTeX Warning: Label `schemROM_M_MEM' multiply defined.
 
 
@@ -1182,41 +1225,105 @@ LaTeX Warning: Label `schemROM_M_MEM' multiply defined.
 
 LaTeX Warning: Label `schemROM_M_MEM' multiply defined.
 
-) (./problema3.aux) (./problema8.aux))
+) (./problema3.aux
+
+LaTeX Warning: Label `booth_sim_1' multiply defined.
+
+
+LaTeX Warning: Label `test1' multiply defined.
+
+
+LaTeX Warning: Label `test1' multiply defined.
+
+) (./problema8.aux
+
+LaTeX Warning: Label `wf_preapp' multiply defined.
+
+
+LaTeX Warning: Label `wf_preapp' multiply defined.
+
+
+LaTeX Warning: Label `wf_preapp' multiply defined.
+
+
+LaTeX Warning: Label `lst:mux_2_1' multiply defined.
+
+
+LaTeX Warning: Label `lst:mux_2_1' multiply defined.
+
+
+LaTeX Warning: Label `lst:mux_2_1' multiply defined.
+
+
+LaTeX Warning: Label `lst:mux_2_1' multiply defined.
+
+
+LaTeX Warning: Label `lst:mux_2_1' multiply defined.
+
+
+LaTeX Warning: Label `lst:mux_2_1' multiply defined.
+
+
+LaTeX Warning: Label `lst:mux_2_1' multiply defined.
+
+
+LaTeX Warning: Label `lst:mux_2_1' multiply defined.
+
+
+LaTeX Warning: Label `lst:mux_2_1' multiply defined.
+
+
+LaTeX Warning: Label `lst:mux_2_1' multiply defined.
+
+
+LaTeX Warning: Label `lst:mux_2_1' multiply defined.
+
+
+LaTeX Warning: Label `lst:mux_2_1' multiply defined.
+
+
+LaTeX Warning: Label `wf_preapp' multiply defined.
+
+
+LaTeX Warning: Label `lst:mux_2_1' multiply defined.
+
+
+LaTeX Warning: Label `wf_preapp' multiply defined.
+
+))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-
-(/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+ (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count400
+\scratchcounter=\count401
 \scratchdimen=\dimen333
 \scratchbox=\box81
-\nofMPsegments=\count401
-\nofMParguments=\count402
-\everyMPshowfont=\toks55
-\MPscratchCnt=\count403
+\nofMPsegments=\count402
+\nofMParguments=\count403
+\everyMPshowfont=\toks56
+\MPscratchCnt=\count404
 \MPscratchDim=\dimen334
-\MPnumerator=\count404
-\makeMPintoPDFobject=\count405
-\everyMPtoPDFconversion=\toks56
+\MPnumerator=\count405
+\makeMPintoPDFobject=\count406
+\everyMPtoPDFconversion=\toks57
 )
 
 ! LaTeX Error: Loading a class or package in a group.
@@ -1225,7 +1332,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.89 \begin{document}
+l.90 \begin{document}
                      
 Classes and packages should only be loaded at the top level
 
@@ -1238,8 +1345,8 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \it@ocap on input line 89.
-LaTeX Info: Redefining \it@ccap on input line 89.
+LaTeX Info: Redefining \it@ocap on input line 90.
+LaTeX Info: Redefining \it@ccap on input line 90.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1275,7 +1382,7 @@ LaTeX Info: Redefining \it@ccap on input line 89.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 89.
+Package hyperref Info: Link coloring OFF on input line 90.
 (./main.out) (./main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
@@ -1289,12 +1396,12 @@ Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.18} (current compat level: 1.8).
 
 (./0_frontespizio.tex
-<img/logo/logo_copertina_1.png, id=232, 200.75pt x 198.7425pt>
+<img/logo/logo_copertina_1.png, id=288, 200.75pt x 198.7425pt>
 File: img/logo/logo_copertina_1.png Graphic file (type png)
 <use img/logo/logo_copertina_1.png>
 Package pdftex.def Info: img/logo/logo_copertina_1.png  used on input line 6.
 (pdftex.def)             Requested size: 150.56212pt x 149.0565pt.
-<img/logo/logo_copertina_2.png, id=233, 192.72pt x 43.66313pt>
+<img/logo/logo_copertina_2.png, id=289, 192.72pt x 43.66313pt>
 File: img/logo/logo_copertina_2.png Graphic file (type png)
 <use img/logo/logo_copertina_2.png>
 Package pdftex.def Info: img/logo/logo_copertina_2.png  used on input line 7.
@@ -1329,20 +1436,22 @@ o/logo_copertina_1.png (PNG copy)> <./img/logo/logo_copertina_2.png>])
 
 ]
 
-[2])
+[2]
+
+[3])
 \tf@toc=\write7
 \openout7 = `main.toc'.
 
 
 
-[3]
+[4]
 \openout2 = `problema1.aux'.
 
  (./problema1.tex
 Capitolo 1.
 Package newfloat Info: Setting Plan B file extension to `lof'... on input line 
 1.
-<img/mux_indirizz.png, id=317, 100.81665pt x 195.129pt>
+<img/mux_indirizz.png, id=392, 100.81665pt x 195.129pt>
 File: img/mux_indirizz.png Graphic file (type png)
 <use img/mux_indirizz.png>
 Package pdftex.def Info: img/mux_indirizz.png  used on input line 14.
@@ -1360,7 +1469,7 @@ l.17 \end{figure}
 
 
 ]
-<img/mux_16-1.png, id=327, 67.57245pt x 195.129pt>
+<img/mux_16-1.png, id=402, 67.57245pt x 195.129pt>
 File: img/mux_16-1.png Graphic file (type png)
 <use img/mux_16-1.png>
 Package pdftex.def Info: img/mux_16-1.png  used on input line 22.
@@ -1368,7 +1477,7 @@ Package pdftex.def Info: img/mux_16-1.png  used on input line 22.
 
 
 [2 <./img/mux_indirizz.png>]
-<img/mux_2-1.png, id=336, 195.129pt x 188.08267pt>
+<img/mux_2-1.png, id=412, 195.129pt x 188.08267pt>
 File: img/mux_2-1.png Graphic file (type png)
 <use img/mux_2-1.png>
 Package pdftex.def Info: img/mux_2-1.png  used on input line 31.
@@ -1381,7 +1490,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--34
 
 
 [3 <./img/mux_16-1.png>]
-<img/mux_4-1.png, id=344, 171.2799pt x 195.129pt>
+<img/mux_4-1.png, id=419, 171.2799pt x 195.129pt>
 File: img/mux_4-1.png Graphic file (type png)
 <use img/mux_4-1.png>
 Package pdftex.def Info: img/mux_4-1.png  used on input line 80.
@@ -1389,7 +1498,7 @@ Package pdftex.def Info: img/mux_4-1.png  used on input line 80.
 
 
 [4 <./img/mux_2-1.png>]
-<img/mux_4-1_comp.png, id=356, 159.7167pt x 195.129pt>
+<img/mux_4-1_comp.png, id=430, 159.7167pt x 195.129pt>
 File: img/mux_4-1_comp.png Graphic file (type png)
 <use img/mux_4-1_comp.png>
 Package pdftex.def Info: img/mux_4-1_comp.png  used on input line 87.
@@ -1397,7 +1506,7 @@ Package pdftex.def Info: img/mux_4-1_comp.png  used on input line 87.
 
 
 [5 <./img/mux_4-1.png> <./img/mux_4-1_comp.png>]
-<img/mux_16-1_composizione.png, id=365, 226.2051pt x 476.982pt>
+<img/mux_16-1_composizione.png, id=439, 226.2051pt x 476.982pt>
 File: img/mux_16-1_composizione.png Graphic file (type png)
 <use img/mux_16-1_composizione.png>
 Package pdftex.def Info: img/mux_16-1_composizione.png  used on input line 100.
@@ -1412,12 +1521,12 @@ Package pdftex.def Info: img/mux_16-1_composizione.png  used on input line 100.
 \pydata@fh@_FAD58DE7366495DB4650CFEFAC2FCD61.data.minted=\write8
 \openout8 = `_FAD58DE7366495DB4650CFEFAC2FCD61.data.minted'.
 
-runsystem(latexminted config  --timestamp 20250103121323 FAD58DE7366495DB4650CF
+runsystem(latexminted config  --timestamp 20250110115227 FAD58DE7366495DB4650CF
 EFAC2FCD61)...executed safely (allowed).
 
 
 (./_FAD58DE7366495DB4650CFEFAC2FCD61.config.minted)
-runsystem(latexminted cleanconfig  --timestamp 20250103121323 FAD58DE7366495DB4
+runsystem(latexminted cleanconfig  --timestamp 20250110115227 FAD58DE7366495DB4
 650CFEFAC2FCD61)...executed safely (allowed).
 
 
@@ -1471,7 +1580,7 @@ LaTeX Info: Symbol \textasciigrave not provided by
 LaTeX Font Info:    Font shape `TS1/pcr/m/it' in size <10> not available
 (Font)              Font shape `TS1/pcr/m/sl' tried instead on input line 44.
 )
-<img/commands_sim_16_1.png, id=413, 542.025pt x 384.43625pt>
+<img/commands_sim_16_1.png, id=487, 542.025pt x 384.43625pt>
 File: img/commands_sim_16_1.png Graphic file (type png)
 <use img/commands_sim_16_1.png>
 Package pdftex.def Info: img/commands_sim_16_1.png  used on input line 151.
@@ -1479,7 +1588,7 @@ Package pdftex.def Info: img/commands_sim_16_1.png  used on input line 151.
 
 
 [13]
-<img/waves_sim_16_1.png, id=418, 542.025pt x 338.76563pt>
+<img/waves_sim_16_1.png, id=492, 542.025pt x 338.76563pt>
 File: img/waves_sim_16_1.png Graphic file (type png)
 <use img/waves_sim_16_1.png>
 Package pdftex.def Info: img/waves_sim_16_1.png  used on input line 158.
@@ -1494,12 +1603,12 @@ Package pdftex.def Info: img/waves_sim_16_1.png  used on input line 158.
 [16])
 
 [17]
-<img/mux16_1_vivado.png, id=441, 458.9145pt x 650.43pt>
+<img/mux16_1_vivado.png, id=516, 458.9145pt x 650.43pt>
 File: img/mux16_1_vivado.png Graphic file (type png)
 <use img/mux16_1_vivado.png>
 Package pdftex.def Info: img/mux16_1_vivado.png  used on input line 173.
 (pdftex.def)             Requested size: 333.46758pt x 472.63643pt.
-<img/Rete_interconn.png, id=442, 186.27592pt x 195.129pt>
+<img/Rete_interconn.png, id=517, 186.27592pt x 195.129pt>
 File: img/Rete_interconn.png Graphic file (type png)
 <use img/Rete_interconn.png>
 Package pdftex.def Info: img/Rete_interconn.png  used on input line 186.
@@ -1509,7 +1618,7 @@ Package pdftex.def Info: img/Rete_interconn.png  used on input line 186.
 [18 <./img/mux16_1_vivado.png>]
 
 [19]
-<img/demux_1_2.png, id=452, 193.50293pt x 195.129pt>
+<img/demux_1_2.png, id=527, 193.50293pt x 195.129pt>
 File: img/demux_1_2.png Graphic file (type png)
 <use img/demux_1_2.png>
 Package pdftex.def Info: img/demux_1_2.png  used on input line 198.
@@ -1517,7 +1626,7 @@ Package pdftex.def Info: img/demux_1_2.png  used on input line 198.
 
 
 [20 <./img/Rete_interconn.png>]
-<img/demux_1_4.png, id=459, 295.5843pt x 354.8457pt>
+<img/demux_1_4.png, id=535, 295.5843pt x 354.8457pt>
 File: img/demux_1_4.png Graphic file (type png)
 <use img/demux_1_4.png>
 Package pdftex.def Info: img/demux_1_4.png  used on input line 233.
@@ -1525,7 +1634,7 @@ Package pdftex.def Info: img/demux_1_4.png  used on input line 233.
 
 
 [21 <./img/demux_1_2.png>]
-<img/ReteInterconn_composta.png, id=468, 195.129pt x 190.25078pt>
+<img/ReteInterconn_composta.png, id=543, 195.129pt x 190.25078pt>
 File: img/ReteInterconn_composta.png Graphic file (type png)
 <use img/ReteInterconn_composta.png>
 Package pdftex.def Info: img/ReteInterconn_composta.png  used on input line 240
@@ -1552,7 +1661,7 @@ Underfull \hbox (badness 1688) in paragraph at lines 259--1
 [26]
 
 [27])
-<img/reteIntVivado.png, id=502, 461.3235pt x 434.8245pt>
+<img/reteIntVivado.png, id=576, 461.3235pt x 434.8245pt>
 File: img/reteIntVivado.png Graphic file (type png)
 <use img/reteIntVivado.png>
 Package pdftex.def Info: img/reteIntVivado.png  used on input line 268.
@@ -1568,7 +1677,7 @@ Package pdftex.def Info: img/reteIntVivado.png  used on input line 268.
 [31]
 
 [32])
-<img/TbReteInt.png, id=526, 1156.32pt x 620.3175pt>
+<img/TbReteInt.png, id=601, 1156.32pt x 620.3175pt>
 File: img/TbReteInt.png Graphic file (type png)
 <use img/TbReteInt.png>
 Package pdftex.def Info: img/TbReteInt.png  used on input line 282.
@@ -1576,7 +1685,7 @@ Package pdftex.def Info: img/TbReteInt.png  used on input line 282.
 
 
 [33]
-<img/board.png, id=532, 1072.005pt x 1084.05pt>
+<img/board.png, id=606, 1072.005pt x 1084.05pt>
 File: img/board.png Graphic file (type png)
 <use img/board.png>
 Package pdftex.def Info: img/board.png  used on input line 291.
@@ -1595,7 +1704,7 @@ Package pdftex.def Info: img/board.png  used on input line 291.
 [38]
 
 [39])
-<img/TestRI.png, id=564, 1084.05pt x 885.3075pt>
+<img/TestRI.png, id=638, 1084.05pt x 885.3075pt>
 File: img/TestRI.png Graphic file (type png)
 <use img/TestRI.png>
 Package pdftex.def Info: img/TestRI.png  used on input line 317.
@@ -1606,7 +1715,7 @@ Package pdftex.def Info: img/TestRI.png  used on input line 317.
 
 [41 <./img/TestRI.png>]
 Capitolo 2.
-<img/rom_M_black_box.png, id=575, 78.0516pt x 30.3534pt>
+<img/rom_M_black_box.png, id=649, 78.0516pt x 30.3534pt>
 File: img/rom_M_black_box.png Graphic file (type png)
 <use img/rom_M_black_box.png>
 Package pdftex.def Info: img/rom_M_black_box.png  used on input line 327.
@@ -1618,158 +1727,24 @@ Package pdftex.def Info: img/rom_M_black_box.png  used on input line 327.
 ] (./_minted/37280D35E15D753EBCED048F4EDC09AE.highlight.minted
 
 [43 <./img/rom_M_black_box.png>])
-\openout8 = `_FAD58DE7366495DB4650CFEFAC2FCD61.data.minted'.
+(./_minted/2B5B9D02766C65FDAB741B0018A49EDE.highlight.minted
 
-runsystem(latexminted highlight  --timestamp 20250103121323 FAD58DE7366495DB465
-0CFEFAC2FCD61)...executed safely (allowed).
-
-
-(./_FAD58DE7366495DB4650CFEFAC2FCD61.message.minted)
-
-! Package minted Error: 
- => ./problema1.tex:343: Cannot decode file "vhdl_files/M.vhd" with encoding="u
-tf8".
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.343 ...otesize, linenos]{vhdl}{vhdl_files/M.vhd}
-                                                  
-This error message was generated by an \errmessage
-command, so I can't give any explicit help.
-Pretend that you're Hercule Poirot: Examine all clues,
-and deduce the truth by order and method.
-
-
-
-[44]
-
-! LaTeX Error: Invalid UTF-8 byte "F9.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.343 ...otesize, linenos]{vhdl}{vhdl_files/M.vhd}
-                                                  
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte "F9.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.343 ...otesize, linenos]{vhdl}{vhdl_files/M.vhd}
-                                                  
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-(./_minted/3E30B0EF2CB54B602DC85C49DC072BD7.highlight.minted
+[44]) (./_minted/3E30B0EF2CB54B602DC85C49DC072BD7.highlight.minted
 
 [45])
-<img/ROM_plus_M.png, id=598, 844.95676pt x 245.11575pt>
+<img/ROM_plus_M.png, id=673, 844.95676pt x 245.11575pt>
 File: img/ROM_plus_M.png Graphic file (type png)
 <use img/ROM_plus_M.png>
 Package pdftex.def Info: img/ROM_plus_M.png  used on input line 358.
 (pdftex.def)             Requested size: 416.83289pt x 120.91937pt.
 
 
-[46]
-\openout8 = `_FAD58DE7366495DB4650CFEFAC2FCD61.data.minted'.
-
-runsystem(latexminted highlight  --timestamp 20250103121323 FAD58DE7366495DB465
-0CFEFAC2FCD61)...executed safely (allowed).
-
- (./_FAD58DE7366495DB4650CFEFAC2FCD61.message.minted)
-
-! Package minted Error: 
- => ./problema1.tex:366: Cannot decode file "vhdl_files/ROMplusM_tb.vhd" with e
-ncoding="utf8".
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.366 ...inenos]{vhdl}{vhdl_files/ROMplusM_tb.vhd}
-                                                  
-(That was another \errmessage.)
-
-
-! LaTeX Error: Invalid UTF-8 byte sequence (è u).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.366 ...inenos]{vhdl}{vhdl_files/ROMplusM_tb.vhd}
-                                                  
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte sequence (à v).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.366 ...inenos]{vhdl}{vhdl_files/ROMplusM_tb.vhd}
-                                                  
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte sequence (è u).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.366 ...inenos]{vhdl}{vhdl_files/ROMplusM_tb.vhd}
-                                                  
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte sequence (à v).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.366 ...inenos]{vhdl}{vhdl_files/ROMplusM_tb.vhd}
-                                                  
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
+[46] (./_minted/CB4E9601C47FEE4D0BDF492E3319F475.highlight.minted
 
 [47 <./img/ROM_plus_M.png>]
 
-[48]
-<img/Sim_Rom_plus_M.png, id=614, 531.1845pt x 336.0555pt>
+[48])
+<img/Sim_Rom_plus_M.png, id=689, 531.1845pt x 336.0555pt>
 File: img/Sim_Rom_plus_M.png Graphic file (type png)
 <use img/Sim_Rom_plus_M.png>
 Package pdftex.def Info: img/Sim_Rom_plus_M.png  used on input line 373.
@@ -1826,12 +1801,12 @@ Overfull \hbox (57.16711pt too wide) in paragraph at lines 409--409
 ports {bout[3]}];[] 
  []
 
-<img/testRom_M_1.png, id=625, 1084.05pt x 939.51pt>
+<img/testRom_M_1.png, id=701, 1084.05pt x 939.51pt>
 File: img/testRom_M_1.png Graphic file (type png)
 <use img/testRom_M_1.png>
 Package pdftex.def Info: img/testRom_M_1.png  used on input line 415.
 (pdftex.def)             Requested size: 291.78174pt x 252.86829pt.
-<img/testRom_M_2.png, id=626, 1084.05pt x 983.675pt>
+<img/testRom_M_2.png, id=702, 1084.05pt x 983.675pt>
 File: img/testRom_M_2.png Graphic file (type png)
 <use img/testRom_M_2.png>
 Package pdftex.def Info: img/testRom_M_2.png  used on input line 422.
@@ -1839,7 +1814,7 @@ Package pdftex.def Info: img/testRom_M_2.png  used on input line 422.
 
 
 [51 <./img/testRom_M_1.png>]
-<img/testrom_M_3.png, id=634, 1084.05pt x 868.24374pt>
+<img/testrom_M_3.png, id=709, 1084.05pt x 868.24374pt>
 File: img/testrom_M_3.png Graphic file (type png)
 <use img/testrom_M_3.png>
 Package pdftex.def Info: img/testrom_M_3.png  used on input line 429.
@@ -1859,7 +1834,7 @@ Capitolo 3.
 
 
 ]
-<img/automa_riconoscitore.png, id=654, 471.9231pt x 612.8496pt>
+<img/automa_riconoscitore.png, id=728, 471.9231pt x 612.8496pt>
 File: img/automa_riconoscitore.png Graphic file (type png)
 <use img/automa_riconoscitore.png>
 Package pdftex.def Info: img/automa_riconoscitore.png  used on input line 18.
@@ -1880,7 +1855,7 @@ Package pdftex.def Info: img/automa_riconoscitore.png  used on input line 18.
 [59]
 
 [60])
-<img/Sim_RIC.png, id=688, 542.025pt x 92.345pt>
+<img/Sim_RIC.png, id=762, 542.025pt x 92.345pt>
 File: img/Sim_RIC.png Graphic file (type png)
 <use img/Sim_RIC.png>
 Package pdftex.def Info: img/Sim_RIC.png  used on input line 65.
@@ -1902,7 +1877,7 @@ Package pdftex.def Info: img/Sim_RIC.png  used on input line 65.
 
 [67]
 Capitolo 4.
-<img/shift_register.png, id=723, 260.8947pt x 101.9007pt>
+<img/shift_register.png, id=798, 260.8947pt x 101.9007pt>
 File: img/shift_register.png Graphic file (type png)
 <use img/shift_register.png>
 Package pdftex.def Info: img/shift_register.png  used on input line 128.
@@ -1921,7 +1896,7 @@ Package pdftex.def Info: img/shift_register.png  used on input line 128.
 [71]
 
 [72])
-<img/simulazione_shift_register.png, id=749, 1101.11375pt x 176.66pt>
+<img/simulazione_shift_register.png, id=824, 1101.11375pt x 176.66pt>
 File: img/simulazione_shift_register.png Graphic file (type png)
 <use img/simulazione_shift_register.png>
 Package pdftex.def Info: img/simulazione_shift_register.png  used on input line
@@ -1930,7 +1905,7 @@ Package pdftex.def Info: img/simulazione_shift_register.png  used on input line
 
 
 [73]
-<img/reg.png, id=755, 226.9278pt x 195.8517pt>
+<img/reg.png, id=830, 226.9278pt x 195.8517pt>
 File: img/reg.png Graphic file (type png)
 <use img/reg.png>
 Package pdftex.def Info: img/reg.png  used on input line 182.
@@ -1938,7 +1913,7 @@ Package pdftex.def Info: img/reg.png  used on input line 182.
 
 
 [74 <./img/simulazione_shift_register.png>]
-<img///mux_41_sr.png, id=764, 188.6247pt x 166.9437pt>
+<img///mux_41_sr.png, id=839, 188.6247pt x 166.9437pt>
 File: img///mux_41_sr.png Graphic file (type png)
 <use img///mux_41_sr.png>
 Package pdftex.def Info: img///mux_41_sr.png  used on input line 199.
@@ -1951,7 +1926,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--202
 
 
 [75 <./img/reg.png>]
-<img/shiftregister_str.png, id=772, 1641.9744pt x 441.5697pt>
+<img/shiftregister_str.png, id=846, 1641.9744pt x 441.5697pt>
 File: img/shiftregister_str.png Graphic file (type png)
 <use img/shiftregister_str.png>
 Package pdftex.def Info: img/shiftregister_str.png  used on input line 230.
@@ -1977,7 +1952,7 @@ Package pdftex.def Info: img/shiftregister_str.png  used on input line 230.
 [83]
 
 [84])
-<img/sim_shift_register_str.png, id=820, 1559.8275pt x 149.55875pt>
+<img/sim_shift_register_str.png, id=894, 1559.8275pt x 149.55875pt>
 File: img/sim_shift_register_str.png Graphic file (type png)
 <use img/sim_shift_register_str.png>
 Package pdftex.def Info: img/sim_shift_register_str.png  used on input line 270
@@ -1992,12 +1967,12 @@ Capitolo 5.
 [86
 
 ]
-<img/ffD.png, id=831, 240.6591pt x 116.3547pt>
+<img/ffD.png, id=906, 240.6591pt x 116.3547pt>
 File: img/ffD.png Graphic file (type png)
 <use img/ffD.png>
 Package pdftex.def Info: img/ffD.png  used on input line 290.
 (pdftex.def)             Requested size: 291.78174pt x 141.07191pt.
-<img/counter_64.png, id=832, 224.037pt x 117.8001pt>
+<img/counter_64.png, id=907, 224.037pt x 117.8001pt>
 File: img/counter_64.png Graphic file (type png)
 <use img/counter_64.png>
 Package pdftex.def Info: img/counter_64.png  used on input line 301.
@@ -2012,7 +1987,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 312--313
 
 
 [88 <./img/counter_64.png>]
-<img/counter_mod_64_str.png, id=848, 2284.4547pt x 521.0667pt>
+<img/counter_mod_64_str.png, id=923, 2284.4547pt x 521.0667pt>
 File: img/counter_mod_64_str.png Graphic file (type png)
 <use img/counter_mod_64_str.png>
 Package pdftex.def Info: img/counter_mod_64_str.png  used on input line 319.
@@ -2020,7 +1995,7 @@ Package pdftex.def Info: img/counter_mod_64_str.png  used on input line 319.
 
 
 [89 <./img/counter_mod_64_str.png>]
-<img/counter_mod_32.png, id=855, 224.037pt x 117.8001pt>
+<img/counter_mod_32.png, id=930, 224.037pt x 117.8001pt>
 File: img/counter_mod_32.png Graphic file (type png)
 <use img/counter_mod_32.png>
 Package pdftex.def Info: img/counter_mod_32.png  used on input line 329.
@@ -2031,7 +2006,7 @@ Package pdftex.def Info: img/counter_mod_32.png  used on input line 329.
 
 
  <./img/counter_mod_32.png>]
-<img/counter_mod_32_str.png, id=863, 1913.7096pt x 521.7894pt>
+<img/counter_mod_32_str.png, id=938, 1913.7096pt x 521.7894pt>
 File: img/counter_mod_32_str.png Graphic file (type png)
 <use img/counter_mod_32_str.png>
 Package pdftex.def Info: img/counter_mod_32_str.png  used on input line 338.
@@ -2039,17 +2014,17 @@ Package pdftex.def Info: img/counter_mod_32_str.png  used on input line 338.
 
 
 [91 <./img/counter_mod_32_str.png>]
-<img/counter_mod_60.png, id=870, 625.1355pt x 260.8947pt>
+<img/counter_mod_60.png, id=945, 625.1355pt x 260.8947pt>
 File: img/counter_mod_60.png Graphic file (type png)
 <use img/counter_mod_60.png>
 Package pdftex.def Info: img/counter_mod_60.png  used on input line 348.
 (pdftex.def)             Requested size: 416.83289pt x 173.96252pt.
-<img/counter_mod_24.png, id=871, 625.1355pt x 260.8947pt>
+<img/counter_mod_24.png, id=946, 625.1355pt x 260.8947pt>
 File: img/counter_mod_24.png Graphic file (type png)
 <use img/counter_mod_24.png>
 Package pdftex.def Info: img/counter_mod_24.png  used on input line 357.
 (pdftex.def)             Requested size: 416.83289pt x 173.96252pt.
-<img/stopwatch.png, id=872, 1043.5788pt x 319.4334pt>
+<img/stopwatch.png, id=947, 1043.5788pt x 319.4334pt>
 File: img/stopwatch.png Graphic file (type png)
 <use img/stopwatch.png>
 Package pdftex.def Info: img/stopwatch.png  used on input line 366.
@@ -2096,7 +2071,7 @@ using[]perl/[]|
 [105]
 
 [106])
-<img/stopwatch_sim.png, id=959, 1559.8275pt x 149.55875pt>
+<img/stopwatch_sim.png, id=1033, 1559.8275pt x 149.55875pt>
 File: img/stopwatch_sim.png Graphic file (type png)
 <use img/stopwatch_sim.png>
 Package pdftex.def Info: img/stopwatch_sim.png  used on input line 432.
@@ -2110,201 +2085,408 @@ la car-tel-la \T1/pcr/m/n/14.4 Esercizio
 
 
 [107 <./img/stopwatch_sim.png>]
-Capitolo 6.
+(./_minted/77ECACA42DCE857BD382103301AD1546.highlight.minted
 
-Overfull \hbox (5.07758pt too wide) in paragraph at lines 442--442
-[]\T1/cmr/bx/n/20.74 Sistema di let-tu-ra - ela-bo-ra-zio-ne - scrit-
- []
-
-
-
-[108
-
-]
-<img/ROM_M_MEM.png, id=970, 195.129pt x 117.61943pt>
-File: img/ROM_M_MEM.png Graphic file (type png)
-<use img/ROM_M_MEM.png>
-Package pdftex.def Info: img/ROM_M_MEM.png  used on input line 450.
-(pdftex.def)             Requested size: 416.83289pt x 251.26158pt.
-
+[108]) (./_minted/77ECACA42DCE857BD382103301AD1546.highlight.minted
 
 [109]
-<img/Automa_ROM_M_MEM.png, id=975, 195.129pt x 117.0774pt>
-File: img/Automa_ROM_M_MEM.png Graphic file (type png)
-<use img/Automa_ROM_M_MEM.png>
-Package pdftex.def Info: img/Automa_ROM_M_MEM.png  used on input line 464.
-(pdftex.def)             Requested size: 416.83289pt x 250.10367pt.
 
+[110]) (./_minted/0A6FF710DDD3CBAE5968A8658DC6F1BA.highlight.minted
 
-[110 <./img/ROM_M_MEM.png>]
-(./_minted/41C9AC2ECF2B37787559A2A60AC65EE8.highlight.minted
+[111]
 
-[111 <./img/Automa_ROM_M_MEM.png>]
+[112]) (./_minted/D65D990A299C11B38879F522893D11A3.highlight.minted
 
-[112]) (./_minted/6F194E3B10E6B9FD85B35B5E7EAD37E8.highlight.minted
+[113]) (./_minted/29CBDE5E02D3A1A3BFB03748575EA87B.highlight.minted
 
-[113]
+[114]) (./_minted/50855AF317487E5B0BDC455D211B6420.highlight.minted
 
-[114]) (./_minted/60E5B7614200F54CF37D9470A0865D44.highlight.minted
+[115]) (./_minted/531DF3D6C73A02E2CE5C9EEA2904DC98.highlight.minted
 
-[115]
+[116]) (./_minted/CF6D87271EF85F937B2975D4E3F141AC.highlight.minted
 
-[116]
+[117]
 
-[117])
-<img/schematic_ROM_M_MEM.PNG, id=1017, 1156.32pt x 620.3175pt>
-File: img/schematic_ROM_M_MEM.PNG Graphic file (type png)
-<use img/schematic_ROM_M_MEM.PNG>
-Package pdftex.def Info: img/schematic_ROM_M_MEM.PNG  used on input line 493.
-(pdftex.def)             Requested size: 416.83289pt x 223.60756pt.
- (./_minted/A8D98AA4B583CF2B2883FAE30CC611B3.highlight.minted
+[118]) (./_minted/470F35E7700EB8EA270424871AFA3A3B.highlight.minted
 
-[118 <./img/schematic_ROM_M_MEM.PNG>]
+[119]) (./_minted/68C55239267CC434ABD9AA36E8B1C05F.highlight.minted
 
-[119])
-<img/ROM_M_MEM_waweform.PNG, id=1029, 1156.32pt x 620.3175pt>
-File: img/ROM_M_MEM_waweform.PNG Graphic file (type png)
-<use img/ROM_M_MEM_waweform.PNG>
-Package pdftex.def Info: img/ROM_M_MEM_waweform.PNG  used on input line 507.
-(pdftex.def)             Requested size: 416.83289pt x 223.60756pt.
-
-
-[120 <./img/ROM_M_MEM_waweform.PNG>]
-(./_minted/96DE9C267FBB4E7D9049601F32BA1D24.highlight.minted
+[120]
 
 [121]
 
 [122]
 
 [123])
-\openout8 = `_FAD58DE7366495DB4650CFEFAC2FCD61.data.minted'.
-
-runsystem(latexminted highlight  --timestamp 20250103121323 FAD58DE7366495DB465
-0CFEFAC2FCD61)...executed safely (allowed).
-
- (./_FAD58DE7366495DB4650CFEFAC2FCD61.message.minted)
-
-! Package minted Error: 
- => ./problema2.tex:534: Cannot decode file "vhdl_files/ROM_M_MEM_board/Rom_M_M
-EM.vhd" with encoding="utf8".
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.534 ...vhdl_files/ROM_M_MEM_board/Rom_M_MEM.vhd}
-                                                  
-(That was another \errmessage.)
-
-
-! LaTeX Error: Invalid UTF-8 byte sequence (è s).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.534 ...vhdl_files/ROM_M_MEM_board/Rom_M_MEM.vhd}
-                                                  
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
-! LaTeX Error: Invalid UTF-8 byte sequence (è s).
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.534 ...vhdl_files/ROM_M_MEM_board/Rom_M_MEM.vhd}
-                                                  
-The document does not appear to be in UTF-8 encoding.
-Try adding \UseRawInputEncoding as the first line of the file
-or specify an encoding such as \usepackage [latin1]{inputenc}
-in the document preamble.
-Alternatively, save the file in UTF-8 using your editor or another tool
-
-
 
 [124]
 
 [125]
 
 [126]
-<img/Test1_ROM_M_MEMwebp.png, id=1064, 1084.05pt x 867.24pt>
+Capitolo 6.
+
+Overfull \hbox (5.07758pt too wide) in paragraph at lines 575--575
+[]\T1/cmr/bx/n/20.74 Sistema di let-tu-ra - ela-bo-ra-zio-ne - scrit-
+ []
+
+
+
+[127
+
+]
+<img/ROM_M_MEM.png, id=1134, 195.129pt x 117.61943pt>
+File: img/ROM_M_MEM.png Graphic file (type png)
+<use img/ROM_M_MEM.png>
+Package pdftex.def Info: img/ROM_M_MEM.png  used on input line 583.
+(pdftex.def)             Requested size: 416.83289pt x 251.26158pt.
+
+
+[128]
+<img/Automa_ROM_M_MEM.png, id=1140, 195.129pt x 117.0774pt>
+File: img/Automa_ROM_M_MEM.png Graphic file (type png)
+<use img/Automa_ROM_M_MEM.png>
+Package pdftex.def Info: img/Automa_ROM_M_MEM.png  used on input line 597.
+(pdftex.def)             Requested size: 416.83289pt x 250.10367pt.
+
+
+[129 <./img/ROM_M_MEM.png>]
+(./_minted/41C9AC2ECF2B37787559A2A60AC65EE8.highlight.minted
+
+[130 <./img/Automa_ROM_M_MEM.png>]
+
+[131]) (./_minted/6F194E3B10E6B9FD85B35B5E7EAD37E8.highlight.minted
+
+[132]
+
+[133]) (./_minted/60E5B7614200F54CF37D9470A0865D44.highlight.minted
+
+[134]
+
+[135]
+
+[136])
+<img/schematic_ROM_M_MEM.PNG, id=1182, 1156.32pt x 620.3175pt>
+File: img/schematic_ROM_M_MEM.PNG Graphic file (type png)
+<use img/schematic_ROM_M_MEM.PNG>
+Package pdftex.def Info: img/schematic_ROM_M_MEM.PNG  used on input line 626.
+(pdftex.def)             Requested size: 416.83289pt x 223.60756pt.
+ (./_minted/A8D98AA4B583CF2B2883FAE30CC611B3.highlight.minted
+
+[137 <./img/schematic_ROM_M_MEM.PNG>]
+
+[138])
+<img/ROM_M_MEM_waweform.PNG, id=1194, 1156.32pt x 620.3175pt>
+File: img/ROM_M_MEM_waweform.PNG Graphic file (type png)
+<use img/ROM_M_MEM_waweform.PNG>
+Package pdftex.def Info: img/ROM_M_MEM_waweform.PNG  used on input line 640.
+(pdftex.def)             Requested size: 416.83289pt x 223.60756pt.
+
+
+[139 <./img/ROM_M_MEM_waweform.PNG>]
+(./_minted/96DE9C267FBB4E7D9049601F32BA1D24.highlight.minted
+
+[140]
+
+[141]
+
+[142]) (./_minted/5024257A09BA56D3A525FF9A20B4A6C4.highlight.minted
+
+[143]
+
+[144]
+
+[145])
+<img/Test1_ROM_M_MEMwebp.png, id=1228, 1084.05pt x 867.24pt>
 File: img/Test1_ROM_M_MEMwebp.png Graphic file (type png)
 <use img/Test1_ROM_M_MEMwebp.png>
-Package pdftex.def Info: img/Test1_ROM_M_MEMwebp.png  used on input line 544.
+Package pdftex.def Info: img/Test1_ROM_M_MEMwebp.png  used on input line 677.
 (pdftex.def)             Requested size: 291.78174pt x 233.41689pt.
 
 
-[127]
-<img/Test2_ROM_M_MEMwebp.png, id=1070, 1084.05pt x 933.4875pt>
+[146]
+<img/Test2_ROM_M_MEMwebp.png, id=1235, 1084.05pt x 933.4875pt>
 File: img/Test2_ROM_M_MEMwebp.png Graphic file (type png)
 <use img/Test2_ROM_M_MEMwebp.png>
-Package pdftex.def Info: img/Test2_ROM_M_MEMwebp.png  used on input line 551.
+Package pdftex.def Info: img/Test2_ROM_M_MEMwebp.png  used on input line 684.
 (pdftex.def)             Requested size: 291.78174pt x 251.24733pt.
-<img/Test3_ROM_M_MEMwebp.png, id=1071, 1084.05pt x 941.5175pt>
+<img/Test3_ROM_M_MEMwebp.png, id=1236, 1084.05pt x 941.5175pt>
 File: img/Test3_ROM_M_MEMwebp.png Graphic file (type png)
 <use img/Test3_ROM_M_MEMwebp.png>
-Package pdftex.def Info: img/Test3_ROM_M_MEMwebp.png  used on input line 559.
+Package pdftex.def Info: img/Test3_ROM_M_MEMwebp.png  used on input line 692.
 (pdftex.def)             Requested size: 291.78174pt x 253.4086pt.
 )
 
-[128 <./img/Test1_ROM_M_MEMwebp.png> <./img/Test2_ROM_M_MEMwebp.png>]
+[147 <./img/Test1_ROM_M_MEMwebp.png> <./img/Test2_ROM_M_MEMwebp.png>]
 
-[129 <./img/Test3_ROM_M_MEMwebp.png>]
+[148 <./img/Test3_ROM_M_MEMwebp.png>]
 \openout2 = `problema3.aux'.
 
- (./problema3.tex)
-\openout2 = `problema8.aux'.
-
- (./problema8.tex
+ (./problema3.tex
 Capitolo 7.
-)
+<img/Esercizio_7_1/booth_prog.png, id=1251, 1196.47pt x 689.57625pt>
+File: img/Esercizio_7_1/booth_prog.png Graphic file (type png)
+<use img/Esercizio_7_1/booth_prog.png>
+Package pdftex.def Info: img/Esercizio_7_1/booth_prog.png  used on input line 8
+.
+(pdftex.def)             Requested size: 416.83289pt x 240.23996pt.
 
-[130
 
-
-
+[149
 
 
 
 
 ]
-No file main.bbl.
-\openout8 = `_FAD58DE7366495DB4650CFEFAC2FCD61.data.minted'.
+Overfull \hbox (6.47458pt too wide) in paragraph at lines 18--19
+\T1/cmr/m/n/14.4 som-ma: nel-l'e-sem-pio si uti-liz-za un som-ma-to-re Carry-Lo
+ok-Ahead; 
+ []
 
-runsystem(latexminted clean  --timestamp 20250103121323 FAD58DE7366495DB4650CFE
-FAC2FCD61)...executed safely (allowed).
 
-(./main.aux (./problema1.aux) (./problema2.aux) (./problema3.aux)
+
+[150 <./img/Esercizio_7_1/booth_prog.png>]
+<img/Esercizio_7_1/Shift_Register_booth.png, id=1262, 304.9794pt x 142.3719pt>
+File: img/Esercizio_7_1/Shift_Register_booth.png Graphic file (type png)
+<use img/Esercizio_7_1/Shift_Register_booth.png>
+Package pdftex.def Info: img/Esercizio_7_1/Shift_Register_booth.png  used on in
+put line 27.
+(pdftex.def)             Requested size: 416.83289pt x 194.59209pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--39
+
+ []
+
+<img/Esercizio_7_1/counter_mod_8.png, id=1263, 1212.6906pt x 376.5267pt>
+File: img/Esercizio_7_1/counter_mod_8.png Graphic file (type png)
+<use img/Esercizio_7_1/counter_mod_8.png>
+Package pdftex.def Info: img/Esercizio_7_1/counter_mod_8.png  used on input lin
+e 42.
+(pdftex.def)             Requested size: 416.83289pt x 129.41924pt.
+
+
+[151 <./img/Esercizio_7_1/Shift_Register_booth.png>]
+<img/Esercizio_7_1/carry_look_ahead_beh.png, id=1273, 239.2137pt x 170.5572pt>
+File: img/Esercizio_7_1/carry_look_ahead_beh.png Graphic file (type png)
+<use img/Esercizio_7_1/carry_look_ahead_beh.png>
+Package pdftex.def Info: img/Esercizio_7_1/carry_look_ahead_beh.png  used on in
+put line 53.
+(pdftex.def)             Requested size: 291.78174pt x 208.05865pt.
+
+
+[152 <./img/Esercizio_7_1/counter_mod_8.png> <./img/Esercizio_7_1/carry_look_ah
+ead_beh.png>]
+<img/Esercizio_7_1/booth_cu.png, id=1284, 480.5955pt x 361.35pt>
+File: img/Esercizio_7_1/booth_cu.png Graphic file (type png)
+<use img/Esercizio_7_1/booth_cu.png>
+Package pdftex.def Info: img/Esercizio_7_1/booth_cu.png  used on input line 66.
+
+(pdftex.def)             Requested size: 416.83289pt x 313.40706pt.
+ (./_minted/1DF8B9B001C9E25832B56B017BF2A820.highlight.minted
+
+[153 <./img/Esercizio_7_1/booth_cu.png>])
+(./_minted/4ED304FF2A2A03669F1E553E23B9E08B.highlight.minted
+
+[154]
+
+[155]) (./_minted/FB38755E717C697858C4D4A7E297989D.highlight.minted
+
+[156]
+
+[157]) (./_minted/9019CBD39B81BFD9B7247D624197B9A5.highlight.minted
+
+[158]
+
+[159]) (./_minted/ACE098CAF484580BC950AE380E1B4421.highlight.minted
+
+[160]
+
+[161]
+
+[162]) (./_minted/008AECB19F98180DDDC00128E678C871.highlight.minted
+
+[163]
+Overfull \hbox (33.20703pt too wide) in paragraph at lines 3--3
+\T1/pcr/m/sl/10 https://www.doulos.com/knowhow/perl/vhdl[]testbench[]creation[]
+using[]perl/[]|  
+ []
+
+
+
+[164])
+<img/Esercizio_7_1/booth_sim_1.png, id=1350, 1312.905pt x 120.45pt>
+File: img/Esercizio_7_1/booth_sim_1.png Graphic file (type png)
+<use img/Esercizio_7_1/booth_sim_1.png>
+Package pdftex.def Info: img/Esercizio_7_1/booth_sim_1.png  used on input line 
+129.
+(pdftex.def)             Requested size: 416.83289pt x 38.24152pt.
+File: img/Esercizio_7_1/booth_sim_1.png Graphic file (type png)
+<use img/Esercizio_7_1/booth_sim_1.png>
+Package pdftex.def Info: img/Esercizio_7_1/booth_sim_1.png  used on input line 
+136.
+(pdftex.def)             Requested size: 416.83289pt x 38.24152pt.
+
+
+[165 <./img/Esercizio_7_1/booth_sim_1.png>]
+Overfull \hbox (69.16711pt too wide) in paragraph at lines 237--237
+[]\T1/pcr/m/n/10 set_property -dict { PACKAGE_PIN E3    IOSTANDARD LVCMOS33 } [
+get_ports { clk }];[] 
+ []
+
+
+
+[166]
+
+[167]
+
+[168]
+<img/onBoard/booth_test1.png, id=1370, 513.92pt x 403.5075pt>
+File: img/onBoard/booth_test1.png Graphic file (type png)
+<use img/onBoard/booth_test1.png>
+Package pdftex.def Info: img/onBoard/booth_test1.png  used on input line 243.
+(pdftex.def)             Requested size: 333.46758pt x 261.8273pt.
+<img/onBoard/booth_test2.png, id=1371, 513.92pt x 399.4925pt>
+File: img/onBoard/booth_test2.png Graphic file (type png)
+<use img/onBoard/booth_test2.png>
+Package pdftex.def Info: img/onBoard/booth_test2.png  used on input line 254.
+(pdftex.def)             Requested size: 333.46758pt x 259.22205pt.
+
+
+[169 <./img/onBoard/booth_test1.png>])
+
+[170 <./img/onBoard/booth_test2.png>]
+\openout2 = `problema8.aux'.
+
+ (./problema8.tex
+Capitolo 8.
+<img/preappDicembre/Preapp_NodoA.png, id=1385, 410.4936pt x 187.1793pt>
+File: img/preappDicembre/Preapp_NodoA.png Graphic file (type png)
+<use img/preappDicembre/Preapp_NodoA.png>
+Package pdftex.def Info: img/preappDicembre/Preapp_NodoA.png  used on input lin
+e 13.
+(pdftex.def)             Requested size: 416.83289pt x 190.08066pt.
+
+
+[171
+
+
+
+
+]
+<img/preappDicembre/Preapp_NodoB.png, id=1390, 367.8543pt x 186.4566pt>
+File: img/preappDicembre/Preapp_NodoB.png Graphic file (type png)
+<use img/preappDicembre/Preapp_NodoB.png>
+Package pdftex.def Info: img/preappDicembre/Preapp_NodoB.png  used on input lin
+e 19.
+(pdftex.def)             Requested size: 416.83289pt x 211.28813pt.
+
+
+[172 <./img/preappDicembre/Preapp_NodoA.png>]
+<img/preappDicembre/Preapp_automaA.png, id=1397, 508.0581pt x 224.037pt>
+File: img/preappDicembre/Preapp_automaA.png Graphic file (type png)
+<use img/preappDicembre/Preapp_automaA.png>
+Package pdftex.def Info: img/preappDicembre/Preapp_automaA.png  used on input l
+ine 26.
+(pdftex.def)             Requested size: 416.83289pt x 183.81749pt.
+<img/preappDicembre/Preapp_automaB.png, id=1398, 381.5856pt x 250.7769pt>
+File: img/preappDicembre/Preapp_automaB.png Graphic file (type png)
+<use img/preappDicembre/Preapp_automaB.png>
+Package pdftex.def Info: img/preappDicembre/Preapp_automaB.png  used on input l
+ine 32.
+(pdftex.def)             Requested size: 416.83289pt x 273.95363pt.
+
+
+[173 <./img/preappDicembre/Preapp_NodoB.png> <./img/preappDicembre/Preapp_autom
+aA.png>] (./_minted/11A852E0021DA566E1E0A0D4ED872AA4.highlight.minted
+
+[174 <./img/preappDicembre/Preapp_automaB.png>])
+(./_minted/55772A125DE31EBFDCDD5D791B5604CE.highlight.minted
+
+[175]) (./_minted/30842AF21FC1F4A8D7EAA25D5488C448.highlight.minted
+
+[176]) (./_minted/4D6CF2170E1C123B4962CF58A750CD2F.highlight.minted
+
+[177]
+
+[178]) (./_minted/3EE427DD116EB1AB6DC0E4D9650F5A2B.highlight.minted
+
+[179]
+
+[180]) (./_minted/36F079B62D83B75F25D59F1E92F6F725.highlight.minted)
+
+[181] (./_minted/5496D382560AA1E68550199D69A72C53.highlight.minted)
+(./_minted/29F75D7955D00218970D442576F5CB26.highlight.minted
+
+[182]
+
+[183]) (./_minted/90D5EC3A6F8AA1A256D2328A3305CD40.highlight.minted
+
+[184]
+
+[185]) (./_minted/F997BF1BCE916330B279874A83FB214E.highlight.minted
+
+[186]) (./_minted/B84F4FC2FDFAAD5CC03EF832B2EBAA43.highlight.minted
+
+[187]
+
+[188]) (./_minted/D955AF25B031F19128546C889E627AA2.highlight.minted
+
+[189])
+<img/preappDicembre/schematic_preapp.png, id=1489, 1086.459pt x 504.6855pt>
+File: img/preappDicembre/schematic_preapp.png Graphic file (type png)
+<use img/preappDicembre/schematic_preapp.png>
+Package pdftex.def Info: img/preappDicembre/schematic_preapp.png  used on input
+ line 113.
+(pdftex.def)             Requested size: 416.83289pt x 193.63069pt.
+
+
+[190] (./_minted/EBF729533184534FB8EB9A7D4D2F3F90.highlight.minted
+
+[191 <./img/preappDicembre/schematic_preapp.png>]
+
+[192])
+<img/preappDicembre/waveformPreappDic.png, id=1505, 1128.01425pt x 539.01375pt>
+
+File: img/preappDicembre/waveformPreappDic.png Graphic file (type png)
+<use img/preappDicembre/waveformPreappDic.png>
+Package pdftex.def Info: img/preappDicembre/waveformPreappDic.png  used on inpu
+t line 127.
+(pdftex.def)             Requested size: 416.83289pt x 199.17699pt.
+
+
+[193 <./img/preappDicembre/waveformPreappDic.png>])
+
+[194] (./main.bbl)
+
+[195
+
+
+
+] (./main.aux (./problema1.aux) (./problema2.aux) (./problema3.aux)
 (./problema8.aux))
  ***********
 LaTeX2e <2024-11-01> patch level 1
-L3 programming layer <2024-12-09>
+L3 programming layer <2024-12-25>
  ***********
 
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3B445218BDA358A231EFAE2BE8674F23;8712.
+(rerunfilecheck)             Checksum: 7548B29A8A7EE1BDC3E38011DCDBD917;10627.
  )
 (\end occurred inside a group at level 1)
 
-### semi simple group (level 1) entered at line 68 (\begingroup)
+### semi simple group (level 1) entered at line 69 (\begingroup)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 41822 strings out of 473254
- 977330 string characters out of 5717957
- 1708519 words of memory out of 5000000
- 63904 multiletter control sequences out of 15000+600000
- 583364 words of font info for 93 fonts, out of 8000000 for 9000
+ 42744 strings out of 473218
+ 1002028 string characters out of 5716975
+ 1717898 words of memory out of 5000000
+ 64637 multiletter control sequences out of 15000+600000
+ 584132 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 81i,12n,93p,1039b,2727s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 81i,12n,93p,1039b,2789s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
@@ -2336,10 +2518,10 @@ ts/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/2024/texmf-dist/fonts
 ype1/urw/courier/ucrb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw
 /courier/ucrr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/courier
 /ucrro8a.pfb>
-Output written on main.pdf (134 pages, 18198520 bytes).
+Output written on main.pdf (200 pages, 20190025 bytes).
 PDF statistics:
- 1278 PDF objects out of 1440 (max. 8388607)
- 981 compressed objects within 10 object streams
- 301 named destinations out of 1000 (max. 500000)
- 706 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1740 PDF objects out of 2073 (max. 8388607)
+ 1345 compressed objects within 14 object streams
+ 437 named destinations out of 1000 (max. 500000)
+ 888 words of extra memory for PDF output out of 10000 (max. 10000000)
 

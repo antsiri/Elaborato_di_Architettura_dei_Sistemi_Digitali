@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity ROMplusM_tb is
--- Un testbench non ha porte, è un'entità vuota.
+-- Un testbench non ha porte, e' un'entita' vuota.
 end ROMplusM_tb;
 
 architecture behavior of ROMplusM_tb is
