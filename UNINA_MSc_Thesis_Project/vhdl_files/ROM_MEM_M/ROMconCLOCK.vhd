@@ -40,10 +40,10 @@ begin
 lettura: process(EN_RD, address, CLK)
 begin
     if (CLK'event AND CLK = '1') then
-    if (EN_RD = '1') then
-        dout<= ROM_N(TO_INTEGER(unsigned(address))); --lettura dalla rom
+        if (EN_RD = '1') then
+            dout<= ROM_N(TO_INTEGER(unsigned(address))); --lettura dalla rom
         end if;
-        end if;
+    end if;
 end process;
 
 
