@@ -90,10 +90,24 @@
 \contentsline {section}{\numberline {7.2}Implementazione su board del punto precedente}{166}{section.7.2}%
 \contentsline {subsection}{\numberline {7.2.1}Traccia}{166}{subsection.7.2.1}%
 \contentsline {subsection}{\numberline {7.2.2}Implementazione}{166}{subsection.7.2.2}%
-\contentsline {chapter}{\numberline {8}Esercizio 8}{171}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Prova di esame del 19 dicembre 2024}{171}{section.8.1}%
+\contentsline {chapter}{\numberline {8}Esercizio 8.1}{171}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Comunicazione con handshaking}{171}{section.8.1}%
 \contentsline {subsection}{\numberline {8.1.1}Traccia}{171}{subsection.8.1.1}%
 \contentsline {subsection}{\numberline {8.1.2}Progettazione}{172}{subsection.8.1.2}%
 \contentsline {subsection}{\numberline {8.1.3}Implementazione}{174}{subsection.8.1.3}%
-\contentsline {subsection}{\numberline {8.1.4}Simulazione}{191}{subsection.8.1.4}%
-\contentsline {chapter}{Bibliografia}{195}{chapter*.163}%
+\contentsline {subsection}{\numberline {8.1.4}Simulazione}{192}{subsection.8.1.4}%
+\contentsline {chapter}{\numberline {9}Esercizio 9}{196}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Il processore Mic-1}{196}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}Unità operativa}{197}{subsection.9.1.1}%
+\contentsline {subsection}{\numberline {9.1.2}Microistruzioni}{199}{subsection.9.1.2}%
+\contentsline {subsection}{\numberline {9.1.3}Unità di Controllo}{200}{subsection.9.1.3}%
+\contentsline {section}{\numberline {9.2}La microistruzione \texttt {ISUB}}{201}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}Simulazione}{202}{subsection.9.2.1}%
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {chapter}{\numberline {10}Esercizio 8}{204}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Prova di esame del 19 dicembre 2024}{204}{section.10.1}%
+\contentsline {subsection}{\numberline {10.1.1}Traccia}{204}{subsection.10.1.1}%
+\contentsline {subsection}{\numberline {10.1.2}Progettazione}{204}{subsection.10.1.2}%
+\contentsline {subsection}{\numberline {10.1.3}Implementazione}{206}{subsection.10.1.3}%
+\contentsline {subsection}{\numberline {10.1.4}Simulazione}{223}{subsection.10.1.4}%

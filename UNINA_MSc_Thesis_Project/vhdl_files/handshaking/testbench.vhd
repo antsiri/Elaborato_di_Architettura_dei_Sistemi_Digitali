@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity tb_AplusB is
-    -- Nessuna porta, è un testbench
+    -- Nessuna porta, e' un testbench
 end tb_AplusB;
 
 architecture Behavioral of tb_AplusB is

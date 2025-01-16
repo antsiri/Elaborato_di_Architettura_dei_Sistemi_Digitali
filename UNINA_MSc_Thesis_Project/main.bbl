@@ -11,4 +11,14 @@ Rocco di~Torrepadula Franca~e Somma~Alessadra.
 \newblock {\em Architettura dei Sistemi di Elaborazione - Appunti tratti dalle
   lezioni del prof N. Mazzocca}.
 
+\bibitem{morriconi}
+Alberto Morriconi.
+\newblock amic-0.
+\newblock \url{https://github.com/albmoriconi/amic-0}.
+
+\bibitem{hand}
+Shira.
+\newblock Prosthetic hand.
+\newblock \url{https://www.thingiverse.com/thing:1489003}.
+
 \end{thebibliography}
