@@ -1,6 +1,0 @@
-\begin{MintedVerbatim}[commandchars=\\\{\}]
-\PYG{+w}{    }\PYG{err}{i}\PYG{n+nf}{sub}\PYG{+w}{ }\PYG{err}{=}\PYG{+w}{ }\PYG{l+m+mi}{0x5C}\PYG{err}{:}
-\PYG{+w}{        }\PYG{err}{M}\PYG{err}{A}\PYG{err}{R}\PYG{+w}{ }\PYG{err}{=}\PYG{+w}{ }\PYG{err}{S}\PYG{err}{P}\PYG{+w}{ }\PYG{err}{=}\PYG{+w}{ }\PYG{err}{S}\PYG{err}{P}\PYG{+w}{ }\PYG{err}{\PYGZhy{}}\PYG{+w}{ }\PYG{err}{1}\PYG{c}{; rd}
-\PYG{+w}{        }\PYG{err}{H}\PYG{+w}{ }\PYG{err}{=}\PYG{+w}{ }\PYG{err}{T}\PYG{err}{O}\PYG{err}{S}
-\PYG{+w}{        }\PYG{err}{M}\PYG{err}{D}\PYG{err}{R}\PYG{+w}{ }\PYG{err}{=}\PYG{+w}{ }\PYG{err}{T}\PYG{err}{O}\PYG{err}{S}\PYG{+w}{ }\PYG{err}{=}\PYG{+w}{ }\PYG{err}{M}\PYG{err}{D}\PYG{err}{R}\PYG{+w}{ }\PYG{err}{\PYGZhy{}}\PYG{+w}{ }\PYG{err}{H}\PYG{c}{; wr; goto main}
-\end{MintedVerbatim}
