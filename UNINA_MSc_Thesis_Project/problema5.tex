@@ -24,7 +24,7 @@ che è tipicamente memorizzato in una ROM interna al processore.
 L'unità operatia del processore è composta da ALU, i suoi ingressi e le sue uscite.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{img/Esercizio_9/uo_mic-1}
+	\includegraphics[width=1\textwidth]{img/Esercizio_9/uo_mic-1}
 	\caption{Unità operativa del Mic-1}
 	\label{uo_mic-1} 
 \end{figure}
@@ -64,7 +64,7 @@ L'unità di controllo del Mic-1 si comporta come un \textit{sequencer}, producen
 Di seguito il diagramma completo del Mic-1:
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{img/Esercizio_9/diag_mic-1}
+	\includegraphics[width=1\textwidth]{img/Esercizio_9/diag_mic-1}
 	\caption{Diagramma completo del Mic-1}
 	\label{diag_mic-1} 
 \end{figure}
@@ -73,8 +73,7 @@ Di seguito il diagramma completo del Mic-1:
 La microistruzione \texttt{ISUB} altro non è che la sottrazione di due operandi.\\
 Per implementare l'instruzione, viene utilizzato linguaggio MAL, \textit{MicroAssembly Lenguage}, il quale viene convertito dal \textit{microassemblatore}.
 L'istruzione è definita come segue
-\begin{listing}[h]
-    \caption{ISUB}
+\begin{listing}[H]
     \AtBeginEnvironment{minted}{%
     \renewcommand{\fcolorbox}[4][]{#4}}
     \begin{minted}[bgcolor=white, linenos]{dasm16}
@@ -83,6 +82,7 @@ L'istruzione è definita come segue
         H = TOS
         MDR = TOS = MDR - H; wr; goto main
     \end{minted}
+    \caption{ISUB}
 \end{listing}
 L'indirizzo \texttt{0x5C} indica l'indirizzo in memoria della prima istruzioni da eseguire. Le restanti sono scritte nei registri successivi. \\
 In tale istruzione si ha come prima istruzione quella di decrementare l' \texttt{SP}, ovvero lo \textit{stack pointer}, poiché nella fase iniziale punta alla testa dello stack, che può essere richiamta tramite \texttt{TOS}, \textit{Top of Stack}.
@@ -90,7 +90,7 @@ Inoltre l'indirizzo viene salvato nel \texttt{MAR}, \textit{Memory Address Regis
 Nella seconda operazione si preleva la testa dello stack tramite \texttt{TOS} e lo si memorizza nel registro \texttt{H}. \\
 Recuperati gli operandi, si effettua l'operazione tra il dato \texttt{MDR}, \textit{Memory Data Register}, e \texttt{H}; si memorizza il risultato con l'istruzione \texttt{wr} nel \texttt{MDR}.\\
 Per caricare l'istruzione nella memoria RAM del processore, si modifica il file \texttt{program.ajvm} e lo si compila:
-\begin{listing}[h]
+\begin{listing}[H]
     \AtBeginEnvironment{minted}{%
     \renewcommand{\fcolorbox}[4][]{#4}}
     \begin{minted}[bgcolor=white, linenos]{dasm16}
@@ -108,18 +108,21 @@ Per caricare l'istruzione nella memoria RAM del processore, si modifica il file 
     \caption{ISUB - program.ajvm}
 \end{listing}
 dove tramite \texttt{BIPUSH} si caricano gli operandi nello stack, \texttt{ISUB} effettua l'operazione e \texttt{ISTORE} memorizza il risultato nella variabile.
+
+%SIMULAZIONE
+
 \subsection{Simulazione}
 Per eseguire la compilazione e quindi modificare il \texttt{control\_store} e la \texttt{ram}, si eseguono i seguenti comandi:
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{img/Esercizio_9/Compile}
+	\includegraphics[width=1\textwidth]{img/Esercizio_9/Compile}
 	\caption{Compilazione Control Store e RAM}
 	\label{compile}
 \end{figure}
 Un modo per verificare che la compilazione è andata a buon fine, si può controllare come è modificata la RAM:
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{img/Esercizio_9/ram_sub}
+	\includegraphics[width=1\textwidth]{img/Esercizio_9/ram_sub}
 	\caption{Istruzione caricata nella RAM}
 	\label{tam_sub}
 \end{figure}
@@ -135,7 +138,154 @@ Si può a questo punto effettuare il testbench (ovviamente è stato modificato o
 e questa è la seguente onda risultante
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\textwidth]{img/Esercizio_9/sub_wave}
+	\includegraphics[width=1\textwidth]{img/Esercizio_9/sub_wave}
 	\caption{Onda ISUB}
 	\label{sub_wave}
+\end{figure}
+
+% IOR
+
+\section{La microistruzione \texttt{IOR}}
+La microistruzione \texttt{IOR} effettua l'operazione di $OR$ tra i due oeprandi caricati in memoria.\\
+\'E definita come segue:
+\begin{listing}[H]
+    \AtBeginEnvironment{minted}{%
+    \renewcommand{\fcolorbox}[4][]{#4}}
+    \begin{minted}[bgcolor=white, linenos]{dasm16}
+    ior = 0xB6:
+        MAR = SP = SP - 1; rd
+        H = TOS
+        MDR = TOS = MDR OR H; wr; goto main
+    \end{minted}
+    \caption{IOR}
+\end{listing}
+L'addrress assegnato all'istruzione è \texttt{0xB6}; viene poi poi memorizzato l'inditizzo del penultimo elemento dello stack, con la funzione \texttt{rd}, analogamente al precedente esempio.\\
+Nel registro \texttt{H} viene memorizzato \texttt{TOS}.\\
+A questo punto è possibile effettuare l'operazione di OR tra \texttt{MDR} e \texttt{H} e con il comando \texttt{wr} viene riscritto il registro \texttt{MDR} con il risultato.\\
+Si modifica il file \texttt{program.ajvm} e lo si compila: 
+\begin{listing}[H]
+    \AtBeginEnvironment{minted}{%
+    \renewcommand{\fcolorbox}[4][]{#4}}
+    \begin{minted}[bgcolor=white, linenos]{dasm16}
+    .main
+    .var
+    a
+    .endvar
+    BIPUSH 0x0
+    BIPUSH 0x1
+    IOR
+    ISTORE a
+    HALT
+    .endmethod
+    \end{minted}
+    \caption{IOR - program.ajvm}
+\end{listing}
+dove tramite \texttt{BIPUSH} si caricano gli operandi nello stack, \texttt{IOR} effettua l'operazione e \texttt{ISTORE} memorizza lo stato nella variabile.
+
+%SIMULAZIONE
+
+\subsection{Simulazione}
+Per eseguire la compilazione si eseguono gli stessi comandi in figura~\ref{compile}.\\
+Controllando la RAM  si puo vedere
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{img/Esercizio_9/ram_or}
+	\caption{Istruzione caricata nella RAM}
+	\label{ram_or}
+\end{figure}
+dove la differenza rispetto alla precedente immagine della RAM sta nella riga 1, per quanto riguarda gli operandi (ora sono sono 0 e 1), e nella riga 2 per quanto riguarda l'indirizzo della funzione che in questo caso è la \texttt{IOR}.\\
+Si può dunque compilare modificando opportunamente il testbench:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{img/Esercizio_9/tb_or}
+	\caption{Testbench OR}
+	\label{tb_or}
+\end{figure}
+e questa è la seguente onda risultante
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{img/Esercizio_9/or_wave}
+	\caption{Onda IOR}
+	\label{or_wave}
+\end{figure}
+
+%IMPLEMENTAZIOE XOR
+
+\section{Implmentazione della microistruzione \texttt{IXOR}}
+Si vuole ora implementare la funzione \texttt{IXOR}.\\
+Per far ciò andremo a modificare una funzione già presente nel file \texttt{ajvm.mal}, in modo da non andar ad intaccare il codice della della build dell'intero sistema.\\
+L'unica accortezza da fare è quella di scegliere una funzione che abbia lo stesso numero di istruzioni di quella che si vuole implementare, oppure se avesse un numero inferiore di istruzioni, di controllare se dopo l'ultima istruzione c'è abbastanza spazio libero (lo si può controllare nel file \texttt{control\_store.vhd}).\\
+
+In questo caso si sceglie di andar a modificare la funzione \texttt{swap} (il nome della funzione non va assolutamente cambiato).\\
+Per semplificare l'implementazione si va a lavorare sull'equzione logica della \texttt{XOR}.\\
+Infatti si può scrivere come segue:
+\begin{equation*}
+    \begin{split}
+        A \oplus B &= (A \cdot \overline{B}) + (\overline{A} \cdot B) = \\
+        &= (A \cdot B) + (\overline{A} \cdot \overline{B}) = \\
+        &= (A \cdot B) \cdot \overline{(A \cdot B)} = \\
+    \end{split}
+\end{equation*}
+La funzione risulta molto più semplicita e l'implementazione sarà la seguente:
+\begin{listing}[H]
+    \AtBeginEnvironment{minted}{%
+    \renewcommand{\fcolorbox}[4][]{#4}}
+    \begin{minted}[bgcolor=white, linenos]{dasm16}
+    swap = 0x5F:
+        MAR = SP = SP - 1; rd
+        H = TOS
+        OPC = MDR OR H 
+        H = H AND MDR
+        H = NOT H
+        MDR = TOS = OPC AND H; wr; goto main
+    \end{minted}
+    \caption{IXOR}
+\end{listing}
+\noindent L'indirizzo in cui è salvata la prima istruzione è \texttt{0x5F}.\\
+Prima di tutto si effettua una \texttt{rd} del penultimo valore con decrementando \texttt{SP} e ponendolo in \texttt{MAR}; si salva poi in \texttt{OPC} (Registro temporaneo) il risultato della OR tra \texttt{MDR} e \texttt{H}.\\
+Fatto ciò, si memorizza in \texttt{H}, il risultato della AND tra \texttt{H} e \texttt{MDR}, il quale viene negato nell'istruzione successiva.\\
+Nell'ultima istruzione si effettua l'operazione finale di AND tra \texttt{OPC} e \texttt{H} e lo si memorizza in \texttt{MDR} che punta alla testa dello stack.
+Si modifica il file \texttt{program.ajvm} e lo si compila: 
+\begin{listing}[H]
+    \AtBeginEnvironment{minted}{%
+    \renewcommand{\fcolorbox}[4][]{#4}}
+    \begin{minted}[bgcolor=white, linenos]{dasm16}
+    .main
+    .var
+    a
+    .endvar
+    BIPUSH 0x0
+    BIPUSH 0x1
+    SWAP
+    ISTORE a
+    HALT
+    .endmethod
+    \end{minted}
+    \caption{IOR - program.ajvm}
+\end{listing}
+dove tramite \texttt{BIPUSH} si caricano gli operandi nello stack, \texttt{SWAP} effettua l'operazione di \texttt{XOR} e \texttt{ISTORE} memorizza lo stato nella variabile.
+
+%SIMULAZIONE
+Per eseguire la compilazione si eseguono nuovamente gli stessi comandi in figura~\ref{compile}.\\
+La RAM  è la seguente:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{img/Esercizio_9/ram_xor}
+	\caption{Istruzione caricata nella RAM}
+	\label{ram_xor}
+\end{figure}
+dove si puo vedere che nella riga 1 vengono caricati gli operandi con la \texttt{BIPUSH} e nella riga 2 viene caricato l'indirizzo della funzione che in questo caso è la \texttt{SWAP} (che effettua la \texttt{XOR}).\\
+Si può dunque compilare modificando opportunamente il testbench:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{img/Esercizio_9/tb_xor}
+	\caption{Testbench XOR}
+	\label{tb_xor}
+\end{figure}
+e questa è la seguente onda risultante
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{img/Esercizio_9/or_wave}
+	\caption{Onda XOR}
+	\label{or_wave}
 \end{figure}

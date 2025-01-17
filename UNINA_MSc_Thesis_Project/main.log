@@ -1,6 +1,6 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.12)  16 JAN 2025 19:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.12)  17 JAN 2025 11:37
 entering extended mode
- restricted \write18 enabled.
+ \write18 enabled.
  %&-line parsing enabled.
 **main.tex
 (./main.tex
@@ -534,7 +534,7 @@ Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
-Package shellesc Info: Restricted shell escape enabled on input line 77.
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/newfloat/newfloat.sty
 Package: newfloat 2023/10/01 v1.2 Defining new floating environments (AR)
@@ -1286,7 +1286,11 @@ LaTeX Warning: Label `lbl:ROMC' multiply defined.
 
 LaTeX Warning: Label `test1' multiply defined.
 
-) (./problema5.aux) (./problema8.aux
+) (./problema5.aux
+
+LaTeX Warning: Label `or_wave' multiply defined.
+
+) (./problema8.aux
 
 LaTeX Warning: Label `wf_preapp' multiply defined.
 
@@ -1447,12 +1451,12 @@ Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.18} (current compat level: 1.8).
 
 (./0_frontespizio.tex
-<img/logo/logo_copertina_1.png, id=336, 200.75pt x 198.7425pt>
+<img/logo/logo_copertina_1.png, id=352, 200.75pt x 198.7425pt>
 File: img/logo/logo_copertina_1.png Graphic file (type png)
 <use img/logo/logo_copertina_1.png>
 Package pdftex.def Info: img/logo/logo_copertina_1.png  used on input line 6.
 (pdftex.def)             Requested size: 150.56212pt x 149.0565pt.
-<img/logo/logo_copertina_2.png, id=337, 192.72pt x 43.66313pt>
+<img/logo/logo_copertina_2.png, id=353, 192.72pt x 43.66313pt>
 File: img/logo/logo_copertina_2.png Graphic file (type png)
 <use img/logo/logo_copertina_2.png>
 Package pdftex.def Info: img/logo/logo_copertina_2.png  used on input line 7.
@@ -1508,7 +1512,7 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 Capitolo 1.
 Package newfloat Info: Setting Plan B file extension to `lof'... on input line 
 1.
-<img/mux_indirizz.png, id=453, 100.81665pt x 195.129pt>
+<img/mux_indirizz.png, id=473, 100.81665pt x 195.129pt>
 File: img/mux_indirizz.png Graphic file (type png)
 <use img/mux_indirizz.png>
 Package pdftex.def Info: img/mux_indirizz.png  used on input line 14.
@@ -1526,7 +1530,7 @@ l.17 \end{figure}
 
 
 ]
-<img/mux_16-1.png, id=463, 67.57245pt x 195.129pt>
+<img/mux_16-1.png, id=483, 67.57245pt x 195.129pt>
 File: img/mux_16-1.png Graphic file (type png)
 <use img/mux_16-1.png>
 Package pdftex.def Info: img/mux_16-1.png  used on input line 22.
@@ -1534,7 +1538,7 @@ Package pdftex.def Info: img/mux_16-1.png  used on input line 22.
 
 
 [2 <./img/mux_indirizz.png>]
-<img/mux_2-1.png, id=473, 195.129pt x 188.08267pt>
+<img/mux_2-1.png, id=493, 195.129pt x 188.08267pt>
 File: img/mux_2-1.png Graphic file (type png)
 <use img/mux_2-1.png>
 Package pdftex.def Info: img/mux_2-1.png  used on input line 31.
@@ -1547,7 +1551,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--34
 
 
 [3 <./img/mux_16-1.png>]
-<img/mux_4-1.png, id=480, 171.2799pt x 195.129pt>
+<img/mux_4-1.png, id=500, 171.2799pt x 195.129pt>
 File: img/mux_4-1.png Graphic file (type png)
 <use img/mux_4-1.png>
 Package pdftex.def Info: img/mux_4-1.png  used on input line 80.
@@ -1555,7 +1559,7 @@ Package pdftex.def Info: img/mux_4-1.png  used on input line 80.
 
 
 [4 <./img/mux_2-1.png>]
-<img/mux_4-1_comp.png, id=491, 159.7167pt x 195.129pt>
+<img/mux_4-1_comp.png, id=511, 159.7167pt x 195.129pt>
 File: img/mux_4-1_comp.png Graphic file (type png)
 <use img/mux_4-1_comp.png>
 Package pdftex.def Info: img/mux_4-1_comp.png  used on input line 87.
@@ -1563,7 +1567,7 @@ Package pdftex.def Info: img/mux_4-1_comp.png  used on input line 87.
 
 
 [5 <./img/mux_4-1.png> <./img/mux_4-1_comp.png>]
-<img/mux_16-1_composizione.png, id=500, 226.2051pt x 476.982pt>
+<img/mux_16-1_composizione.png, id=521, 226.2051pt x 476.982pt>
 File: img/mux_16-1_composizione.png Graphic file (type png)
 <use img/mux_16-1_composizione.png>
 Package pdftex.def Info: img/mux_16-1_composizione.png  used on input line 100.
@@ -1578,13 +1582,13 @@ Package pdftex.def Info: img/mux_16-1_composizione.png  used on input line 100.
 \pydata@fh@_FAD58DE7366495DB4650CFEFAC2FCD61.data.minted=\write8
 \openout8 = `_FAD58DE7366495DB4650CFEFAC2FCD61.data.minted'.
 
-runsystem(latexminted config  --timestamp 20250116192218 FAD58DE7366495DB4650CF
-EFAC2FCD61)...executed safely (allowed).
+runsystem(latexminted config  --timestamp 20250117113701 FAD58DE7366495DB4650CF
+EFAC2FCD61)...executed.
 
 
 (./_FAD58DE7366495DB4650CFEFAC2FCD61.config.minted)
-runsystem(latexminted cleanconfig  --timestamp 20250116192218 FAD58DE7366495DB4
-650CFEFAC2FCD61)...executed safely (allowed).
+runsystem(latexminted cleanconfig  --timestamp 20250117113701 FAD58DE7366495DB4
+650CFEFAC2FCD61)...executed.
 
 
 (./_minted/default.style.minted)
@@ -1631,7 +1635,7 @@ LaTeX Info: Symbol \textasciigrave not provided by
 LaTeX Font Info:    Font shape `TS1/pcr/m/it' in size <10> not available
 (Font)              Font shape `TS1/pcr/m/sl' tried instead on input line 44.
 )
-<img/commands_sim_16_1.png, id=548, 542.025pt x 384.43625pt>
+<img/commands_sim_16_1.png, id=568, 542.025pt x 384.43625pt>
 File: img/commands_sim_16_1.png Graphic file (type png)
 <use img/commands_sim_16_1.png>
 Package pdftex.def Info: img/commands_sim_16_1.png  used on input line 151.
@@ -1639,7 +1643,7 @@ Package pdftex.def Info: img/commands_sim_16_1.png  used on input line 151.
 
 
 [13]
-<img/waves_sim_16_1.png, id=553, 542.025pt x 338.76563pt>
+<img/waves_sim_16_1.png, id=573, 542.025pt x 338.76563pt>
 File: img/waves_sim_16_1.png Graphic file (type png)
 <use img/waves_sim_16_1.png>
 Package pdftex.def Info: img/waves_sim_16_1.png  used on input line 158.
@@ -1654,12 +1658,12 @@ Package pdftex.def Info: img/waves_sim_16_1.png  used on input line 158.
 [16])
 
 [17]
-<img/mux16_1_vivado.png, id=576, 458.9145pt x 650.43pt>
+<img/mux16_1_vivado.png, id=596, 458.9145pt x 650.43pt>
 File: img/mux16_1_vivado.png Graphic file (type png)
 <use img/mux16_1_vivado.png>
 Package pdftex.def Info: img/mux16_1_vivado.png  used on input line 173.
 (pdftex.def)             Requested size: 333.46758pt x 472.63643pt.
-<img/Rete_interconn.png, id=577, 186.27592pt x 195.129pt>
+<img/Rete_interconn.png, id=597, 186.27592pt x 195.129pt>
 File: img/Rete_interconn.png Graphic file (type png)
 <use img/Rete_interconn.png>
 Package pdftex.def Info: img/Rete_interconn.png  used on input line 186.
@@ -1669,7 +1673,7 @@ Package pdftex.def Info: img/Rete_interconn.png  used on input line 186.
 [18 <./img/mux16_1_vivado.png>]
 
 [19]
-<img/demux_1_2.png, id=587, 193.50293pt x 195.129pt>
+<img/demux_1_2.png, id=607, 193.50293pt x 195.129pt>
 File: img/demux_1_2.png Graphic file (type png)
 <use img/demux_1_2.png>
 Package pdftex.def Info: img/demux_1_2.png  used on input line 198.
@@ -1677,7 +1681,7 @@ Package pdftex.def Info: img/demux_1_2.png  used on input line 198.
 
 
 [20 <./img/Rete_interconn.png>]
-<img/demux_1_4.png, id=595, 295.5843pt x 354.8457pt>
+<img/demux_1_4.png, id=615, 295.5843pt x 354.8457pt>
 File: img/demux_1_4.png Graphic file (type png)
 <use img/demux_1_4.png>
 Package pdftex.def Info: img/demux_1_4.png  used on input line 233.
@@ -1685,7 +1689,7 @@ Package pdftex.def Info: img/demux_1_4.png  used on input line 233.
 
 
 [21 <./img/demux_1_2.png>]
-<img/ReteInterconn_composta.png, id=603, 195.129pt x 190.25078pt>
+<img/ReteInterconn_composta.png, id=623, 195.129pt x 190.25078pt>
 File: img/ReteInterconn_composta.png Graphic file (type png)
 <use img/ReteInterconn_composta.png>
 Package pdftex.def Info: img/ReteInterconn_composta.png  used on input line 240
@@ -1712,7 +1716,7 @@ Underfull \hbox (badness 1688) in paragraph at lines 259--1
 [26]
 
 [27])
-<img/reteIntVivado.png, id=636, 461.3235pt x 434.8245pt>
+<img/reteIntVivado.png, id=656, 461.3235pt x 434.8245pt>
 File: img/reteIntVivado.png Graphic file (type png)
 <use img/reteIntVivado.png>
 Package pdftex.def Info: img/reteIntVivado.png  used on input line 268.
@@ -1728,7 +1732,7 @@ Package pdftex.def Info: img/reteIntVivado.png  used on input line 268.
 [31]
 
 [32])
-<img/TbReteInt.png, id=661, 1156.32pt x 620.3175pt>
+<img/TbReteInt.png, id=682, 1156.32pt x 620.3175pt>
 File: img/TbReteInt.png Graphic file (type png)
 <use img/TbReteInt.png>
 Package pdftex.def Info: img/TbReteInt.png  used on input line 282.
@@ -1736,7 +1740,7 @@ Package pdftex.def Info: img/TbReteInt.png  used on input line 282.
 
 
 [33]
-<img/board.png, id=667, 1072.005pt x 1084.05pt>
+<img/board.png, id=687, 1072.005pt x 1084.05pt>
 File: img/board.png Graphic file (type png)
 <use img/board.png>
 Package pdftex.def Info: img/board.png  used on input line 291.
@@ -1755,7 +1759,7 @@ Package pdftex.def Info: img/board.png  used on input line 291.
 [38]
 
 [39])
-<img/TestRI.png, id=699, 1084.05pt x 885.3075pt>
+<img/TestRI.png, id=719, 1084.05pt x 885.3075pt>
 File: img/TestRI.png Graphic file (type png)
 <use img/TestRI.png>
 Package pdftex.def Info: img/TestRI.png  used on input line 317.
@@ -1766,7 +1770,7 @@ Package pdftex.def Info: img/TestRI.png  used on input line 317.
 
 [41 <./img/TestRI.png>]
 Capitolo 2.
-<img/rom_M_black_box.png, id=710, 78.0516pt x 30.3534pt>
+<img/rom_M_black_box.png, id=730, 78.0516pt x 30.3534pt>
 File: img/rom_M_black_box.png Graphic file (type png)
 <use img/rom_M_black_box.png>
 Package pdftex.def Info: img/rom_M_black_box.png  used on input line 327.
@@ -1783,7 +1787,7 @@ Package pdftex.def Info: img/rom_M_black_box.png  used on input line 327.
 [44]) (./_minted/3E30B0EF2CB54B602DC85C49DC072BD7.highlight.minted
 
 [45])
-<img/ROM_plus_M.png, id=733, 844.95676pt x 245.11575pt>
+<img/ROM_plus_M.png, id=753, 844.95676pt x 245.11575pt>
 File: img/ROM_plus_M.png Graphic file (type png)
 <use img/ROM_plus_M.png>
 Package pdftex.def Info: img/ROM_plus_M.png  used on input line 358.
@@ -1795,7 +1799,7 @@ Package pdftex.def Info: img/ROM_plus_M.png  used on input line 358.
 [47 <./img/ROM_plus_M.png>]
 
 [48])
-<img/Sim_Rom_plus_M.png, id=749, 531.1845pt x 336.0555pt>
+<img/Sim_Rom_plus_M.png, id=769, 531.1845pt x 336.0555pt>
 File: img/Sim_Rom_plus_M.png Graphic file (type png)
 <use img/Sim_Rom_plus_M.png>
 Package pdftex.def Info: img/Sim_Rom_plus_M.png  used on input line 373.
@@ -1852,12 +1856,12 @@ Overfull \hbox (57.16711pt too wide) in paragraph at lines 409--409
 ports {bout[3]}];[] 
  []
 
-<img/testRom_M_1.png, id=761, 1084.05pt x 939.51pt>
+<img/testRom_M_1.png, id=781, 1084.05pt x 939.51pt>
 File: img/testRom_M_1.png Graphic file (type png)
 <use img/testRom_M_1.png>
 Package pdftex.def Info: img/testRom_M_1.png  used on input line 415.
 (pdftex.def)             Requested size: 291.78174pt x 252.86829pt.
-<img/testRom_M_2.png, id=762, 1084.05pt x 983.675pt>
+<img/testRom_M_2.png, id=782, 1084.05pt x 983.675pt>
 File: img/testRom_M_2.png Graphic file (type png)
 <use img/testRom_M_2.png>
 Package pdftex.def Info: img/testRom_M_2.png  used on input line 422.
@@ -1865,7 +1869,7 @@ Package pdftex.def Info: img/testRom_M_2.png  used on input line 422.
 
 
 [51 <./img/testRom_M_1.png>]
-<img/testrom_M_3.png, id=769, 1084.05pt x 868.24374pt>
+<img/testrom_M_3.png, id=789, 1084.05pt x 868.24374pt>
 File: img/testrom_M_3.png Graphic file (type png)
 <use img/testrom_M_3.png>
 Package pdftex.def Info: img/testrom_M_3.png  used on input line 429.
@@ -1885,7 +1889,7 @@ Capitolo 3.
 
 
 ]
-<img/automa_riconoscitore.png, id=788, 471.9231pt x 612.8496pt>
+<img/automa_riconoscitore.png, id=809, 471.9231pt x 612.8496pt>
 File: img/automa_riconoscitore.png Graphic file (type png)
 <use img/automa_riconoscitore.png>
 Package pdftex.def Info: img/automa_riconoscitore.png  used on input line 18.
@@ -1906,7 +1910,7 @@ Package pdftex.def Info: img/automa_riconoscitore.png  used on input line 18.
 [59]
 
 [60])
-<img/Sim_RIC.png, id=823, 542.025pt x 92.345pt>
+<img/Sim_RIC.png, id=843, 542.025pt x 92.345pt>
 File: img/Sim_RIC.png Graphic file (type png)
 <use img/Sim_RIC.png>
 Package pdftex.def Info: img/Sim_RIC.png  used on input line 65.
@@ -1928,7 +1932,7 @@ Package pdftex.def Info: img/Sim_RIC.png  used on input line 65.
 
 [67]
 Capitolo 4.
-<img/shift_register.png, id=858, 260.8947pt x 101.9007pt>
+<img/shift_register.png, id=878, 260.8947pt x 101.9007pt>
 File: img/shift_register.png Graphic file (type png)
 <use img/shift_register.png>
 Package pdftex.def Info: img/shift_register.png  used on input line 128.
@@ -1947,7 +1951,7 @@ Package pdftex.def Info: img/shift_register.png  used on input line 128.
 [71]
 
 [72])
-<img/simulazione_shift_register.png, id=884, 1101.11375pt x 176.66pt>
+<img/simulazione_shift_register.png, id=904, 1101.11375pt x 176.66pt>
 File: img/simulazione_shift_register.png Graphic file (type png)
 <use img/simulazione_shift_register.png>
 Package pdftex.def Info: img/simulazione_shift_register.png  used on input line
@@ -1956,7 +1960,7 @@ Package pdftex.def Info: img/simulazione_shift_register.png  used on input line
 
 
 [73]
-<img/reg.png, id=890, 226.9278pt x 195.8517pt>
+<img/reg.png, id=910, 226.9278pt x 195.8517pt>
 File: img/reg.png Graphic file (type png)
 <use img/reg.png>
 Package pdftex.def Info: img/reg.png  used on input line 182.
@@ -1964,7 +1968,7 @@ Package pdftex.def Info: img/reg.png  used on input line 182.
 
 
 [74 <./img/simulazione_shift_register.png>]
-<img///mux_41_sr.png, id=899, 188.6247pt x 166.9437pt>
+<img///mux_41_sr.png, id=919, 188.6247pt x 166.9437pt>
 File: img///mux_41_sr.png Graphic file (type png)
 <use img///mux_41_sr.png>
 Package pdftex.def Info: img///mux_41_sr.png  used on input line 199.
@@ -1977,7 +1981,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--202
 
 
 [75 <./img/reg.png>]
-<img/shiftregister_str.png, id=906, 1641.9744pt x 441.5697pt>
+<img/shiftregister_str.png, id=926, 1641.9744pt x 441.5697pt>
 File: img/shiftregister_str.png Graphic file (type png)
 <use img/shiftregister_str.png>
 Package pdftex.def Info: img/shiftregister_str.png  used on input line 230.
@@ -2003,7 +2007,7 @@ Package pdftex.def Info: img/shiftregister_str.png  used on input line 230.
 [83]
 
 [84])
-<img/sim_shift_register_str.png, id=955, 1559.8275pt x 149.55875pt>
+<img/sim_shift_register_str.png, id=975, 1559.8275pt x 149.55875pt>
 File: img/sim_shift_register_str.png Graphic file (type png)
 <use img/sim_shift_register_str.png>
 Package pdftex.def Info: img/sim_shift_register_str.png  used on input line 270
@@ -2018,12 +2022,12 @@ Capitolo 5.
 [86
 
 ]
-<img/ffD.png, id=967, 240.6591pt x 116.3547pt>
+<img/ffD.png, id=987, 240.6591pt x 116.3547pt>
 File: img/ffD.png Graphic file (type png)
 <use img/ffD.png>
 Package pdftex.def Info: img/ffD.png  used on input line 290.
 (pdftex.def)             Requested size: 291.78174pt x 141.07191pt.
-<img/counter_64.png, id=968, 224.037pt x 117.8001pt>
+<img/counter_64.png, id=988, 224.037pt x 117.8001pt>
 File: img/counter_64.png Graphic file (type png)
 <use img/counter_64.png>
 Package pdftex.def Info: img/counter_64.png  used on input line 301.
@@ -2038,7 +2042,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 312--313
 
 
 [88 <./img/counter_64.png>]
-<img/counter_mod_64_str.png, id=983, 2284.4547pt x 521.0667pt>
+<img/counter_mod_64_str.png, id=1003, 2284.4547pt x 521.0667pt>
 File: img/counter_mod_64_str.png Graphic file (type png)
 <use img/counter_mod_64_str.png>
 Package pdftex.def Info: img/counter_mod_64_str.png  used on input line 319.
@@ -2046,7 +2050,7 @@ Package pdftex.def Info: img/counter_mod_64_str.png  used on input line 319.
 
 
 [89 <./img/counter_mod_64_str.png>]
-<img/counter_mod_32.png, id=990, 224.037pt x 117.8001pt>
+<img/counter_mod_32.png, id=1010, 224.037pt x 117.8001pt>
 File: img/counter_mod_32.png Graphic file (type png)
 <use img/counter_mod_32.png>
 Package pdftex.def Info: img/counter_mod_32.png  used on input line 329.
@@ -2057,7 +2061,7 @@ Package pdftex.def Info: img/counter_mod_32.png  used on input line 329.
 
 
  <./img/counter_mod_32.png>]
-<img/counter_mod_32_str.png, id=998, 1913.7096pt x 521.7894pt>
+<img/counter_mod_32_str.png, id=1018, 1913.7096pt x 521.7894pt>
 File: img/counter_mod_32_str.png Graphic file (type png)
 <use img/counter_mod_32_str.png>
 Package pdftex.def Info: img/counter_mod_32_str.png  used on input line 338.
@@ -2065,17 +2069,17 @@ Package pdftex.def Info: img/counter_mod_32_str.png  used on input line 338.
 
 
 [91 <./img/counter_mod_32_str.png>]
-<img/counter_mod_60.png, id=1005, 625.1355pt x 260.8947pt>
+<img/counter_mod_60.png, id=1025, 625.1355pt x 260.8947pt>
 File: img/counter_mod_60.png Graphic file (type png)
 <use img/counter_mod_60.png>
 Package pdftex.def Info: img/counter_mod_60.png  used on input line 348.
 (pdftex.def)             Requested size: 416.83289pt x 173.96252pt.
-<img/counter_mod_24.png, id=1006, 625.1355pt x 260.8947pt>
+<img/counter_mod_24.png, id=1026, 625.1355pt x 260.8947pt>
 File: img/counter_mod_24.png Graphic file (type png)
 <use img/counter_mod_24.png>
 Package pdftex.def Info: img/counter_mod_24.png  used on input line 357.
 (pdftex.def)             Requested size: 416.83289pt x 173.96252pt.
-<img/stopwatch.png, id=1007, 1043.5788pt x 319.4334pt>
+<img/stopwatch.png, id=1027, 1043.5788pt x 319.4334pt>
 File: img/stopwatch.png Graphic file (type png)
 <use img/stopwatch.png>
 Package pdftex.def Info: img/stopwatch.png  used on input line 366.
@@ -2122,7 +2126,7 @@ using[]perl/[]|
 [105]
 
 [106])
-<img/stopwatch_sim.png, id=1094, 1559.8275pt x 149.55875pt>
+<img/stopwatch_sim.png, id=1114, 1559.8275pt x 149.55875pt>
 File: img/stopwatch_sim.png Graphic file (type png)
 <use img/stopwatch_sim.png>
 Package pdftex.def Info: img/stopwatch_sim.png  used on input line 432.
@@ -2186,7 +2190,7 @@ Overfull \hbox (5.07758pt too wide) in paragraph at lines 577--577
 [127
 
 ]
-<img/ROM_M_MEM.png, id=1195, 195.129pt x 117.61943pt>
+<img/ROM_M_MEM.png, id=1215, 195.129pt x 117.61943pt>
 File: img/ROM_M_MEM.png Graphic file (type png)
 <use img/ROM_M_MEM.png>
 Package pdftex.def Info: img/ROM_M_MEM.png  used on input line 585.
@@ -2194,7 +2198,7 @@ Package pdftex.def Info: img/ROM_M_MEM.png  used on input line 585.
 
 
 [128]
-<img/Automa_ROM_M_MEM.png, id=1201, 195.129pt x 117.0774pt>
+<img/Automa_ROM_M_MEM.png, id=1221, 195.129pt x 117.0774pt>
 File: img/Automa_ROM_M_MEM.png Graphic file (type png)
 <use img/Automa_ROM_M_MEM.png>
 Package pdftex.def Info: img/Automa_ROM_M_MEM.png  used on input line 599.
@@ -2217,7 +2221,7 @@ Package pdftex.def Info: img/Automa_ROM_M_MEM.png  used on input line 599.
 [135]
 
 [136])
-<img/schematic_ROM_M_MEM.PNG, id=1242, 1156.32pt x 620.3175pt>
+<img/schematic_ROM_M_MEM.PNG, id=1262, 1156.32pt x 620.3175pt>
 File: img/schematic_ROM_M_MEM.PNG Graphic file (type png)
 <use img/schematic_ROM_M_MEM.PNG>
 Package pdftex.def Info: img/schematic_ROM_M_MEM.PNG  used on input line 628.
@@ -2227,7 +2231,7 @@ Package pdftex.def Info: img/schematic_ROM_M_MEM.PNG  used on input line 628.
 [137 <./img/schematic_ROM_M_MEM.PNG>]
 
 [138])
-<img/ROM_M_MEM_waweform.PNG, id=1254, 1156.32pt x 620.3175pt>
+<img/ROM_M_MEM_waweform.PNG, id=1274, 1156.32pt x 620.3175pt>
 File: img/ROM_M_MEM_waweform.PNG Graphic file (type png)
 <use img/ROM_M_MEM_waweform.PNG>
 Package pdftex.def Info: img/ROM_M_MEM_waweform.PNG  used on input line 642.
@@ -2248,7 +2252,7 @@ Package pdftex.def Info: img/ROM_M_MEM_waweform.PNG  used on input line 642.
 [144]
 
 [145])
-<img/Test1_ROM_M_MEMwebp.png, id=1288, 1084.05pt x 867.24pt>
+<img/Test1_ROM_M_MEMwebp.png, id=1308, 1084.05pt x 867.24pt>
 File: img/Test1_ROM_M_MEMwebp.png Graphic file (type png)
 <use img/Test1_ROM_M_MEMwebp.png>
 Package pdftex.def Info: img/Test1_ROM_M_MEMwebp.png  used on input line 679.
@@ -2256,12 +2260,12 @@ Package pdftex.def Info: img/Test1_ROM_M_MEMwebp.png  used on input line 679.
 
 
 [146]
-<img/Test2_ROM_M_MEMwebp.png, id=1295, 1084.05pt x 933.4875pt>
+<img/Test2_ROM_M_MEMwebp.png, id=1315, 1084.05pt x 933.4875pt>
 File: img/Test2_ROM_M_MEMwebp.png Graphic file (type png)
 <use img/Test2_ROM_M_MEMwebp.png>
 Package pdftex.def Info: img/Test2_ROM_M_MEMwebp.png  used on input line 686.
 (pdftex.def)             Requested size: 291.78174pt x 251.24733pt.
-<img/Test3_ROM_M_MEMwebp.png, id=1296, 1084.05pt x 941.5175pt>
+<img/Test3_ROM_M_MEMwebp.png, id=1316, 1084.05pt x 941.5175pt>
 File: img/Test3_ROM_M_MEMwebp.png Graphic file (type png)
 <use img/Test3_ROM_M_MEMwebp.png>
 Package pdftex.def Info: img/Test3_ROM_M_MEMwebp.png  used on input line 694.
@@ -2275,7 +2279,7 @@ Package pdftex.def Info: img/Test3_ROM_M_MEMwebp.png  used on input line 694.
 
  (./problema3.tex
 Capitolo 7.
-<img/Esercizio_7_1/booth_prog.png, id=1311, 1196.47pt x 689.57625pt>
+<img/Esercizio_7_1/booth_prog.png, id=1331, 1196.47pt x 689.57625pt>
 File: img/Esercizio_7_1/booth_prog.png Graphic file (type png)
 <use img/Esercizio_7_1/booth_prog.png>
 Package pdftex.def Info: img/Esercizio_7_1/booth_prog.png  used on input line 8
@@ -2297,7 +2301,7 @@ ok-Ahead;
 
 
 [150 <./img/Esercizio_7_1/booth_prog.png>]
-<img/Esercizio_7_1/Shift_Register_booth.png, id=1322, 304.9794pt x 142.3719pt>
+<img/Esercizio_7_1/Shift_Register_booth.png, id=1343, 304.9794pt x 142.3719pt>
 File: img/Esercizio_7_1/Shift_Register_booth.png Graphic file (type png)
 <use img/Esercizio_7_1/Shift_Register_booth.png>
 Package pdftex.def Info: img/Esercizio_7_1/Shift_Register_booth.png  used on in
@@ -2308,7 +2312,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 37--39
 
  []
 
-<img/Esercizio_7_1/counter_mod_8.png, id=1323, 1212.6906pt x 376.5267pt>
+<img/Esercizio_7_1/counter_mod_8.png, id=1344, 1212.6906pt x 376.5267pt>
 File: img/Esercizio_7_1/counter_mod_8.png Graphic file (type png)
 <use img/Esercizio_7_1/counter_mod_8.png>
 Package pdftex.def Info: img/Esercizio_7_1/counter_mod_8.png  used on input lin
@@ -2317,7 +2321,7 @@ e 42.
 
 
 [151 <./img/Esercizio_7_1/Shift_Register_booth.png>]
-<img/Esercizio_7_1/carry_look_ahead_beh.png, id=1334, 239.2137pt x 170.5572pt>
+<img/Esercizio_7_1/carry_look_ahead_beh.png, id=1354, 239.2137pt x 170.5572pt>
 File: img/Esercizio_7_1/carry_look_ahead_beh.png Graphic file (type png)
 <use img/Esercizio_7_1/carry_look_ahead_beh.png>
 Package pdftex.def Info: img/Esercizio_7_1/carry_look_ahead_beh.png  used on in
@@ -2327,7 +2331,7 @@ put line 53.
 
 [152 <./img/Esercizio_7_1/counter_mod_8.png> <./img/Esercizio_7_1/carry_look_ah
 ead_beh.png>]
-<img/Esercizio_7_1/booth_cu.png, id=1345, 480.5955pt x 361.35pt>
+<img/Esercizio_7_1/booth_cu.png, id=1365, 480.5955pt x 361.35pt>
 File: img/Esercizio_7_1/booth_cu.png Graphic file (type png)
 <use img/Esercizio_7_1/booth_cu.png>
 Package pdftex.def Info: img/Esercizio_7_1/booth_cu.png  used on input line 66.
@@ -2365,7 +2369,7 @@ using[]perl/[]|
 
 
 [164])
-<img/Esercizio_7_1/booth_sim_1.png, id=1410, 1312.905pt x 120.45pt>
+<img/Esercizio_7_1/booth_sim_1.png, id=1430, 1312.905pt x 120.45pt>
 File: img/Esercizio_7_1/booth_sim_1.png Graphic file (type png)
 <use img/Esercizio_7_1/booth_sim_1.png>
 Package pdftex.def Info: img/Esercizio_7_1/booth_sim_1.png  used on input line 
@@ -2391,12 +2395,12 @@ get_ports { clk }];[]
 [167]
 
 [168]
-<img/onBoard/booth_test1.png, id=1430, 513.92pt x 403.5075pt>
+<img/onBoard/booth_test1.png, id=1450, 513.92pt x 403.5075pt>
 File: img/onBoard/booth_test1.png Graphic file (type png)
 <use img/onBoard/booth_test1.png>
 Package pdftex.def Info: img/onBoard/booth_test1.png  used on input line 243.
 (pdftex.def)             Requested size: 333.46758pt x 261.8273pt.
-<img/onBoard/booth_test2.png, id=1431, 513.92pt x 399.4925pt>
+<img/onBoard/booth_test2.png, id=1451, 513.92pt x 399.4925pt>
 File: img/onBoard/booth_test2.png Graphic file (type png)
 <use img/onBoard/booth_test2.png>
 Package pdftex.def Info: img/onBoard/booth_test2.png  used on input line 254.
@@ -2418,13 +2422,13 @@ Capitolo 8.
 
 
 ]
-<img/handshaking/sch_nodoA_Handshaking.png, id=1449, 445.9059pt x 203.0787pt>
+<img/handshaking/sch_nodoA_Handshaking.png, id=1470, 445.9059pt x 203.0787pt>
 File: img/handshaking/sch_nodoA_Handshaking.png Graphic file (type png)
 <use img/handshaking/sch_nodoA_Handshaking.png>
 Package pdftex.def Info: img/handshaking/sch_nodoA_Handshaking.png  used on inp
 ut line 18.
 (pdftex.def)             Requested size: 416.83289pt x 189.84973pt.
-<img/handshaking/sch_nodoB_Handshaking.png, id=1450, 294.8616pt x 180.675pt>
+<img/handshaking/sch_nodoB_Handshaking.png, id=1471, 294.8616pt x 180.675pt>
 File: img/handshaking/sch_nodoB_Handshaking.png Graphic file (type png)
 <use img/handshaking/sch_nodoB_Handshaking.png>
 Package pdftex.def Info: img/handshaking/sch_nodoB_Handshaking.png  used on inp
@@ -2433,13 +2437,13 @@ ut line 24.
 
 
 [172]
-<img/handshaking/automa_A_handshake.png, id=1455, 508.0581pt x 224.037pt>
+<img/handshaking/automa_A_handshake.png, id=1476, 508.0581pt x 224.037pt>
 File: img/handshaking/automa_A_handshake.png Graphic file (type png)
 <use img/handshaking/automa_A_handshake.png>
 Package pdftex.def Info: img/handshaking/automa_A_handshake.png  used on input 
 line 31.
 (pdftex.def)             Requested size: 416.83289pt x 183.81749pt.
-<img/handshaking/automa_B_handshake.png, id=1456, 246.4407pt x 195.129pt>
+<img/handshaking/automa_B_handshake.png, id=1477, 246.4407pt x 195.129pt>
 File: img/handshaking/automa_B_handshake.png Graphic file (type png)
 <use img/handshaking/automa_B_handshake.png>
 Package pdftex.def Info: img/handshaking/automa_B_handshake.png  used on input 
@@ -2451,8 +2455,8 @@ line 37.
 _Handshaking.png>]
 \openout8 = `_FAD58DE7366495DB4650CFEFAC2FCD61.data.minted'.
 
-runsystem(latexminted highlight  --timestamp 20250116192218 FAD58DE7366495DB465
-0CFEFAC2FCD61)...executed safely (allowed).
+runsystem(latexminted highlight  --timestamp 20250117113701 FAD58DE7366495DB465
+0CFEFAC2FCD61)...executed.
 
  (./_FAD58DE7366495DB4650CFEFAC2FCD61.message.minted)
 
@@ -2512,8 +2516,8 @@ Alternatively, save the file in UTF-8 using your editor or another tool
 [176])
 \openout8 = `_FAD58DE7366495DB4650CFEFAC2FCD61.data.minted'.
 
-runsystem(latexminted highlight  --timestamp 20250116192218 FAD58DE7366495DB465
-0CFEFAC2FCD61)...executed safely (allowed).
+runsystem(latexminted highlight  --timestamp 20250117113701 FAD58DE7366495DB465
+0CFEFAC2FCD61)...executed.
 
  (./_FAD58DE7366495DB4650CFEFAC2FCD61.message.minted)
 
@@ -2570,8 +2574,8 @@ Alternatively, save the file in UTF-8 using your editor or another tool
 [180])
 \openout8 = `_FAD58DE7366495DB4650CFEFAC2FCD61.data.minted'.
 
-runsystem(latexminted highlight  --timestamp 20250116192218 FAD58DE7366495DB465
-0CFEFAC2FCD61)...executed safely (allowed).
+runsystem(latexminted highlight  --timestamp 20250117113701 FAD58DE7366495DB465
+0CFEFAC2FCD61)...executed.
 
  (./_FAD58DE7366495DB4650CFEFAC2FCD61.message.minted)
 
@@ -2630,8 +2634,8 @@ Alternatively, save the file in UTF-8 using your editor or another tool
 [184])
 \openout8 = `_FAD58DE7366495DB4650CFEFAC2FCD61.data.minted'.
 
-runsystem(latexminted highlight  --timestamp 20250116192218 FAD58DE7366495DB465
-0CFEFAC2FCD61)...executed safely (allowed).
+runsystem(latexminted highlight  --timestamp 20250117113701 FAD58DE7366495DB465
+0CFEFAC2FCD61)...executed.
 
  (./_FAD58DE7366495DB4650CFEFAC2FCD61.message.minted)
 
@@ -2696,7 +2700,7 @@ Alternatively, save the file in UTF-8 using your editor or another tool
 [192]
 
 [193])
-<img/handshaking/waveform_handshaking.png, id=1566, 1123.7985pt x 545.6385pt>
+<img/handshaking/waveform_handshaking.png, id=1586, 1123.7985pt x 545.6385pt>
 File: img/handshaking/waveform_handshaking.png Graphic file (type png)
 <use img/handshaking/waveform_handshaking.png>
 Package pdftex.def Info: img/handshaking/waveform_handshaking.png  used on inpu
@@ -2719,11 +2723,11 @@ Capitolo 9.
 
 
 ]
-<img/Esercizio_9/uo_mic-1.png, id=1583, 502.87875pt x 699.61375pt>
+<img/Esercizio_9/uo_mic-1.png, id=1604, 502.87875pt x 699.61375pt>
 File: img/Esercizio_9/uo_mic-1.png Graphic file (type png)
 <use img/Esercizio_9/uo_mic-1.png>
 Package pdftex.def Info: img/Esercizio_9/uo_mic-1.png  used on input line 27.
-(pdftex.def)             Requested size: 333.46758pt x 463.92426pt.
+(pdftex.def)             Requested size: 416.83289pt x 579.89998pt.
 
 
 [197]
@@ -2731,1481 +2735,226 @@ Package pdftex.def Info: img/Esercizio_9/uo_mic-1.png  used on input line 27.
 [198 <./img/Esercizio_9/uo_mic-1.png>]
 
 [199]
-<img/Esercizio_9/diag_mic-1.png, id=1600, 502.87875pt x 534.99875pt>
+<img/Esercizio_9/diag_mic-1.png, id=1620, 502.87875pt x 534.99875pt>
 File: img/Esercizio_9/diag_mic-1.png Graphic file (type png)
 <use img/Esercizio_9/diag_mic-1.png>
 Package pdftex.def Info: img/Esercizio_9/diag_mic-1.png  used on input line 67.
 
-(pdftex.def)             Requested size: 333.46758pt x 354.7656pt.
- (./_minted/57F206365EA25D58E3968191D724F40B.highlight.minted
+(pdftex.def)             Requested size: 416.83289pt x 443.45291pt.
+
+
+[200] (./_minted/57F206365EA25D58E3968191D724F40B.highlight.minted
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <12> not available
 (Font)              Font shape `T1/pcr/m/sl' tried instead on input line 3.
 )
+
+[201 <./img/Esercizio_9/diag_mic-1.png>]
 (./_minted/9B47025D3D03155A889B9D7F66A45134.highlight.minted)
 
-[200 <./img/Esercizio_9/diag_mic-1.png>]
-
-[201]
-<img/Esercizio_9/Compile.png, id=1615, 1847.90375pt x 527.9725pt>
+[202]
+<img/Esercizio_9/Compile.png, id=1639, 1847.90375pt x 527.9725pt>
 File: img/Esercizio_9/Compile.png Graphic file (type png)
 <use img/Esercizio_9/Compile.png>
-Package pdftex.def Info: img/Esercizio_9/Compile.png  used on input line 115.
-(pdftex.def)             Requested size: 333.46758pt x 95.27263pt.
-<img/Esercizio_9/ram_sub.png, id=1616, 480.79625pt x 221.82875pt>
+Package pdftex.def Info: img/Esercizio_9/Compile.png  used on input line 118.
+(pdftex.def)             Requested size: 416.83289pt x 119.09482pt.
+<img/Esercizio_9/ram_sub.png, id=1640, 480.79625pt x 221.82875pt>
 File: img/Esercizio_9/ram_sub.png Graphic file (type png)
 <use img/Esercizio_9/ram_sub.png>
-Package pdftex.def Info: img/Esercizio_9/ram_sub.png  used on input line 122.
-(pdftex.def)             Requested size: 333.46758pt x 153.85742pt.
+Package pdftex.def Info: img/Esercizio_9/ram_sub.png  used on input line 125.
+(pdftex.def)             Requested size: 416.83289pt x 192.32262pt.
 
 
-[202 <./img/Esercizio_9/Compile.png>]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.128 ...namente il file \texttt{processor_tb.vhd}
-                                                  ):
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<recently read> \egroup 
-                        
-l.128 ...namente il file \texttt{processor_tb.vhd}
-                                                  ):
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-<img/Esercizio_9/tb_sub.png, id=1624, 1245.65375pt x 676.5275pt>
+[203 <./img/Esercizio_9/Compile.png>]
+<img/Esercizio_9/tb_sub.png, id=1648, 1245.65375pt x 676.5275pt>
 File: img/Esercizio_9/tb_sub.png Graphic file (type png)
 <use img/Esercizio_9/tb_sub.png>
-Package pdftex.def Info: img/Esercizio_9/tb_sub.png  used on input line 131.
+Package pdftex.def Info: img/Esercizio_9/tb_sub.png  used on input line 134.
 (pdftex.def)             Requested size: 333.46758pt x 181.1061pt.
-! Missing $ inserted.
-<inserted text> 
-                $
-l.134 \end{figure}
-                  
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.134 \end{figure}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Undefined control sequence.
-\endfigure ...box \columnwidth \fi \box \@currbox 
-                                                  \vskip \intextsep \relax 
-l.134 \end{figure}
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \vskip 
-l.134 \end{figure}
-                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
 
 
-! LaTeX Error: \begin{document} ended by \end{figure}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.134 \end{figure}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.134 \end{figure}
-                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.136 \begin{figure}[H]
-                       
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<img/Esercizio_9/sub_wave.png, id=1625, 1859.94875pt x 562.1pt>
+[204 <./img/Esercizio_9/ram_sub.png>]
+<img/Esercizio_9/sub_wave.png, id=1655, 1859.94875pt x 562.1pt>
 File: img/Esercizio_9/sub_wave.png Graphic file (type png)
 <use img/Esercizio_9/sub_wave.png>
-Package pdftex.def Info: img/Esercizio_9/sub_wave.png  used on input line 138.
-(pdftex.def)             Requested size: 333.46758pt x 100.77051pt.
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.139 	\caption{Onda ISUB}
-                          
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+Package pdftex.def Info: img/Esercizio_9/sub_wave.png  used on input line 141.
+(pdftex.def)             Requested size: 416.83289pt x 125.96957pt.
 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.139 	\caption{Onda ISUB}
-                          
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+(./_minted/72AED8A33B344C2D780A849D5B4D2DD9.highlight.minted)
 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.139 	\caption{Onda ISUB}
-                          
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+[205 <./img/Esercizio_9/tb_sub.png> <./img/Esercizio_9/sub_wave.png>]
+(./_minted/5D3EE3F4E7057B31FA5E9DEDB3B71582.highlight.minted)
 
-)
+[206]
+<img/Esercizio_9/ram_or.png, id=1672, 420.57124pt x 219.82124pt>
+File: img/Esercizio_9/ram_or.png Graphic file (type png)
+<use img/Esercizio_9/ram_or.png>
+Package pdftex.def Info: img/Esercizio_9/ram_or.png  used on input line 192.
+(pdftex.def)             Requested size: 416.83289pt x 217.86855pt.
+<img/Esercizio_9/tb_or.png, id=1673, 1542.76375pt x 669.50125pt>
+File: img/Esercizio_9/tb_or.png Graphic file (type png)
+<use img/Esercizio_9/tb_or.png>
+Package pdftex.def Info: img/Esercizio_9/tb_or.png  used on input line 200.
+(pdftex.def)             Requested size: 333.46758pt x 144.70615pt.
 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.106 \include{problema5}
-                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.106 \include{problema5}
-                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+[207 <./img/Esercizio_9/ram_or.png>]
+<img/Esercizio_9/or_wave.png, id=1680, 1829.83624pt x 518.93875pt>
+File: img/Esercizio_9/or_wave.png Graphic file (type png)
+<use img/Esercizio_9/or_wave.png>
+Package pdftex.def Info: img/Esercizio_9/or_wave.png  used on input line 207.
+(pdftex.def)             Requested size: 416.83289pt x 118.21315pt.
 
-[203 <./img/Esercizio_9/ram_sub.png> <./img/Esercizio_9/sub_wave.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 215--218
+
+ []
+
+
+
+[208 <./img/Esercizio_9/tb_or.png> <./img/Esercizio_9/or_wave.png>]
+(./_minted/B4FEF7FB54CE1FBFA9C71A5C986964AF.highlight.minted)
+(./_minted/5A2C5A5E7FA32FAE73857EBA381D85B5.highlight.minted)
+
+[209]
+<img/Esercizio_9/ram_xor.png, id=1695, 420.57124pt x 244.915pt>
+File: img/Esercizio_9/ram_xor.png Graphic file (type png)
+<use img/Esercizio_9/ram_xor.png>
+Package pdftex.def Info: img/Esercizio_9/ram_xor.png  used on input line 273.
+(pdftex.def)             Requested size: 416.83289pt x 242.73938pt.
+
+
+[210]
+<img/Esercizio_9/tb_xor.png, id=1701, 1843.88875pt x 756.8275pt>
+File: img/Esercizio_9/tb_xor.png Graphic file (type png)
+<use img/Esercizio_9/tb_xor.png>
+Package pdftex.def Info: img/Esercizio_9/tb_xor.png  used on input line 281.
+(pdftex.def)             Requested size: 333.46758pt x 136.86977pt.
+File: img/Esercizio_9/or_wave.png Graphic file (type png)
+<use img/Esercizio_9/or_wave.png>
+Package pdftex.def Info: img/Esercizio_9/or_wave.png  used on input line 288.
+(pdftex.def)             Requested size: 416.83289pt x 118.21315pt.
+
+
+[211 <./img/Esercizio_9/ram_xor.png> <./img/Esercizio_9/tb_xor.png>])
+
+[212]
 \openout2 = `problema8.aux'.
 
-
-(./problema8.tex
+ (./problema8.tex
 Capitolo 10.
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.11 \begin{figure}[H]
-                      
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<img/preappDicembre/Preapp_NodoA.png, id=1635, 410.4936pt x 187.1793pt>
+<img/preappDicembre/Preapp_NodoA.png, id=1716, 410.4936pt x 187.1793pt>
 File: img/preappDicembre/Preapp_NodoA.png Graphic file (type png)
 <use img/preappDicembre/Preapp_NodoA.png>
 Package pdftex.def Info: img/preappDicembre/Preapp_NodoA.png  used on input lin
 e 13.
 (pdftex.def)             Requested size: 416.83289pt x 190.08066pt.
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.14 	\caption{Schema a blocchi: nodo A}
-                                        
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.14 	\caption{Schema a blocchi: nodo A}
-                                        
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.14 	\caption{Schema a blocchi: nodo A}
-                                        
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.17 \begin{figure}[H]
-                      
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<img/preappDicembre/Preapp_NodoB.png, id=1636, 367.8543pt x 186.4566pt>
-File: img/preappDicembre/Preapp_NodoB.png Graphic file (type png)
-<use img/preappDicembre/Preapp_NodoB.png>
-Package pdftex.def Info: img/preappDicembre/Preapp_NodoB.png  used on input lin
-e 19.
-(pdftex.def)             Requested size: 416.83289pt x 211.28813pt.
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.20 	\caption{Schema a blocchi: nodo B}
-                                        
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.20 	\caption{Schema a blocchi: nodo B}
-                                        
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.20 	\caption{Schema a blocchi: nodo B}
-                                        
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
 
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.22 \end{figure}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.22 \end{figure}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[204
+[213
 
 
 
 
 ]
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.24 \begin{figure}[H]
-                      
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+<img/preappDicembre/Preapp_NodoB.png, id=1721, 367.8543pt x 186.4566pt>
+File: img/preappDicembre/Preapp_NodoB.png Graphic file (type png)
+<use img/preappDicembre/Preapp_NodoB.png>
+Package pdftex.def Info: img/preappDicembre/Preapp_NodoB.png  used on input lin
+e 19.
+(pdftex.def)             Requested size: 416.83289pt x 211.28813pt.
 
-<img/preappDicembre/Preapp_automaA.png, id=1641, 508.0581pt x 224.037pt>
+
+[214 <./img/preappDicembre/Preapp_NodoA.png>]
+<img/preappDicembre/Preapp_automaA.png, id=1728, 508.0581pt x 224.037pt>
 File: img/preappDicembre/Preapp_automaA.png Graphic file (type png)
 <use img/preappDicembre/Preapp_automaA.png>
 Package pdftex.def Info: img/preappDicembre/Preapp_automaA.png  used on input l
 ine 26.
 (pdftex.def)             Requested size: 416.83289pt x 183.81749pt.
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.27 	\caption{Automa unità di controllo: nodo A}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.27 	\caption{Automa unità di controllo: nodo A}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.27 	\caption{Automa unità di controllo: nodo A}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.30 \begin{figure}[H]
-                      
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<img/preappDicembre/Preapp_automaB.png, id=1642, 381.5856pt x 250.7769pt>
+<img/preappDicembre/Preapp_automaB.png, id=1729, 381.5856pt x 250.7769pt>
 File: img/preappDicembre/Preapp_automaB.png Graphic file (type png)
 <use img/preappDicembre/Preapp_automaB.png>
 Package pdftex.def Info: img/preappDicembre/Preapp_automaB.png  used on input l
 ine 32.
 (pdftex.def)             Requested size: 416.83289pt x 273.95363pt.
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.33 	\caption{Automa unità di controllo: nodo B}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.33 	\caption{Automa unità di controllo: nodo B}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.33 	\caption{Automa unità di controllo: nodo B}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
 
+[215 <./img/preappDicembre/Preapp_NodoB.png> <./img/preappDicembre/Preapp_autom
+aA.png>] (./_minted/11A852E0021DA566E1E0A0D4ED872AA4.highlight.minted
 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.35 \end{figure}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.35 \end{figure}
-                 
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[205 <./img/preappDicembre/Preapp_NodoA.png> <./img/preappDicembre/Preapp_NodoB
-.png>]
-
-! Package caption Error: `type' undefined in families `caption'.
-
-See the caption package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.39 \begin{code}
-                 
-If you do not understand this error, please take a closer look
-at the documentation of the `caption' package, especially the
-section about errors.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-(./_minted/11A852E0021DA566E1E0A0D4ED872AA4.highlight.minted
-LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 2.
-
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.5 
-    
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.5 
-    
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[206 <./img/preappDicembre/Preapp_automaA.png> <./img/preappDicembre/Preapp_aut
-omaB.png>])
-
-! LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.41     \caption
-                 {ROM.vhdl}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package caption Error: `type' undefined in families `caption'.
-
-See the caption package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.45 \begin{code}
-                 
-If you do not understand this error, please take a closer look
-at the documentation of the `caption' package, especially the
-section about errors.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+[216 <./img/preappDicembre/Preapp_automaB.png>])
 (./_minted/55772A125DE31EBFDCDD5D791B5604CE.highlight.minted
 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.8 ...counter\PYGZus{}mod8}\PYG{+w}{ }\PYG{k}{is}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+[217]) (./_minted/30842AF21FC1F4A8D7EAA25D5488C448.highlight.minted
 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.8 ...counter\PYGZus{}mod8}\PYG{+w}{ }\PYG{k}{is}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[207])
-
-! LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.47     \caption
-                 {Contatore modulo 8.vhdl}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package caption Error: `type' undefined in families `caption'.
-
-See the caption package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.51 \begin{code}
-                 
-If you do not understand this error, please take a closer look
-at the documentation of the `caption' package, especially the
-section about errors.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-(./_minted/30842AF21FC1F4A8D7EAA25D5488C448.highlight.minted
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.17 ...PYG{+w}{ }\PYG{n+nc}{counter\PYGZus{}mod8}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.17 ...PYG{+w}{ }\PYG{n+nc}{counter\PYGZus{}mod8}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[208])
-
-! LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.53     \caption
-                 {CUnità operativa di A in vhdl}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package caption Error: `type' undefined in families `caption'.
-
-See the caption package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.57 \begin{code}
-                 
-If you do not understand this error, please take a closer look
-at the documentation of the `caption' package, especially the
-section about errors.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-(./_minted/4D6CF2170E1C123B4962CF58A750CD2F.highlight.minted
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.5 ...+w}{ }\PYG{n+nc}{UCA}\PYG{+w}{ }\PYG{k}{is}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.5 ...+w}{ }\PYG{n+nc}{UCA}\PYG{+w}{ }\PYG{k}{is}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[209]
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.49 \PYG{+w}{             }\PYG{k}{else}
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.49 \PYG{+w}{             }\PYG{k}{else}
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[210])
-
-! LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.59     \caption
-                 {Control Unit di A.vhdl}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package caption Error: `type' undefined in families `caption'.
-
-See the caption package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.63 \begin{code}
-                 
-If you do not understand this error, please take a closer look
-at the documentation of the `caption' package, especially the
-section about errors.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-(./_minted/3EE427DD116EB1AB6DC0E4D9650F5A2B.highlight.minted
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.9 ...}{ }\PYG{k+kt}{STD\PYGZus{}LOGIC}\PYG{p}{;}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.9 ...}{ }\PYG{k+kt}{STD\PYGZus{}LOGIC}\PYG{p}{;}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[211]
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.55 ...PYGZgt{}}\PYG{+w}{ }\PYG{n}{CLK}\PYG{p}{,}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.55 ...PYGZgt{}}\PYG{+w}{ }\PYG{n}{CLK}\PYG{p}{,}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[212])
-
-! LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.65     \caption
-                 {nodo A.vhdl}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package caption Error: `type' undefined in families `caption'.
-
-See the caption package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.69 \begin{code}
-                 
-If you do not understand this error, please take a closer look
-at the documentation of the `caption' package, especially the
-section about errors.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-(./_minted/36F079B62D83B75F25D59F1E92F6F725.highlight.minted
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.28 ...YG{+w}{ }\PYG{n+nc}{behavioural}\PYG{p}{;}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.28 ...YG{+w}{ }\PYG{n+nc}{behavioural}\PYG{p}{;}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[213])
-
-! LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.71     \caption
-                 {register.vhdl}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package caption Error: `type' undefined in families `caption'.
-
-See the caption package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.75 \begin{code}
-                 
-If you do not understand this error, please take a closer look
-at the documentation of the `caption' package, especially the
-section about errors.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-(./_minted/5496D382560AA1E68550199D69A72C53.highlight.minted)
-
-! LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.77     \caption
-                 {full\_adder.vhdl}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package caption Error: `type' undefined in families `caption'.
-
-See the caption package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.81 \begin{code}
-                 
-If you do not understand this error, please take a closer look
-at the documentation of the `caption' package, especially the
-section about errors.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-(./_minted/29F75D7955D00218970D442576F5CB26.highlight.minted
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.17 ...{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{;}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.17 ...{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{;}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[214]
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.62 \PYG{+w}{        }\PYG{p}{)}\PYG{p}{;}
-                                           
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.62 \PYG{+w}{        }\PYG{p}{)}\PYG{p}{;}
-                                           
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[215])
-
-! LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.83     \caption
-                 {CarryLookAhead.vhdl}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package caption Error: `type' undefined in families `caption'.
-
-See the caption package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.87 \begin{code}
-                 
-If you do not understand this error, please take a closer look
-at the documentation of the `caption' package, especially the
-section about errors.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-(./_minted/90D5EC3A6F8AA1A256D2328A3305CD40.highlight.minted
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.37 ...{ }\PYG{k+kt}{std\PYGZus{}logic}\PYG{p}{;}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.37 ...{ }\PYG{k+kt}{std\PYGZus{}logic}\PYG{p}{;}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[216]
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.82 
-     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.82 
-     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[217])
-
-! LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.89     \caption
-                 {unità operativa di B in vhdl}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package caption Error: `type' undefined in families `caption'.
-
-See the caption package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.93 \begin{code}
-                 
-If you do not understand this error, please take a closer look
-at the documentation of the `caption' package, especially the
-section about errors.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-(./_minted/F997BF1BCE916330B279874A83FB214E.highlight.minted
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.40 ...YGZsq{}0\PYGZsq{}}\PYG{+w}{ }\PYG{k}{then}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.40 ...YGZsq{}0\PYGZsq{}}\PYG{+w}{ }\PYG{k}{then}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[218])
-
-! LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.95     \caption
-                 {Control Unit di A.vhdl}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! Package caption Error: `type' undefined in families `caption'.
-
-See the caption package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.99 \begin{code}
-                 
-If you do not understand this error, please take a closer look
-at the documentation of the `caption' package, especially the
-section about errors.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-(./_minted/B84F4FC2FDFAAD5CC03EF832B2EBAA43.highlight.minted
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.10 ...{ }\PYG{k+kt}{STD\PYGZus{}LOGIC}\PYG{p}{;}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.10 ...{ }\PYG{k+kt}{STD\PYGZus{}LOGIC}\PYG{p}{;}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+[218]) (./_minted/4D6CF2170E1C123B4962CF58A750CD2F.highlight.minted
 
 [219]
 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.56 ...PYGZgt{}}\PYG{+w}{ }\PYG{n}{ACK}\PYG{p}{,}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+[220]) (./_minted/3EE427DD116EB1AB6DC0E4D9650F5A2B.highlight.minted
 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.56 ...PYGZgt{}}\PYG{+w}{ }\PYG{n}{ACK}\PYG{p}{,}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+[221]
 
-[220])
+[222]) (./_minted/36F079B62D83B75F25D59F1E92F6F725.highlight.minted)
 
-! LaTeX Error: \caption outside float.
+[223] (./_minted/5496D382560AA1E68550199D69A72C53.highlight.minted)
+(./_minted/29F75D7955D00218970D442576F5CB26.highlight.minted
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.101     \caption
-                  {nodo B.vhdl}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+[224]
 
+[225]) (./_minted/90D5EC3A6F8AA1A256D2328A3305CD40.highlight.minted
 
-! Package caption Error: `type' undefined in families `caption'.
+[226]
 
-See the caption package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.105 \begin{code}
-                  
-If you do not understand this error, please take a closer look
-at the documentation of the `caption' package, especially the
-section about errors.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+[227]) (./_minted/F997BF1BCE916330B279874A83FB214E.highlight.minted
 
-(./_minted/D955AF25B031F19128546C889E627AA2.highlight.minted
+[228]) (./_minted/B84F4FC2FDFAAD5CC03EF832B2EBAA43.highlight.minted
 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.37 ...nd}\PYG{+w}{ }\PYG{k}{component}\PYG{p}{;}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+[229]
 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.37 ...nd}\PYG{+w}{ }\PYG{k}{component}\PYG{p}{;}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+[230]) (./_minted/D955AF25B031F19128546C889E627AA2.highlight.minted
 
-[221])
-
-! LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.107     \caption
-                  {AplusB.vhdl}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.111 \begin{figure}[H]
-                       
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<img/preappDicembre/schematic_preapp.png, id=1722, 1086.459pt x 504.6855pt>
+[231])
+<img/preappDicembre/schematic_preapp.png, id=1820, 1086.459pt x 504.6855pt>
 File: img/preappDicembre/schematic_preapp.png Graphic file (type png)
 <use img/preappDicembre/schematic_preapp.png>
 Package pdftex.def Info: img/preappDicembre/schematic_preapp.png  used on input
  line 113.
 (pdftex.def)             Requested size: 416.83289pt x 193.63069pt.
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.114 	\caption{Schema a blocchi: nodo B}
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.114 	\caption{Schema a blocchi: nodo B}
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.114 	\caption{Schema a blocchi: nodo B}
-                                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
 
+[232] (./_minted/EBF729533184534FB8EB9A7D4D2F3F90.highlight.minted
 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.117 \subsection
-                 {Simulazione}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+[233 <./img/preappDicembre/schematic_preapp.png>]
 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.117 \subsection
-                 {Simulazione}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[222]
-
-! Package caption Error: `type' undefined in families `caption'.
-
-See the caption package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.119 \begin{code}
-                  
-If you do not understand this error, please take a closer look
-at the documentation of the `caption' package, especially the
-section about errors.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-(./_minted/EBF729533184534FB8EB9A7D4D2F3F90.highlight.minted
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.29 ...{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{;}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.29 ...{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{)}\PYG{p}{;}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[223 <./img/preappDicembre/schematic_preapp.png>]
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.74 ...+m+mi}{20}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.74 ...+m+mi}{20}\PYG{+w}{ }\PYG{n}{ns}\PYG{p}{;}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[224])
-
-! LaTeX Error: \caption outside float.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.121     \caption
-                  {testbench.vhdl}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.125 \begin{figure}[H]
-                       
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-<img/preappDicembre/waveformPreappDic.png, id=1738, 1128.01425pt x 539.01375pt>
+[234])
+<img/preappDicembre/waveformPreappDic.png, id=1836, 1128.01425pt x 539.01375pt>
 
 File: img/preappDicembre/waveformPreappDic.png Graphic file (type png)
 <use img/preappDicembre/waveformPreappDic.png>
 Package pdftex.def Info: img/preappDicembre/waveformPreappDic.png  used on inpu
 t line 127.
 (pdftex.def)             Requested size: 416.83289pt x 199.17699pt.
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.128 	\caption{Waveform}
-                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.128 	\caption{Waveform}
-                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.128 	\caption{Waveform}
-                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
 
+[235 <./img/preappDicembre/waveformPreappDic.png>])
 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.140 ROM[5] = 1111 \\
-                      
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.140 ROM[5] = 1111 \\
-                      
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[225 <./img/preappDicembre/waveformPreappDic.png>])
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.107 \include{problema8}
-                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.107 \include{problema8}
-                         
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[226] (./main.bbl
-! Undefined control sequence.
-<argument> \@bibsetup 
-                      {1}\global \c@NAT@ctr \z@ 
-l.1 \begin{thebibliography}{1}
-                              
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Underfull \hbox (badness 3019) in paragraph at lines 15--18
+[236] (./main.bbl
+Underfull \hbox (badness 6284) in paragraph at lines 15--18
 []\T1/cmr/m/n/14.4 Alberto Mor-ri-co-ni.  amic-0.  []$\T1/pcr/m/n/14.4 https : 
 / / github . com /
  []
 
 )
 
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.115 \end{document}
-                    
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\set@color ...\@pdfcolorstack push{\current@color 
-                                                  }\aftergroup \reset@color 
-l.115 \end{document}
-                    
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[227
+[237
 
 
 
 ]
 \openout8 = `_FAD58DE7366495DB4650CFEFAC2FCD61.data.minted'.
 
-runsystem(latexminted clean  --timestamp 20250116192218 FAD58DE7366495DB4650CFE
-FAC2FCD61)...executed safely (allowed).
+runsystem(latexminted clean  --timestamp 20250117113701 FAD58DE7366495DB4650CFE
+FAC2FCD61)...executed.
 
  (./main.aux (./problema1.aux) (./problema2.aux) (./problema3.aux)
 (./problema4.aux) (./problema5.aux) (./problema8.aux))
@@ -4218,48 +2967,51 @@ L3 programming layer <2024-12-25>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0D36110A5E615EE55B145FD00E6CE089;12319.
- ) 
+(rerunfilecheck)             Checksum: A4E22D022E22B29786F2014182DF5D6B;12983.
+ )
+(\end occurred inside a group at level 1)
+
+### semi simple group (level 1) entered at line 70 (\begingroup)
+### bottom level 
 Here is how much of TeX's memory you used:
- 42953 strings out of 473207
- 1011790 string characters out of 5716282
+ 43079 strings out of 473207
+ 1015741 string characters out of 5716282
  1718298 words of memory out of 5000000
- 64720 multiletter control sequences out of 15000+600000
- 587673 words of font info for 102 fonts, out of 8000000 for 9000
+ 64799 multiletter control sequences out of 15000+600000
+ 586111 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 81i,12n,93p,1039b,2789s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
-usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
-r/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
-cal/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loc
-al/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local
-/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbi2488.pfb></usr/local/t
-exlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/tex
-live/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texli
-ve/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive
-/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2986.pfb></usr/local/texlive/2
-024/texmf-dist/fonts/type1/public/cm-super/sfbx3583.pfb></usr/local/texlive/202
-4/texmf-dist/fonts/type1/public/cm-super/sfit1000.pfb></usr/local/texlive/2024/
-texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2024/te
-xmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2024/texm
-f-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2024/texmf-
-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2024/texmf-di
-st/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2024/texmf-dist
-/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2024/texmf-dist/f
-onts/type1/public/cm-super/sfsl1440.pfb></usr/local/texlive/2024/texmf-dist/fon
-ts/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/2024/texmf-dist/fonts
-/type1/public/cm-super/sfti1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/t
-ype1/urw/courier/ucrb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw
-/courier/ucrr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/courier
-/ucrro8a.pfb>
-Output written on main.pdf (232 pages, 20950116 bytes).
+ 81i,15n,93p,1039b,2836s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
+2.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.p
+fb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbi2488.pfb
+></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><
+/usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></u
+sr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr
+/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx2986.pfb></usr/l
+ocal/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx3583.pfb></usr/loc
+al/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfit1000.pfb></usr/local
+/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/t
+exlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/tex
+live/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texli
+ve/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive
+/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2
+024/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/202
+4/texmf-dist/fonts/type1/public/cm-super/sfss1440.pfb></usr/local/texlive/2024/
+texmf-dist/fonts/type1/public/cm-super/sfti1440.pfb></usr/local/texlive/2024/te
+xmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2024/texmf-dist
+/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/t
+ype1/urw/courier/ucrro8a.pfb>
+Output written on main.pdf (242 pages, 21393484 bytes).
 PDF statistics:
- 1999 PDF objects out of 2073 (max. 8388607)
- 1547 compressed objects within 16 object streams
- 500 named destinations out of 1000 (max. 500000)
- 1039 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2100 PDF objects out of 2487 (max. 8388607)
+ 1628 compressed objects within 17 object streams
+ 537 named destinations out of 1000 (max. 500000)
+ 1096 words of extra memory for PDF output out of 10000 (max. 10000000)
 
