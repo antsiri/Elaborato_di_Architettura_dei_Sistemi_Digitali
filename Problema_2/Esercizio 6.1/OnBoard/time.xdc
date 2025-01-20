@@ -1,0 +1,13 @@
+create_generated_clock -name fd/CLK -source [get_ports CLK] -divide_by 1 [get_pins fd/clock_signal_reg/Q]
+set_input_delay -clock [get_clocks sys_clk_pin] -min -add_delay 1.000 [get_ports READ]
+set_input_delay -clock [get_clocks sys_clk_pin] -max -add_delay 10.000 [get_ports READ]
+set_input_delay -clock [get_clocks sys_clk_pin] -clock_fall -min -add_delay 1.000 [get_ports RST]
+set_input_delay -clock [get_clocks sys_clk_pin] -clock_fall -max -add_delay 10.000 [get_ports RST]
+set_input_delay -clock [get_clocks sys_clk_pin] -min -add_delay 1.000 [get_ports RST]
+set_input_delay -clock [get_clocks sys_clk_pin] -max -add_delay 10.000 [get_ports RST]
+set_input_delay -clock [get_clocks sys_clk_pin] -min -add_delay 1.000 [get_ports START]
+set_input_delay -clock [get_clocks sys_clk_pin] -max -add_delay 10.000 [get_ports START]
+set_output_delay -clock [get_clocks sys_clk_pin] -min -add_delay 0.000 [get_ports {Y[*]}]
+set_output_delay -clock [get_clocks sys_clk_pin] -max -add_delay 10.000 [get_ports {Y[*]}]
+#set_false_path -from [get_ports RST] -to [get_pins current_state]
+
